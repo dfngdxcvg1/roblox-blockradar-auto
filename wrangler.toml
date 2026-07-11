@@ -1,0 +1,4 @@
+name = "123456"
+compatibility_date = "2026-07-09"
+assets = { directory = "outputs/roblox-portal" }
+preview_urls = false

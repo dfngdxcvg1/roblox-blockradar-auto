@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://roblox.pingdou123.uk/sitemap.xml

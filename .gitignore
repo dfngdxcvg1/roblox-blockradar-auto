@@ -1,0 +1,5 @@
+.agents/
+.codex/
+.wrangler/
+
+outputs/*.zip

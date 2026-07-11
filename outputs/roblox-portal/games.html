@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roblox Game Library - BlockRadar</title>
+    <meta name="description" content="Browse Roblox games by genre, safety score, age guide, free-player fit, spending pressure, and scam-risk notes." />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js" defer></script>
+    <script src="games.js" defer></script>
+      <script src="ads.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">BR</span><span>BlockRadar</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="games.html">Games</a>
+        <a href="rankings.html">Rankings</a>
+        <a href="guides.html">Guides</a>
+        <a href="codes.html">Codes</a>
+        <a href="safety.html">Safety</a>
+        <a href="creators.html">Creators</a>
+      </nav>
+      <a class="submit-link" href="creators.html">Submit Game</a>
+    </header>
+    <main class="page-shell">
+      <section class="page-title">
+        <p class="eyebrow">Game Library</p>
+        <h1>Browse Roblox games by what matters.</h1>
+        <p>Genre is only the start. BlockRadar adds age guidance, spending pressure, free-player fit, scam risk, scare level, and beginner routes.</p>
+      </section>
+      <form class="search-panel page-search" role="search">
+        <label class="sr-only" for="library-search">Search game library</label>
+        <input id="library-search" type="search" placeholder="Search games, categories, risks, or guide topics..." autocomplete="off" />
+        <select id="library-filter" aria-label="Filter library by category">
+          <option value="all">All categories</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Roleplay">Roleplay</option>
+          <option value="Horror">Horror</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Pet Sim">Pet Sim</option>
+          <option value="Obby">Obby</option>
+          <option value="Simulator">Simulator</option>
+          <option value="Shooter">Shooter</option>
+        </select>
+      </form>
+      <section class="game-grid page-grid" id="library-grid" aria-label="Roblox game library"></section>
+    </main>
+    <footer class="site-footer"><strong>BlockRadar</strong><span><a href="parents.html">Parents</a> · <a href="about.html">About</a> · Independent Roblox discovery concept. Not affiliated with Roblox Corporation.</span></footer>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+{
+  "updatedAt": "2026-07-11T04:14:32.676Z",
+  "updatedCount": 20,
+  "updated": [
+    {
+      "id": "blox-fruits",
+      "name": "Blox Fruits",
+      "playing": 265003,
+      "visits": 62657573071,
+      "likeRatio": 92
+    },
+    {
+      "id": "brookhaven-rp",
+      "name": "Brookhaven RP",
+      "playing": 519166,
+      "visits": 84794454787,
+      "likeRatio": 86
+    },
+    {
+      "id": "doors",
+      "name": "Doors",
+      "playing": 9995,
+      "visits": 7494850858,
+      "likeRatio": 93
+    },
+    {
+      "id": "dress-to-impress",
+      "name": "Dress to Impress",
+      "playing": 88565,
+      "visits": 10481965622,
+      "likeRatio": 91
+    },
+    {
+      "id": "adopt-me",
+      "name": "Adopt Me!",
+      "playing": 342093,
+      "visits": 44092343412,
+      "likeRatio": 86
+    },
+    {
+      "id": "tower-of-hell",
+      "name": "Tower of Hell",
+      "playing": 12676,
+      "visits": 28039787878,
+      "likeRatio": 74
+    },
+    {
+      "id": "blade-ball",
+      "name": "Blade Ball",
+      "playing": 15018,
+      "visits": 6267495236,
+      "likeRatio": 94
+    },
+    {
+      "id": "natural-disaster-survival",
+      "name": "Natural Disaster Survival",
+      "playing": 13710,
+      "visits": 4336463080,
+      "likeRatio": 91
+    },
+    {
+      "id": "pet-simulator-99",
+      "name": "Pet Simulator 99",
+      "playing": 167218,
+      "visits": 2525093039,
+      "likeRatio": 95
+    },
+    {
+      "id": "evade",
+      "name": "Evade",
+      "playing": 34899,
+      "visits": 8827949229,
+      "likeRatio": 94
+    },
+    {
+      "id": "theme-park-tycoon-2",
+      "name": "Theme Park Tycoon 2",
+      "playing": 7384,
+      "visits": 1587034973,
+      "likeRatio": 89
+    },
+    {
+      "id": "bee-swarm-simulator",
+      "name": "Bee Swarm Simulator",
+      "playing": 16747,
+      "visits": 4479087740,
+      "likeRatio": 96
+    },
+    {
+      "id": "royale-high",
+      "name": "Royale High",
+      "playing": 7251,
+      "visits": 10417474027,
+      "likeRatio": 86
+    },
+    {
+      "id": "murder-mystery-2",
+      "name": "Murder Mystery 2",
+      "playing": 249218,
+      "visits": 27117985087,
+      "likeRatio": 91
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "playing": 6322,
+      "visits": 6251482073,
+      "likeRatio": 89
+    },
+    {
+      "id": "build-a-boat-for-treasure",
+      "name": "Build A Boat For Treasure",
+      "playing": 18498,
+      "visits": 5093557111,
+      "likeRatio": 93
+    },
+    {
+      "id": "restaurant-tycoon-2",
+      "name": "Restaurant Tycoon 2",
+      "playing": 2646,
+      "visits": 1633924683,
+      "likeRatio": 93
+    },
+    {
+      "id": "work-at-a-pizza-place",
+      "name": "Work at a Pizza Place",
+      "playing": 6198,
+      "visits": 5524410180,
+      "likeRatio": 93
+    },
+    {
+      "id": "rainbow-friends",
+      "name": "Rainbow Friends",
+      "playing": 5347,
+      "visits": 4988588903,
+      "likeRatio": 83
+    },
+    {
+      "id": "catalog-avatar-creator",
+      "name": "Catalog Avatar Creator",
+      "playing": 98090,
+      "visits": 7295117034,
+      "likeRatio": 94
+    }
+  ]
+}

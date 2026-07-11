@@ -75,6 +75,9 @@ a {
 
 .nav a,
 .submit-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
   padding: 9px 12px;
   border-radius: 8px;
   color: #334155;
@@ -107,6 +110,10 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero-image.image-failed {
+  opacity: 0;
 }
 
 .hero-overlay {
@@ -370,6 +377,9 @@ button {
 }
 
 .ticker a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
   color: #334155;
   font-weight: 700;
 }

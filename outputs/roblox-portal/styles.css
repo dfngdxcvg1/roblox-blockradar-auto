@@ -245,6 +245,115 @@ button {
   margin: 0;
 }
 
+.player-tools {
+  padding: 58px 32px;
+  background: #eaf3f7;
+  border-block: 1px solid var(--line);
+}
+
+.tool-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.85fr;
+  gap: 16px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.live-panel,
+.finder-panel,
+.random-panel {
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(20, 39, 61, 0.08);
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.panel-head span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.live-board {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.live-board li,
+.finder-card,
+.spotlight-pick {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.live-board li {
+  grid-template-columns: 34px 1fr auto;
+  align-items: center;
+}
+
+.rank {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  color: #fff;
+  background: var(--teal);
+  border-radius: 7px;
+  font-weight: 900;
+}
+
+.live-board strong,
+.finder-card strong,
+.spotlight-pick strong {
+  display: block;
+}
+
+.live-board span:not(.rank),
+.finder-card span,
+.spotlight-pick span,
+.live-board em {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-style: normal;
+}
+
+.finder-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.finder-result {
+  display: grid;
+  gap: 10px;
+}
+
+.finder-card p,
+.spotlight-pick p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.random-panel button {
+  margin-top: 12px;
+}
+
 .ticker {
   display: flex;
   flex-wrap: wrap;
@@ -895,6 +1004,7 @@ li strong {
 
   .search-panel,
   .ranking-layout,
+  .tool-layout,
   .split-section,
   .score-system,
   .method-row,
@@ -904,6 +1014,10 @@ li strong {
   .detail-grid,
   .article-grid,
   .checklist {
+    grid-template-columns: 1fr;
+  }
+
+  .finder-controls {
     grid-template-columns: 1fr;
   }
 
@@ -919,6 +1033,7 @@ li strong {
 
 @media (max-width: 560px) {
   .ticker,
+  .player-tools,
   .section-grid,
   .content-band,
   .split-section,

@@ -74,6 +74,48 @@
         <article><strong>0</strong><span>fake Robux or download traps</span></article>
       </section>
 
+      <section class="player-tools" aria-labelledby="tools-title">
+        <div class="section-heading">
+          <p class="eyebrow">Live Player Tools</p>
+          <h2 id="tools-title">Pick a game by mood, risk, and live heat.</h2>
+          <p class="section-copy">BlockRadar updates Roblox activity data automatically, then turns it into quick choices players can actually use.</p>
+        </div>
+        <div class="tool-layout">
+          <article class="live-panel">
+            <div class="panel-head">
+              <h3>Hot right now</h3>
+              <span id="live-updated">Updating</span>
+            </div>
+            <ol class="live-board" id="live-board"></ol>
+          </article>
+          <article class="finder-panel">
+            <h3>Game Finder</h3>
+            <div class="finder-controls">
+              <select id="mood-filter" aria-label="Choose a play mood">
+                <option value="any">Any mood</option>
+                <option value="friends">Play with friends</option>
+                <option value="safe">Low risk</option>
+                <option value="scary">Scary</option>
+                <option value="creative">Creative</option>
+                <option value="grind">Progression grind</option>
+              </select>
+              <select id="spend-filter" aria-label="Choose spending pressure">
+                <option value="any">Any spending</option>
+                <option value="low">Low spending</option>
+                <option value="medium">Medium spending</option>
+                <option value="high">High spending OK</option>
+              </select>
+            </div>
+            <div class="finder-result" id="finder-result"></div>
+          </article>
+          <article class="random-panel">
+            <h3>Tonight's pick</h3>
+            <div id="random-pick"></div>
+            <button type="button" id="reroll-game">Roll another</button>
+          </article>
+        </div>
+      </section>
+
       <section class="section-grid" id="games" aria-labelledby="games-title">
         <div class="section-heading">
           <p class="eyebrow">Game Library</p>

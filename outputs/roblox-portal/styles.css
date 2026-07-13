@@ -585,6 +585,41 @@ button {
   border-block: 1px solid var(--line);
 }
 
+.play-plans {
+  padding: 58px 32px;
+  background: #f7fbff;
+  border-block: 1px solid var(--line);
+}
+
+.play-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.play-plan-grid a {
+  display: grid;
+  gap: 8px;
+  min-height: 152px;
+  padding: 20px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(20, 39, 61, 0.08);
+}
+
+.play-plan-grid strong {
+  font-size: 1.05rem;
+}
+
+.play-plan-grid span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .ranking-layout {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1014,6 +1049,7 @@ li strong {
 
   .search-panel,
   .ranking-layout,
+  .play-plan-grid,
   .tool-layout,
   .split-section,
   .score-system,
@@ -1044,6 +1080,7 @@ li strong {
 @media (max-width: 560px) {
   .ticker,
   .player-tools,
+  .play-plans,
   .section-grid,
   .content-band,
   .split-section,
@@ -1066,6 +1103,7 @@ li strong {
   }
 
   .insight-strip,
+  .play-plan-grid,
   .feature-grid {
     grid-template-columns: 1fr;
   }

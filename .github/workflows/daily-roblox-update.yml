@@ -13,6 +13,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: daily-roblox-update-main
+  cancel-in-progress: false
+
 jobs:
   update:
     if: github.actor != 'github-actions[bot]'
@@ -44,5 +48,6 @@ jobs:
             echo "No Roblox updates to commit."
           else
             git commit -m "Update Roblox live stats"
+            git pull --rebase origin main
             git push
           fi

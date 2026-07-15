@@ -1,145 +1,145 @@
 {
-  "updatedAt": "2026-07-15T03:28:06.160Z",
+  "updatedAt": "2026-07-15T04:18:56.753Z",
   "updatedCount": 20,
   "updated": [
     {
       "id": "blox-fruits",
       "name": "Blox Fruits",
-      "playing": 203196,
-      "visits": 62738206006,
+      "playing": 198764,
+      "visits": 62738757174,
       "likeRatio": 92
     },
     {
       "id": "brookhaven-rp",
       "name": "Brookhaven RP",
-      "playing": 400094,
-      "visits": 84973857682,
+      "playing": 383872,
+      "visits": 84975003245,
       "likeRatio": 86
     },
     {
       "id": "doors",
       "name": "Doors",
-      "playing": 9779,
-      "visits": 7503121643,
+      "playing": 9057,
+      "visits": 7503169277,
       "likeRatio": 93
     },
     {
       "id": "dress-to-impress",
       "name": "Dress to Impress",
-      "playing": 75139,
-      "visits": 10517316562,
+      "playing": 66233,
+      "visits": 10517565537,
       "likeRatio": 91
     },
     {
       "id": "adopt-me",
       "name": "Adopt Me!",
-      "playing": 325089,
-      "visits": 44126824424,
+      "playing": 308885,
+      "visits": 44127062280,
       "likeRatio": 86
     },
     {
       "id": "tower-of-hell",
       "name": "Tower of Hell",
-      "playing": 13435,
-      "visits": 28075512262,
+      "playing": 13412,
+      "visits": 28075681929,
       "likeRatio": 74
     },
     {
       "id": "blade-ball",
       "name": "Blade Ball",
-      "playing": 10757,
-      "visits": 6274734819,
+      "playing": 10288,
+      "visits": 6274784662,
       "likeRatio": 94
     },
     {
       "id": "natural-disaster-survival",
       "name": "Natural Disaster Survival",
-      "playing": 12884,
-      "visits": 4343306835,
+      "playing": 11918,
+      "visits": 4343376312,
       "likeRatio": 91
     },
     {
       "id": "pet-simulator-99",
       "name": "Pet Simulator 99",
-      "playing": 205389,
-      "visits": 2538843736,
+      "playing": 204622,
+      "visits": 2538922499,
       "likeRatio": 95
     },
     {
       "id": "evade",
       "name": "Evade",
-      "playing": 24758,
-      "visits": 8844623229,
+      "playing": 25590,
+      "visits": 8844740475,
       "likeRatio": 94
     },
     {
       "id": "theme-park-tycoon-2",
       "name": "Theme Park Tycoon 2",
-      "playing": 7438,
-      "visits": 1589195956,
+      "playing": 6800,
+      "visits": 1589210994,
       "likeRatio": 89
     },
     {
       "id": "bee-swarm-simulator",
       "name": "Bee Swarm Simulator",
-      "playing": 16318,
-      "visits": 4483339789,
+      "playing": 16284,
+      "visits": 4483375068,
       "likeRatio": 96
     },
     {
       "id": "royale-high",
       "name": "Royale High",
-      "playing": 7304,
-      "visits": 10419196421,
+      "playing": 6699,
+      "visits": 10419211230,
       "likeRatio": 86
     },
     {
       "id": "murder-mystery-2",
       "name": "Murder Mystery 2",
-      "playing": 255470,
-      "visits": 27269131729,
+      "playing": 238800,
+      "visits": 27270241384,
       "likeRatio": 91
     },
     {
       "id": "arsenal",
       "name": "Arsenal",
-      "playing": 5987,
-      "visits": 6254909726,
+      "playing": 5763,
+      "visits": 6254942738,
       "likeRatio": 89
     },
     {
       "id": "build-a-boat-for-treasure",
       "name": "Build A Boat For Treasure",
-      "playing": 16321,
-      "visits": 5099851004,
+      "playing": 15547,
+      "visits": 5099891320,
       "likeRatio": 93
     },
     {
       "id": "restaurant-tycoon-2",
       "name": "Restaurant Tycoon 2",
-      "playing": 2530,
-      "visits": 1634975385,
+      "playing": 2392,
+      "visits": 1634981687,
       "likeRatio": 93
     },
     {
       "id": "work-at-a-pizza-place",
       "name": "Work at a Pizza Place",
-      "playing": 5093,
-      "visits": 5527182512,
+      "playing": 4885,
+      "visits": 5527201321,
       "likeRatio": 93
     },
     {
       "id": "rainbow-friends",
       "name": "Rainbow Friends",
-      "playing": 5378,
-      "visits": 4995143152,
+      "playing": 4734,
+      "visits": 4995176545,
       "likeRatio": 83
     },
     {
       "id": "catalog-avatar-creator",
       "name": "Catalog Avatar Creator",
-      "playing": 87876,
-      "visits": 7334804807,
+      "playing": 82277,
+      "visits": 7335130319,
       "likeRatio": 94
     }
   ]

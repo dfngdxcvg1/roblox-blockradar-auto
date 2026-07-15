@@ -361,6 +361,40 @@ button {
   margin-top: 12px;
 }
 
+.todays-picks {
+  padding: 58px 32px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.today-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.today-grid a {
+  display: grid;
+  gap: 8px;
+  min-height: 140px;
+  padding: 18px;
+  color: var(--ink);
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.today-grid strong {
+  font-size: 1.02rem;
+}
+
+.today-grid span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .ticker {
   display: flex;
   flex-wrap: wrap;
@@ -1050,6 +1084,7 @@ li strong {
   .search-panel,
   .ranking-layout,
   .play-plan-grid,
+  .today-grid,
   .tool-layout,
   .split-section,
   .score-system,
@@ -1080,6 +1115,7 @@ li strong {
 @media (max-width: 560px) {
   .ticker,
   .player-tools,
+  .todays-picks,
   .play-plans,
   .section-grid,
   .content-band,
@@ -1104,6 +1140,7 @@ li strong {
 
   .insight-strip,
   .play-plan-grid,
+  .today-grid,
   .feature-grid {
     grid-template-columns: 1fr;
   }

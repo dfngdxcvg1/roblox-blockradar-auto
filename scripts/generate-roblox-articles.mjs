@@ -157,7 +157,6 @@ function buildArticle(theme, index) {
           <li>Avoid free Robux claims, trust trades, and outside-link invitations.</li>
           <li>Try one free session before buying passes, boosts, or cosmetics.</li>
         </ul>
-        <p class="card-note">Updated automatically by BlockRadar. Roblox game data can change quickly, so use this as a practical starting point rather than a permanent ranking.</p>
       </article>
     </main>
     <footer class="site-footer"><strong>BlockRadar</strong><span><a href="../parents.html">Parents</a> · <a href="../about.html">About</a> · Independent Roblox discovery concept.</span></footer>

@@ -7,3 +7,4 @@ preview_urls = false
 directory = "outputs/roblox-portal"
 binding = "ASSETS"
 run_worker_first = true
+html_handling = "none"

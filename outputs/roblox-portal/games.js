@@ -2,6 +2,7 @@ const libraryGames = window.blockRadarGames;
 const libraryGrid = document.querySelector("#library-grid");
 const librarySearch = document.querySelector("#library-search");
 const libraryFilter = document.querySelector("#library-filter");
+const savedOnly = document.querySelector("#saved-only");
 
 function initialsForLibrary(name) {
   return name.split(/\s+/).map((word) => word[0]).join("").replace(/[^A-Z]/gi, "").slice(0, 3).toUpperCase();
@@ -12,7 +13,8 @@ function renderLibrary() {
   const filter = libraryFilter.value;
   const filtered = libraryGames.filter((game) => {
     const haystack = [game.name, game.category, game.summary, game.spend, game.chatRisk, game.scamRisk, game.bestFor].join(" ").toLowerCase();
-    return haystack.includes(query) && (filter === "all" || game.category === filter);
+    const savedMatch = !savedOnly.checked || window.BlockRadarFavorites?.has(game.id);
+    return haystack.includes(query) && (filter === "all" || game.category === filter) && savedMatch;
   });
 
   libraryGrid.innerHTML = filtered.length
@@ -35,13 +37,20 @@ function renderLibrary() {
             <span class="tag">${game.liveLabel || "Live data pending"}</span>
             <span class="tag">${game.visitsLabel || "Visits updating"}</span>
           </div>
-          <a class="card-link" href="${game.page}">Open game hub</a>
+          <div class="result-actions">
+            <a class="card-link" href="${game.page}">Open game hub</a>
+            <a class="card-link secondary-link" href="/compare?left=${game.id}">Compare</a>
+            <button class="favorite-button" type="button" data-favorite-id="${game.id}" aria-pressed="false">Save game</button>
+          </div>
         </div>
       </article>
     `).join("")
     : '<div class="empty-state">No matching games yet. Try another category or search term.</div>';
+  window.BlockRadarFavorites?.refresh();
 }
 
 librarySearch.addEventListener("input", renderLibrary);
 libraryFilter.addEventListener("change", renderLibrary);
+savedOnly.addEventListener("change", renderLibrary);
+window.addEventListener("blockradar:favorites", renderLibrary);
 renderLibrary();

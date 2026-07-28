@@ -3,7 +3,6 @@ const pageId = document.body?.dataset?.game;
 const id = pageId || params.get("id") || "blox-fruits";
 const game = window.blockRadarGames.find((item) => item.id === id) || window.blockRadarGames[0];
 const detail = document.querySelector("#game-detail");
-const pathPrefix = window.location.pathname.includes("/games/") || window.location.pathname.includes("\\games\\") ? "../" : "";
 
 document.title = `${game.name} Guide, Codes & Safety Score - BlockRadar`;
 
@@ -53,15 +52,17 @@ detail.innerHTML = `
       </div>
       <div class="detail-actions">
         <a class="card-link" href="${game.officialUrl}" target="_blank" rel="noopener">Open official Roblox page</a>
-        <a class="card-link secondary-link" href="${pathPrefix}games.html">Browse library</a>
+        <a class="card-link secondary-link" href="/games">Browse library</a>
+        <a class="card-link secondary-link" href="/compare?left=${game.id}">Compare</a>
+        <button class="favorite-button" type="button" data-favorite-id="${game.id}" aria-pressed="false">Save game</button>
       </div>
     </div>
   </section>
 
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="${pathPrefix}index.html">Home</a>
+    <a href="/">Home</a>
     <span>/</span>
-    <a href="${pathPrefix}games.html">Games</a>
+    <a href="/games">Games</a>
     <span>/</span>
     <strong>${game.name}</strong>
   </nav>

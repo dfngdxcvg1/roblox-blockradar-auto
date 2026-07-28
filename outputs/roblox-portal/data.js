@@ -428,7 +428,7 @@ window.blockRadarGames.forEach((game) => {
   const meta = window.blockRadarGameMeta[game.id];
   if (!meta) return;
   game.placeId = meta.placeId;
-  game.page = `games/${game.id}.html`;
+  game.page = `/games/${game.id}`;
   game.officialUrl = `https://www.roblox.com/games/${meta.placeId}/`;
   game.image = `https://www.roblox.com/asset-thumbnail/image?assetId=${meta.placeId}&width=768&height=432&format=png`;
 });

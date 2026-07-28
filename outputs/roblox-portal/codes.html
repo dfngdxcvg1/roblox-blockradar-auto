@@ -1,41 +1,64 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Roblox Codes Hub - BlockRadar</title>
-    <meta name="description" content="A Roblox codes hub concept for active codes, expired codes, redemption guides, update cadence, and scam warnings." />
+    <title>Active Roblox Codes Tracker with Copy Buttons - BlockRadar</title>
+    <meta name="description" content="Filter and copy reviewed Roblox codes for Blox Fruits, Dress to Impress, Blade Ball, and Bee Swarm Simulator with rewards, source dates, and scam warnings." />
     <link rel="stylesheet" href="styles.css" />
-      <script src="ads.js" defer></script>
-      <link rel="canonical" href="https://roblox.pingdou123.uk/codes.html" />
+    <script src="codes-data.js" defer></script>
+    <script src="codes.js" defer></script>
+    <script src="ads.js" defer></script>
+      <link rel="canonical" href="https://roblox.pingdou123.uk/codes" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html"><span class="brand-mark">BR</span><span>BlockRadar</span></a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="games.html">Games</a><a href="rankings.html">Rankings</a><a href="guides.html">Guides</a><a href="codes.html">Codes</a><a href="safety.html">Safety</a><a href="creators.html">Creators</a>
-      </nav>
-      <a class="submit-link" href="creators.html">Submit Game</a>
+      <a class="brand" href="/"><span class="brand-mark">BR</span><span>BlockRadar</span></a>
+      <nav class="nav" aria-label="Primary navigation"><a href="/games">Games</a><a href="/compare">Compare</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/safety">Safety</a></nav>
+      <a class="submit-link" href="/creators">Submit Game</a>
     </header>
     <main class="page-shell">
       <section class="page-title">
-        <p class="eyebrow">Codes Hub</p>
-        <h1>Roblox codes without the spam.</h1>
-        <p>Players want fast answers: what is active, what expired, how to redeem, and whether a code page is hiding fake Robux traps.</p>
+        <p class="eyebrow">Reviewed July 28, 2026</p>
+        <h1>Roblox codes without fake generators.</h1>
+        <p>Filter reviewed codes, see the reward, copy one tap at a time, and check the source review date before opening Roblox.</p>
       </section>
-      <section class="article-grid">
-        <article><span class="tag">High Demand</span><h2>Blox Fruits codes</h2><p>XP boosts, reset timing, expired-code archive, and beginner redemption order.</p><a class="card-link" href="games/blox-fruits.html">Open hub</a></article>
-        <article><span class="tag">Style Rewards</span><h2>Dress to Impress codes</h2><p>Track outfit items, theme usefulness, and whether new codes are worth claiming.</p><a class="card-link" href="games/dress-to-impress.html">Open hub</a></article>
-        <article><span class="tag">Fast Matches</span><h2>Blade Ball codes</h2><p>Keep code updates separated from fake reward generators and outside-link bait.</p><a class="card-link" href="games/blade-ball.html">Open hub</a></article>
-        <article><span class="tag">Simulator</span><h2>Bee Swarm Simulator codes</h2><p>Plan boost timing before redeeming codes so rewards are not wasted.</p><a class="card-link" href="games/bee-swarm-simulator.html">Open hub</a></article>
-        <article><span class="tag">Safety Rule</span><h2>No password, no download, no survey</h2><p>Any site asking for login credentials, files, or external verification is a red flag.</p><a class="card-link" href="safety.html">Read safety guide</a></article>
+
+      <section class="tool-surface code-tool" aria-labelledby="code-filters-title">
+        <div class="tool-heading"><div><p class="eyebrow">Codes Tracker</p><h2 id="code-filters-title">Find a working code</h2></div><strong id="codes-summary">Loading codes...</strong></div>
+        <div class="code-filters">
+          <label>Game<select id="codes-game"></select></label>
+          <label>Status<select id="codes-status"><option value="active">Active in source review</option><option value="expired">Expired</option><option value="all">All statuses</option></select></label>
+          <label>Search<input id="codes-search" type="search" placeholder="Code, game, or reward..." /></label>
+        </div>
+        <p class="code-caution"><strong>Important:</strong> Codes can expire without notice. BlockRadar never asks for a Roblox password, download, survey, or external verification.</p>
+        <p id="copy-status" class="tool-status" role="status" aria-live="polite"></p>
       </section>
-      <section class="detail-card editorial-block">
-        <h2>Code page template</h2>
-        <p>Each code article should include active codes, expired codes, redemption steps, last checked date, reward type, official source link, and scam warning copy.</p>
+
+      <section id="codes-list" class="codes-list" aria-live="polite">
+        <article class="code-row"><div><span class="code-game">Blox Fruits</span><code>EASTEREXP</code></div><p>20 minutes of 2x EXP</p><span class="code-status active">Active in source review</span><button type="button">Copy</button></article>
+        <article class="code-row"><div><span class="code-game">Dress to Impress</span><code>LANADOLLDRESS</code></div><p>Lana Doll Dress</p><span class="code-status active">Active in source review</span><button type="button">Copy</button></article>
+        <article class="code-row"><div><span class="code-game">Bee Swarm Simulator</span><code>BeesBuzz123</code></div><p>Cloud Vial, Bitterberries, and Gumdrops</p><span class="code-status active">Active in source review</span><button type="button">Copy</button></article>
+      </section>
+
+      <section class="source-band">
+        <div class="section-heading compact-heading"><p class="eyebrow">Source notes</p><h2>What was checked</h2></div>
+        <div id="code-sources" class="code-sources"></div>
+      </section>
+
+      <section class="long-article codes-copy">
+        <h2>How to redeem Roblox game codes safely</h2>
+        <ol>
+          <li>Open the game from its official Roblox experience page.</li>
+          <li>Use the in-game Codes, Settings, Gift, or Twitter icon described by the developer.</li>
+          <li>Paste the code exactly. Many codes are case-sensitive.</li>
+          <li>Never enter your Roblox password on a third-party code page.</li>
+        </ol>
+        <h2>Why a code may not work</h2>
+        <p>The code may have expired, already been redeemed, require official group membership, or contain a capitalization difference. Event codes change fastest. The source review date tells you when the list was last checked, but only the game can confirm redemption.</p>
       </section>
     </main>
-    <footer class="site-footer"><strong>BlockRadar</strong><span><a href="parents.html">Parents</a> · <a href="about.html">About</a> · Independent Roblox discovery concept. Not affiliated with Roblox Corporation.</span></footer>
+    <footer class="site-footer"><strong>BlockRadar</strong><span><a href="/parents">Parents</a> &middot; <a href="/about">About</a> &middot; Independent Roblox discovery site.</span></footer>
   </body>
 </html>

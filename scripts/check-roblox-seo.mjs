@@ -11,7 +11,8 @@ const noindexPages = new Set([
 ]);
 
 function canonicalPath(relativePath) {
-  return relativePath === "index.html" ? "/" : `/${relativePath.replaceAll("\\", "/")}`;
+  if (relativePath === "index.html") return "/";
+  return `/${relativePath.replaceAll("\\", "/").replace(/\.html$/i, "")}`;
 }
 
 function visibleText(html) {
@@ -55,6 +56,13 @@ for (const relativePath of htmlFiles) {
     if (visibleText(main).length < 900) errors.push(`${relativePath}: static detail content is too thin`);
     if (main.includes("asset-thumbnail/image")) errors.push(`${relativePath}: uses retired Roblox thumbnail endpoint`);
   }
+
+  const internalHtmlLinks = [...html.matchAll(/href=["']([^"']*\.html(?:[?#][^"']*)?)["']/gi)]
+    .map((match) => match[1])
+    .filter((href) => !/^(?:https?:)?\/\//i.test(href));
+  if (internalHtmlLinks.length) {
+    errors.push(`${relativePath}: internal .html links remain (${internalHtmlLinks.slice(0, 3).join(", ")})`);
+  }
 }
 
 const sitemap = await readFile(path.join(root, "sitemap.xml"), "utf8");
@@ -68,10 +76,13 @@ if (sitemapUrls.length < 50 || sitemapUrls.length > 80) {
 if ((sitemap.match(/<lastmod>/g) || []).length !== sitemapUrls.length) {
   errors.push("sitemap.xml: every URL must include lastmod");
 }
+if (sitemapUrls.some((url) => new URL(url).pathname.endsWith(".html"))) {
+  errors.push("sitemap.xml: canonical URLs must not use .html");
+}
 
 for (const url of sitemapUrls) {
   const pathname = new URL(url).pathname;
-  const relativePath = pathname === "/" ? "index.html" : pathname.slice(1);
+  const relativePath = pathname === "/" ? "index.html" : `${pathname.slice(1)}.html`;
   try {
     await readFile(path.join(root, relativePath));
   } catch {

@@ -128,11 +128,16 @@ function renderGames() {
           <span class="tag">${game.ratingLabel || "Rating updating"}</span>
         </div>
         <div class="tag">${game.spend}</div>
-        <a class="card-link" href="${game.page}">Open game hub</a>
+        <div class="result-actions">
+          <a class="card-link" href="${game.page}">Open game hub</a>
+          <a class="card-link secondary-link" href="/compare?left=${game.id}">Compare</a>
+          <button class="favorite-button" type="button" data-favorite-id="${game.id}" aria-pressed="false">Save game</button>
+        </div>
       </div>
     `;
     grid.appendChild(card);
   });
+  window.BlockRadarFavorites?.refresh();
 }
 
 search.addEventListener("input", renderGames);

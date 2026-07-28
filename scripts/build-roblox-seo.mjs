@@ -14,6 +14,77 @@ const sitemapExcluded = new Set([
   ...noindexPages,
   "google4c9c5b5cfa7f7a88.html"
 ]);
+const relatedGuidesByGame = {
+  "blox-fruits": [
+    {
+      title: "Blox Fruits trading scam guide",
+      href: "/blox-fruits-trading-scam-guide",
+      copy: "Recognize trust trades, fake middlemen, phishing links, and off-platform deals."
+    },
+    {
+      title: "Is Blox Fruits safe for kids?",
+      href: "/is-blox-fruits-safe-for-kids",
+      copy: "Review chat, combat, trading, grinding, and Robux pressure before a child plays."
+    },
+    {
+      title: "Reviewed Blox Fruits codes",
+      href: "/codes?game=blox-fruits",
+      copy: "Copy recently reviewed XP and stat-reset codes from the BlockRadar tracker."
+    }
+  ],
+  "catalog-avatar-creator": [
+    {
+      title: "Is Catalog Avatar Creator safe?",
+      href: "/is-catalog-avatar-creator-safe-for-kids",
+      copy: "A parent guide to public chat, avatar purchases, social comparison, and safer settings."
+    }
+  ],
+  "dress-to-impress": [
+    {
+      title: "Is Dress to Impress safe?",
+      href: "/is-dress-to-impress-safe-for-kids",
+      copy: "Understand voting, public chat, VIP pressure, outfit codes, and age fit."
+    },
+    {
+      title: "Reviewed Dress to Impress codes",
+      href: "/codes?game=dress-to-impress",
+      copy: "Filter and copy outfit codes with source-review dates and redemption warnings."
+    }
+  ],
+  "brookhaven-rp": [
+    {
+      title: "Is Brookhaven safe for kids?",
+      href: "/is-brookhaven-safe-for-kids",
+      copy: "Review roleplay boundaries, chat, private spaces, vehicles, and purchase prompts."
+    },
+    {
+      title: "Games like Brookhaven",
+      href: "/games-like-brookhaven",
+      copy: "Compare social and roleplay alternatives before choosing the next game."
+    }
+  ],
+  "bee-swarm-simulator": [
+    {
+      title: "Reviewed Bee Swarm Simulator codes",
+      href: "/codes?game=bee-swarm-simulator",
+      copy: "See code rewards, source notes, and the latest BlockRadar review date."
+    }
+  ],
+  "blade-ball": [
+    {
+      title: "Reviewed Blade Ball codes",
+      href: "/codes?game=blade-ball",
+      copy: "Copy current source-reviewed codes and check why a code may stop working."
+    }
+  ],
+  "doors": [
+    {
+      title: "Games like Doors",
+      href: "/games-like-doors",
+      copy: "Compare scare level, co-op fit, and session style across similar Roblox games."
+    }
+  ]
+};
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -49,6 +120,21 @@ function spendingLabel(value) {
   return "High pressure";
 }
 
+function relatedGuides(game) {
+  const guides = relatedGuidesByGame[game.id] || [];
+  if (!guides.length) return "";
+  return `
+        <article class="detail-card wide-card">
+          <h2>Related ${escapeHtml(game.name)} guides</h2>
+          <div class="related-guide-list">${guides.map((guide) => `
+              <a href="${escapeHtml(guide.href)}">
+                <strong>${escapeHtml(guide.title)}</strong>
+                <span>${escapeHtml(guide.copy)}</span>
+              </a>`).join("")}
+          </div>
+        </article>`;
+}
+
 function gameDetail(game) {
   const name = escapeHtml(game.name);
   const verdict = scoreLabel(game.safety);
@@ -72,14 +158,16 @@ function gameDetail(game) {
           </div>
           <div class="detail-actions">
             <a class="card-link" href="${escapeHtml(game.officialUrl)}" target="_blank" rel="noopener">Open official Roblox page</a>
-            <a class="card-link secondary-link" href="../games.html">Browse library</a>
+            <a class="card-link secondary-link" href="/games">Browse library</a>
+            <a class="card-link secondary-link" href="/compare?left=${escapeHtml(game.id)}">Compare</a>
+            <button class="favorite-button" type="button" data-favorite-id="${escapeHtml(game.id)}" aria-pressed="false">Save game</button>
           </div>
         </div>
       </section>
 
       <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="../index.html">Home</a><span>/</span>
-        <a href="../games.html">Games</a><span>/</span>
+        <a href="/">Home</a><span>/</span>
+        <a href="/games">Games</a><span>/</span>
         <strong>${name}</strong>
       </nav>
 
@@ -143,12 +231,12 @@ function gameDetail(game) {
         <article class="detail-card wide-card">
           <h2>Search topics covered</h2>
           <p>This hub covers ${name} beginner tips, codes status, age guidance, spending pressure, safety notes, and games similar to ${name}.</p>
-        </article>
+        </article>${relatedGuides(game)}
       </section>`;
 }
 
 function gamePage(game) {
-  const canonical = `${baseUrl}/games/${game.id}.html`;
+  const canonical = `${baseUrl}/games/${game.id}`;
   const description = `${game.name} Roblox guide with safety score, beginner route, spending pressure, scam-risk notes, live stats, and parent guidance.`;
   const structuredData = JSON.stringify({
     "@context": "https://schema.org",
@@ -184,22 +272,23 @@ function gamePage(game) {
     <script type="application/ld+json">${structuredData}</script>
     <script src="../data.js" defer></script>
     <script src="../game.js" defer></script>
+    <script src="../favorites.js" defer></script>
     <script src="../ads.js" defer></script>
   </head>
   <body data-game="${escapeHtml(game.id)}">
     <header class="site-header">
-      <a class="brand" href="../index.html"><span class="brand-mark">BR</span><span>BlockRadar</span></a>
+      <a class="brand" href="/"><span class="brand-mark">BR</span><span>BlockRadar</span></a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="../games.html">Games</a><a href="../rankings.html">Rankings</a><a href="../guides.html">Guides</a>
-        <a href="../codes.html">Codes</a><a href="../safety.html">Safety</a><a href="../creators.html">Creators</a>
+        <a href="/games">Games</a><a href="/compare">Compare</a><a href="/rankings">Rankings</a>
+        <a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/safety">Safety</a>
       </nav>
-      <a class="submit-link" href="../creators.html">Submit Game</a>
+      <a class="submit-link" href="/creators">Submit Game</a>
     </header>
     <main class="detail-shell" id="game-detail">${gameDetail(game)}
     </main>
     <footer class="site-footer">
       <strong>BlockRadar</strong>
-      <span><a href="../parents.html">Parents</a> · <a href="../about.html">About</a> · Independent Roblox discovery concept. Not affiliated with Roblox Corporation.</span>
+      <span><a href="/parents">Parents</a> &middot; <a href="/about">About</a> &middot; Independent Roblox discovery concept. Not affiliated with Roblox Corporation.</span>
     </footer>
   </body>
 </html>
@@ -207,7 +296,22 @@ function gamePage(game) {
 }
 
 function canonicalPath(relativePath) {
-  return relativePath === "index.html" ? "/" : `/${relativePath.replaceAll("\\", "/")}`;
+  if (relativePath === "index.html") return "/";
+  return `/${relativePath.replaceAll("\\", "/").replace(/\.html$/i, "")}`;
+}
+
+function normalizeInternalLinks(html, relativePath) {
+  return html.replace(/href=(["'])([^"']+)\1/gi, (match, quote, href) => {
+    if (/^(?:[a-z]+:|#|\/\/)/i.test(href)) return match;
+    const splitAt = href.search(/[?#]/);
+    const target = splitAt === -1 ? href : href.slice(0, splitAt);
+    const suffix = splitAt === -1 ? "" : href.slice(splitAt);
+    if (!target.toLowerCase().endsWith(".html")) return match;
+    const resolved = path.posix.normalize(
+      path.posix.join(path.posix.dirname(relativePath.replaceAll("\\", "/")), target)
+    );
+    return `href=${quote}${canonicalPath(resolved)}${suffix}${quote}`;
+  });
 }
 
 function updateHead(html, relativePath, noindex) {
@@ -242,7 +346,7 @@ const rootHtmlFiles = rootEntries
 for (const name of rootHtmlFiles) {
   const filePath = path.join(root, name);
   const html = await readFile(filePath, "utf8");
-  await writeFile(filePath, updateHead(html, name, noindexPages.has(name)));
+  await writeFile(filePath, updateHead(normalizeInternalLinks(html, name), name, noindexPages.has(name)));
 }
 
 const sitemapPath = path.join(root, "sitemap.xml");

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search Roblox Games, Codes, Guides and Tools - BlockRadar</title>
+    <meta name="description" content="Search all BlockRadar Roblox game hubs, working-code trackers, beginner guides, safety reviews, rankings, values, and interactive tools." />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="search-index.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="ads.js" defer></script>
+      <link rel="canonical" href="https://roblox.pingdou123.uk/search" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/"><span class="brand-mark">BR</span><span>BlockRadar</span></a>
+      <nav class="nav" aria-label="Primary navigation"><a href="/games">Games</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/search">Search</a><a href="/dashboard">My Radar</a></nav>
+      <a class="submit-link" href="/dashboard">My Radar</a>
+    </header>
+    <main class="page-shell search-page">
+      <section class="page-title compact-title">
+        <p class="eyebrow">Search the whole site</p>
+        <h1>Find the answer before you join.</h1>
+        <p>Search by game, code reward, guide question, value table, safety concern, or tool.</p>
+      </section>
+      <form class="global-search search-page-form" data-site-search role="search">
+        <label class="sr-only" for="search-query">Search BlockRadar</label>
+        <input id="search-query" type="search" placeholder="Try Fish It rods, RIVALS codes, or safe horror..." autocomplete="off" />
+        <select id="search-type" aria-label="Result type"><option>All</option><option>Game</option><option>Codes</option><option>Guide</option><option>Tool</option><option>Safety</option><option>Ranking</option></select>
+        <button type="submit">Search</button>
+        <div class="search-suggestions" data-search-suggestions hidden></div>
+      </form>
+      <div class="popular-searches" aria-label="Popular searches">
+        <span>Popular</span>
+        <button type="button" data-search-term="Grow a Garden 2 codes">Grow a Garden 2 codes</button>
+        <button type="button" data-search-term="99 Nights guide">99 Nights guide</button>
+        <button type="button" data-search-term="Blox Fruits values">Blox Fruits values</button>
+        <button type="button" data-search-term="safe for kids">Safe for kids</button>
+      </div>
+      <div class="search-results-head"><h2 id="search-summary">Loading results</h2></div>
+      <section id="search-results" class="search-results" aria-live="polite"></section>
+    </main>
+    <footer class="site-footer"><strong>BlockRadar</strong><span>Current Roblox answers, reviewed sources, and no fake generators.</span></footer>
+  </body>
+</html>

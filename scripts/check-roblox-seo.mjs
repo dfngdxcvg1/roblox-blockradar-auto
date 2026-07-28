@@ -16,6 +16,7 @@ const requiredTools = [
   "fish-it-rod-finder.html",
   "99-nights-survival-checklist.html"
 ];
+const requiredPlayerSurfaces = ["search.html", "dashboard.html"];
 const growthPagePatterns = [
   /-codes-not-expired\.html$/,
   /-beginner-guide\.html$/,
@@ -101,6 +102,9 @@ if ((sitemap.match(/<lastmod>/g) || []).length !== sitemapUrls.length) {
 if (sitemapUrls.some((url) => new URL(url).pathname.endsWith(".html"))) {
   errors.push("sitemap.xml: canonical URLs must not use .html");
 }
+for (const pathname of ["/search", "/dashboard"]) {
+  if (!sitemapUrls.includes(`${baseUrl}${pathname}`)) errors.push(`sitemap.xml: missing ${pathname}`);
+}
 
 for (const url of sitemapUrls) {
   const pathname = new URL(url).pathname;
@@ -120,6 +124,9 @@ if (growthPages.length !== 30) {
 for (const tool of requiredTools) {
   if (!rootFiles.includes(tool)) errors.push(`tools: missing ${tool}`);
 }
+for (const surface of requiredPlayerSurfaces) {
+  if (!rootFiles.includes(surface)) errors.push(`player surface: missing ${surface}`);
+}
 
 const dataSource = await readFile(path.join(root, "data.js"), "utf8");
 const codesSource = await readFile(path.join(root, "codes-data.js"), "utf8");
@@ -133,6 +140,12 @@ if ((browserWindow.blockRadarCodeGroups || []).length < 12) {
 }
 if (!(browserWindow.blockRadarTrending?.games || []).length) {
   errors.push("official chart: no Top Playing Now snapshot found");
+}
+
+const searchSource = await readFile(path.join(root, "search-index.js"), "utf8");
+Function("window", `${searchSource}; return window;`)(browserWindow);
+if ((browserWindow.blockRadarSearchIndex || []).length < 100) {
+  errors.push(`site search: expected at least 100 indexed items, found ${(browserWindow.blockRadarSearchIndex || []).length}`);
 }
 
 if (errors.length) {

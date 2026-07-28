@@ -8,3 +8,7 @@ directory = "outputs/roblox-portal"
 binding = "ASSETS"
 run_worker_first = true
 html_handling = "none"
+
+[vars]
+SUPABASE_URL = "https://amqyylrgfqiilyhdlpkw.supabase.co"
+SUPABASE_PUBLISHABLE_KEY = "sb_publishable_peLE4GQsu0qPhDoTYVGalg_461Ha843"

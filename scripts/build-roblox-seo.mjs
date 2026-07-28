@@ -221,6 +221,11 @@ function gameDetail(game) {
         <strong>${name}</strong>
       </nav>
 
+      <section class="content-status-bar" aria-label="Content freshness">
+        <span data-freshness-date="${escapeHtml((game.updatedAt || game.chartUpdatedAt || today).slice(0, 10))}" data-fresh-days="3" data-warning-days="14">Checked ${(game.updatedAt || game.chartUpdatedAt || today).slice(0, 10)}</span>
+        <p>Live players and visits refresh automatically. Guides, risks, and safety notes are flagged when an editorial recheck is due.</p>
+      </section>
+
       <section class="detail-grid">
         <article class="detail-card score-card">
           <h2>Safety snapshot</h2>
@@ -343,6 +348,7 @@ function gamePage(game) {
     <script src="../data.js" defer></script>
     <script src="../game.js" defer></script>
     <script src="../favorites.js" defer></script>
+    <script src="../freshness.js" defer></script>
     <script src="../feedback.js" defer></script>
     <script src="../ads.js" defer></script>
   </head>
@@ -350,10 +356,10 @@ function gamePage(game) {
     <header class="site-header">
       <a class="brand" href="/"><span class="brand-mark">BR</span><span>BlockRadar</span></a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="/games">Games</a><a href="/compare">Compare</a><a href="/rankings">Rankings</a>
-        <a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/safety">Safety</a>
+        <a href="/games">Games</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a>
+        <a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/search">Search</a><a href="/dashboard">My Radar</a>
       </nav>
-      <a class="submit-link" href="/creators">Submit Game</a>
+      <a class="submit-link" href="/dashboard">My Radar</a>
     </header>
     <main class="detail-shell" id="game-detail">${gameDetail(game)}
     </main>
@@ -385,15 +391,11 @@ function normalizeInternalLinks(html, relativePath) {
   });
 }
 
-function ensureToolsNavigation(html) {
-  return html.replace(/<nav class="nav"([^>]*)>([\s\S]*?)<\/nav>/i, (match, attributes, links) => {
-    if (/href=["']\/tools["']/.test(links)) return match;
-    const nextLinks = links.replace(
-      /(<a href=["']\/codes["']>Codes<\/a>)/,
-      '$1<a href="/tools">Tools</a>'
-    );
-    return `<nav class="nav"${attributes}>${nextLinks}</nav>`;
-  });
+function ensurePrimaryNavigation(html) {
+  const links = '<a href="/games">Games</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/search">Search</a><a href="/dashboard">My Radar</a>';
+  return html
+    .replace(/<nav class="nav"([^>]*)>[\s\S]*?<\/nav>/i, `<nav class="nav"$1>${links}</nav>`)
+    .replace(/<a class="submit-link" href="\/creators">Submit Game<\/a>/i, '<a class="submit-link" href="/dashboard">My Radar</a>');
 }
 
 function updateHead(html, relativePath, noindex) {
@@ -430,7 +432,7 @@ for (const name of rootHtmlFiles) {
   const html = await readFile(filePath, "utf8");
   await writeFile(
     filePath,
-    updateHead(ensureToolsNavigation(normalizeInternalLinks(html, name)), name, noindexPages.has(name))
+    updateHead(ensurePrimaryNavigation(normalizeInternalLinks(html, name)), name, noindexPages.has(name))
   );
 }
 

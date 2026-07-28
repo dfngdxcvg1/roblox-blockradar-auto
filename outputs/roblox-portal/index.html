@@ -1,324 +1,120 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BlockRadar - Roblox Game Guides, Rankings & Safety Scores</title>
-    <meta
-      name="description"
-      content="Discover the best Roblox games, guides, codes, safety ratings, age guidance, free-player scores, and curated rankings."
-    />
+    <title>BlockRadar - Roblox Games, Codes, Guides and Player Tools</title>
+    <meta name="description" content="Find current Roblox games, working-code trackers, beginner guides, safety checks, live player counts, values, and practical player tools." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BlockRadar - Know Before You Join" />
+    <meta property="og:description" content="Current Roblox games, codes, guides, safety checks, and tools in one searchable player hub." />
+    <meta property="og:url" content="https://roblox.pingdou123.uk/" />
+    <meta property="og:image" content="https://roblox.pingdou123.uk/assets/hero-world.png" />
     <link rel="stylesheet" href="styles.css" />
     <script src="data.js" defer></script>
+    <script src="codes-data.js" defer></script>
+    <script src="search-index.js" defer></script>
     <script src="favorites.js" defer></script>
+    <script src="freshness.js" defer></script>
     <script src="script.js" defer></script>
-      <script src="ads.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="ads.js" defer></script>
       <link rel="canonical" href="https://roblox.pingdou123.uk/" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
   </head>
-  <body>
+  <body class="home-page">
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="BlockRadar home">
-        <span class="brand-mark">BR</span>
-        <span>BlockRadar</span>
-      </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="/games">Games</a>
-        <a href="/compare">Compare</a>
-        <a href="/rankings">Rankings</a>
-        <a href="/guides">Guides</a>
-        <a href="/codes">Codes</a>
-        <a href="/tools">Tools</a>
-        <a href="/safety">Safety</a>
-        <a href="/creators">Creators</a>
-      </nav>
-      <a class="submit-link" href="/creators">Submit Game</a>
+      <a class="brand" href="/" aria-label="BlockRadar home"><span class="brand-mark">BR</span><span>BlockRadar</span></a>
+      <nav class="nav" aria-label="Primary navigation"><a href="/games">Games</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/search">Search</a><a href="/dashboard">My Radar</a></nav>
+      <a class="submit-link" href="/dashboard">My Radar</a>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-image" src="assets/hero-world.png" alt="Stylized block game worlds with portals and guide elements" onerror="this.classList.add('image-failed')" />
+      <section class="hero home-hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/hero-world.png" alt="Block-style Roblox game worlds and discovery portals" onerror="this.classList.add('image-failed')" />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">Roblox discovery, guides, codes, and safety ratings</p>
-          <h1 id="hero-title">Find Roblox games worth your time.</h1>
-          <p class="hero-copy">
-            Search curated game pages with play style tags, age guidance, spending pressure, scam-risk notes,
-            beginner guides, and honest rankings for players and parents.
-          </p>
-          <form class="search-panel" role="search">
-            <label class="sr-only" for="game-search">Search Roblox games or guides</label>
-            <input id="game-search" type="search" placeholder="Search Blox Fruits, Doors, obby, codes..." autocomplete="off" />
-            <select id="category-filter" aria-label="Filter by category">
-              <option value="all">All categories</option>
-              <option value="Adventure">Adventure</option>
-              <option value="Roleplay">Roleplay</option>
-              <option value="Horror">Horror</option>
-              <option value="Fashion">Fashion</option>
-              <option value="Pet Sim">Pet Sim</option>
-              <option value="Obby">Obby</option>
-              <option value="Simulator">Simulator</option>
-              <option value="Shooter">Shooter</option>
-            </select>
+          <p class="eyebrow">Roblox games, codes, guides, values, and safety</p>
+          <h1 id="hero-title">BlockRadar</h1>
+          <p class="hero-copy">Know what is popular, what still works, and what to expect before you join. Live game data meets focused answers for players and parents.</p>
+          <form class="global-search home-search" data-site-search role="search">
+            <label class="sr-only" for="home-search-query">Search BlockRadar</label>
+            <input id="home-search-query" type="search" placeholder="Search a game, code, item, map, or safety question" autocomplete="off" />
+            <button type="submit">Search</button>
+            <div class="search-suggestions" data-search-suggestions hidden></div>
           </form>
+          <div class="hero-quick-links" aria-label="Popular searches"><a href="/codes?game=blox-fruits">Blox Fruits codes</a><a href="/99-nights-survival-checklist">99 Nights checklist</a><a href="/fish-it-rod-finder">Fish It rod finder</a><a href="/mm2-values">MM2 values</a></div>
+          <p class="hero-data-status" id="hero-data-status">Loading official Roblox activity...</p>
         </div>
       </section>
 
-      <section class="ticker" aria-label="Trending topics">
-        <span>Trending</span>
-        <a href="/games/grow-a-garden-2">Grow a Garden 2</a>
-        <a href="/games/99-nights-in-the-forest">99 Nights</a>
-        <a href="/games/rivals">RIVALS</a>
-        <a href="/games/fish-it">Fish It</a>
-        <a href="/most-played-roblox-games-today">Most played today</a>
-        <a href="/codes">12-game Codes Tracker</a>
+      <section class="home-signal-strip" aria-label="BlockRadar coverage">
+        <article><strong id="home-game-count">36</strong><span>Game hubs</span></article>
+        <article><strong id="home-live-count">Live</strong><span>Player counts</span></article>
+        <article><strong id="home-code-count">12</strong><span>Games with codes</span></article>
+        <article><strong>30</strong><span>Focused guides</span></article>
+        <a href="/dashboard"><strong id="home-saved-count">0</strong><span>Saved in My Radar</span></a>
       </section>
 
-      <section class="insight-strip" aria-label="What BlockRadar solves">
-        <article><strong>36</strong><span>game hubs with safety notes</span></article>
-        <article><strong>5</strong><span>risk signals per game</span></article>
-        <article><strong>30</strong><span>focused current-game guides</span></article>
-        <article><strong>4</strong><span>repeat-use player tools</span></article>
-      </section>
-
-      <section class="player-tools" aria-labelledby="tools-title">
-        <div class="section-heading">
-          <p class="eyebrow">Live Player Tools</p>
-          <h2 id="tools-title">Pick a game by mood, risk, and live heat.</h2>
-          <p class="section-copy">BlockRadar updates Roblox activity data automatically, then turns it into quick choices players can actually use.</p>
+      <section class="home-band home-trending" aria-labelledby="trending-title">
+        <div class="home-section-head">
+          <div><p class="eyebrow">Official Top Playing Now</p><h2 id="trending-title">What Roblox players are playing now</h2></div>
+          <a href="/most-played-roblox-games-today">See full live ranking</a>
         </div>
-        <div class="tool-layout">
-          <article class="live-panel">
-            <div class="panel-head">
-              <h3>Hot right now</h3>
-              <span id="live-updated">Updating</span>
-            </div>
-            <ol class="live-board" id="live-board"></ol>
-          </article>
-          <article class="finder-panel">
-            <h3>Game Finder</h3>
-            <div class="finder-controls">
-              <select id="mood-filter" aria-label="Choose a play mood">
-                <option value="any">Any mood</option>
-                <option value="friends">Play with friends</option>
-                <option value="safe">Low risk</option>
-                <option value="scary">Scary</option>
-                <option value="creative">Creative</option>
-                <option value="grind">Progression grind</option>
-              </select>
-              <select id="spend-filter" aria-label="Choose spending pressure">
-                <option value="any">Any spending</option>
-                <option value="low">Low spending</option>
-                <option value="medium">Medium spending</option>
-                <option value="high">High spending OK</option>
-              </select>
-            </div>
-            <div class="finder-result" id="finder-result"></div>
-          </article>
-          <article class="random-panel">
-            <h3>Tonight's pick</h3>
-            <div id="random-pick"></div>
-            <button type="button" id="reroll-game">Roll another</button>
-          </article>
+        <div class="home-trending-grid" id="home-trending-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="home-band home-now" aria-labelledby="answers-title">
+        <div class="home-section-head">
+          <div><p class="eyebrow">Useful right now</p><h2 id="answers-title">Codes and tools worth coming back for</h2></div>
+          <a href="/tools">Open all tools</a>
+        </div>
+        <div class="home-now-layout">
+          <div class="home-codes-column">
+            <div class="home-subhead"><h3>Recently reviewed codes</h3><a href="/codes">Open tracker</a></div>
+            <div id="home-codes-list" class="home-codes-list"></div>
+          </div>
+          <div class="home-tool-grid">
+            <a href="/blox-fruits-value-calculator"><span>Trade Tool</span><strong>Blox Fruits value calculator</strong><p>Compare demand, value, and deal balance before trading.</p></a>
+            <a href="/mm2-values"><span>Value Table</span><strong>MM2 searchable values</strong><p>Filter knives, guns, sets, pets, demand, and stability.</p></a>
+            <a href="/fish-it-rod-finder"><span>Game Tool</span><strong>Fish It rod and location finder</strong><p>Match budget, level, luck, mutation goals, and fishing route.</p></a>
+            <a href="/99-nights-survival-checklist"><span>Saved Progress</span><strong>99 Nights survival checklist</strong><p>Keep camp, daylight runs, resources, and team roles on track.</p></a>
+          </div>
         </div>
       </section>
 
-      <section class="todays-picks" aria-labelledby="todays-picks-title">
-        <div class="section-heading">
-          <p class="eyebrow">Today's Roblox Picks</p>
-          <h2 id="todays-picks-title">Fast answers for players opening Roblox right now.</h2>
-          <p class="section-copy">These pages turn common player questions into clear paths: what to play when bored, what is safe for younger kids, what works without Robux, and what feels like a favorite game.</p>
+      <section class="home-band home-guides" aria-labelledby="guides-title">
+        <div class="home-section-head">
+          <div><p class="eyebrow">Player answers</p><h2 id="guides-title">Start with the question you actually have</h2></div>
+          <a href="/guides">Browse all guides</a>
         </div>
-        <div class="today-grid">
-          <a href="/most-played-roblox-games-today"><strong>Most played today</strong><span>Live activity, practical safety context, and quick picks from the current game library.</span></a>
-          <a href="/best-roblox-games-to-play-when-bored"><strong>When bored</strong><span>Quick games, chill games, friend games, and low-effort picks.</span></a>
-          <a href="/best-roblox-games-without-robux"><strong>No Robux needed</strong><span>Free-player choices with lower spending pressure.</span></a>
-          <a href="/best-roblox-games-for-8-year-olds"><strong>Age 8 starts</strong><span>Simple goals, lower scare pressure, and parent-friendly checks.</span></a>
-        </div>
-      </section>
-
-      <section class="play-plans" aria-labelledby="play-plans-title">
-        <div class="section-heading">
-          <p class="eyebrow">Player Sticky Tools</p>
-          <h2 id="play-plans-title">Pick by situation, not just by rank.</h2>
-          <p class="section-copy">Players come back when the site helps them decide fast: two-player sessions, safe starts, simulator grinds, and friend-night choices.</p>
-        </div>
-        <div class="play-plan-grid">
-          <a href="/roblox-game-finder">
-            <strong>Roblox Game Finder</strong>
-            <span>Choose a game by mood, group size, spending pressure, scare level, and time available.</span>
-          </a>
-          <a href="/compare">
-            <strong>Compare Roblox Games</strong>
-            <span>See age fit, chat, spending, scares, scams, and live players side by side.</span>
-          </a>
-          <a href="/roblox-games-for-two-players">
-            <strong>Games for 2 Players</strong>
-            <span>Quick picks for duos: co-op, roleplay, survival, fashion voting, and short competitive rounds.</span>
-          </a>
-          <a href="/best-roblox-simulator-games">
-            <strong>Best Simulator Games</strong>
-            <span>Progression games ranked by grind, free-player fairness, code usefulness, and kid-friendly clarity.</span>
-          </a>
-          <a href="/tools">
-            <strong>Roblox Player Tools</strong>
-            <span>Use value calculators, searchable tables, a rod finder, and a persistent survival checklist.</span>
-          </a>
+        <div class="home-guide-grid">
+          <a href="/grow-a-garden-2-beginner-guide"><span>Beginner</span><strong>Grow a Garden 2 beginner route</strong><p>Seeds, sheckles, plot protection, and the day-night loop.</p></a>
+          <a href="/99-nights-in-the-forest-map-and-survival-route"><span>Map</span><strong>99 Nights survival route</strong><p>Daylight searches, camp reserves, children, and return timing.</p></a>
+          <a href="/rivals-best-weapons"><span>Loadout</span><strong>RIVALS best weapons</strong><p>Choose a practical loadout for your range and movement style.</p></a>
+          <a href="/steal-a-brainrot-best-brainrots-and-values"><span>Values</span><strong>Steal a Brainrot values</strong><p>Judge income, rarity, defense cost, and tradeoffs.</p></a>
+          <a href="/fish-it-locations-and-fishing-route"><span>Route</span><strong>Fish It locations and fishing route</strong><p>Move from starter water to stronger rods and better catches.</p></a>
+          <a href="/is-anime-expeditions-safe-for-kids"><span>Safety</span><strong>Is Anime Expeditions safe for kids?</strong><p>Combat, chat, spending, grind pressure, and age fit.</p></a>
         </div>
       </section>
 
-      <section class="section-grid" id="games" aria-labelledby="games-title">
-        <div class="section-heading">
-          <p class="eyebrow">Game Library</p>
-          <h2 id="games-title">Curated Roblox games</h2>
-          <p class="section-copy">Each card leads to a game hub with a safety snapshot, beginner route, parent notes, spending context, and official Roblox link.</p>
+      <section class="home-band home-radar" aria-labelledby="radar-title">
+        <div class="home-section-head">
+          <div><p class="eyebrow">Your private workspace</p><h2 id="radar-title">Pick up where you left off</h2></div>
+          <a href="/dashboard">Open My Radar</a>
         </div>
-        <div class="game-grid" id="game-grid"></div>
+        <div class="home-radar-layout"><div><h3>Saved games</h3><div class="home-radar-list" id="home-saved-games"></div></div><div><h3>Recently viewed</h3><div class="home-radar-list" id="home-recent-games"></div></div></div>
       </section>
 
-      <section class="editorial-feature" aria-labelledby="featured-title">
-        <div>
-          <p class="eyebrow">Editor's Brief</p>
-          <h2 id="featured-title">Turn Roblox chaos into clear choices.</h2>
-          <p>
-            Roblox players search for codes, tips, rankings, and similar games. Parents search for risk signals.
-            BlockRadar combines both intents so each page can rank in search while still being genuinely useful.
-          </p>
+      <section class="home-band home-library" aria-labelledby="library-title">
+        <div class="home-section-head">
+          <div><p class="eyebrow">Browse the library</p><h2 id="library-title">More Roblox game hubs</h2></div>
+          <a href="/games">View all games</a>
         </div>
-        <div class="feature-grid">
-          <a href="/best-free-roblox-games"><strong>Free-player picks</strong><span>Find games that are fun before spending Robux.</span></a>
-          <a href="/safe-roblox-games-for-kids"><strong>Parent-safe starts</strong><span>Review age fit, scares, chat, and scam exposure.</span></a>
-          <a href="/most-played-roblox-games-today"><strong>Live popularity</strong><span>See which Roblox games have the most active players today.</span></a>
-          <a href="/games-like-blox-fruits"><strong>Similar games</strong><span>Find alternatives to big games by play style and risk level.</span></a>
-          <a href="/roblox-scams"><strong>Scam protection</strong><span>Explain fake Robux, trust trades, and outside-link traps.</span></a>
-          <a href="/methodology"><strong>Score method</strong><span>Show how safety ratings are assigned and updated.</span></a>
-        </div>
-      </section>
-
-      <section class="content-band" id="rankings" aria-labelledby="rankings-title">
-        <div class="section-heading">
-          <p class="eyebrow">Rankings</p>
-          <h2 id="rankings-title">What players are actually looking for</h2>
-          <p class="section-copy">Dedicated lists answer high-intent searches: beginner games, friend games, horror games, tycoon games, safe kids games, and free-player picks.</p>
-        </div>
-        <div class="ranking-layout">
-          <article class="ranking-list">
-            <h3>Best for new players</h3>
-            <ol>
-              <li><span>Brookhaven RP</span><strong>Easy social play</strong></li>
-              <li><span>Natural Disaster Survival</span><strong>Quick rounds</strong></li>
-              <li><span>Epic Minigames</span><strong>Low learning curve</strong></li>
-              <li><span>Theme Park Tycoon 2</span><strong>Creative sandbox</strong></li>
-              <li><span>Tower of Hell</span><strong>Skill practice</strong></li>
-            </ol>
-          </article>
-          <article class="ranking-list warning">
-            <h3>Needs extra checks</h3>
-            <ol>
-              <li><span>Trading-heavy games</span><strong>Scam risk</strong></li>
-              <li><span>Horror experiences</span><strong>Age sensitivity</strong></li>
-              <li><span>Gacha-style simulators</span><strong>Spending pressure</strong></li>
-              <li><span>External chat invites</span><strong>Privacy risk</strong></li>
-              <li><span>Fake Robux events</span><strong>Account theft</strong></li>
-            </ol>
-          </article>
-          <article class="ranking-list">
-            <h3>Best with friends</h3>
-            <ol>
-              <li><span>Doors</span><strong>Co-op tension</strong></li>
-              <li><span>Evade</span><strong>Team survival</strong></li>
-              <li><span>Dress to Impress</span><strong>Social voting</strong></li>
-              <li><span>Blade Ball</span><strong>Fast matches</strong></li>
-              <li><span>Blox Fruits</span><strong>Long progression</strong></li>
-            </ol>
-          </article>
-        </div>
-      </section>
-
-      <section class="split-section" id="guides" aria-labelledby="guides-title">
-        <div>
-          <p class="eyebrow">Guides</p>
-          <h2 id="guides-title">Pages players can never find fast enough</h2>
-          <p>
-            Every game hub should answer the same urgent questions: how to start, what to avoid,
-            what is worth buying, how codes work, and which similar games are better for a specific play style.
-          </p>
-        </div>
-        <div class="guide-list">
-          <a href="/games/blox-fruits"><strong>Blox Fruits beginner route</strong><span>Leveling, fruit choices, codes, and free-player notes</span></a>
-          <a href="/games/doors"><strong>Doors survival checklist</strong><span>Room tips, monster tells, age guidance, and scare level</span></a>
-          <a href="/games/dress-to-impress"><strong>Dress to Impress style guide</strong><span>Themes, voting habits, outfit ideas, and spending notes</span></a>
-          <a href="/safety"><strong>Roblox scam warning center</strong><span>Fake Robux pages, trade traps, and external link red flags</span></a>
-          <a href="/best-free-roblox-games"><strong>Best free-player Roblox games</strong><span>Low spending pressure, fair progression, and skill-first picks</span></a>
-          <a href="/safe-roblox-games-for-kids"><strong>Safe Roblox games for kids</strong><span>Parent-friendly picks, watch-outs, and review checklist</span></a>
-        </div>
-      </section>
-
-      <section class="content-band safety-band" id="safety" aria-labelledby="safety-title">
-        <div class="section-heading">
-          <p class="eyebrow">Safety Scores</p>
-          <h2 id="safety-title">The layer most Roblox sites are missing</h2>
-        </div>
-        <div class="score-system">
-          <article>
-            <span class="score-pill green">8.5+</span>
-            <h3>Parent-friendly</h3>
-            <p>Low spending pressure, simple interactions, limited scary content, and clear gameplay goals.</p>
-          </article>
-          <article>
-            <span class="score-pill yellow">6.0-8.4</span>
-            <h3>Check first</h3>
-            <p>Fun for many players, but parents should review chat intensity, purchases, or horror themes.</p>
-          </article>
-          <article>
-            <span class="score-pill red">Below 6.0</span>
-            <h3>Needs caution</h3>
-            <p>High scam exposure, heavy monetization, mature roleplay, intense scares, or external chat pressure.</p>
-          </article>
-        </div>
-        <div class="method-row">
-          <a href="/methodology"><strong>Read the full scoring methodology</strong><span>Chat risk, scam exposure, spending pressure, scare intensity, and gameplay clarity.</span></a>
-          <a href="/parents"><strong>Open parent checklist</strong><span>A five-minute review flow before children join a new Roblox game.</span></a>
-        </div>
-      </section>
-
-      <section class="creator-section" id="creators" aria-labelledby="creators-title">
-        <div>
-          <p class="eyebrow">Creator Portal</p>
-          <h2 id="creators-title">A fairer way for good Roblox games to be found</h2>
-          <p>
-            Small developers can submit games with genre, player count, safety notes, monetization model,
-            update cadence, and creator contact. Editorial review keeps rankings useful instead of pay-to-win.
-          </p>
-          <a class="card-link" href="/editorial-plan">View editorial plan</a>
-        </div>
-        <form class="creator-form">
-          <label>
-            Game name
-            <input type="text" placeholder="Your Roblox experience" />
-          </label>
-          <label>
-            Main category
-            <select>
-              <option>Adventure</option>
-              <option>Roleplay</option>
-              <option>Simulator</option>
-              <option>Horror</option>
-              <option>Obby</option>
-            </select>
-          </label>
-          <label>
-            Review note
-            <textarea placeholder="What should players know before joining?"></textarea>
-          </label>
-          <button type="button">Prepare Submission</button>
-        </form>
+        <div class="home-library-grid" id="home-library-grid"></div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <strong>BlockRadar</strong>
-      <span><a href="/parents">Parents</a> · <a href="/about">About</a> · Independent Roblox discovery concept. Not affiliated with Roblox Corporation.</span>
-    </footer>
+    <footer class="site-footer"><strong>BlockRadar</strong><span><a href="/parents">Parents</a> &middot; <a href="/about">About</a> &middot; <a href="/methodology">Methodology</a> &middot; Independent Roblox resource. Not affiliated with Roblox Corporation.</span></footer>
   </body>
 </html>

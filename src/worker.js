@@ -1,6 +1,11 @@
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+
+    if (url.pathname === "/api/feedback") {
+      return submitFeedback(request, env);
+    }
+
     const isLegacyDaily = url.pathname === "/daily"
       || url.pathname.startsWith("/daily/")
       || url.pathname === "/daily-roblox-guides"
@@ -52,3 +57,90 @@ export default {
     return env.ASSETS.fetch(new Request(assetUrl, request));
   }
 };
+
+const allowedFeedbackValues = new Set([
+  "accurate",
+  "too-low",
+  "too-high",
+  "helpful",
+  "not-helpful",
+  "worked",
+  "expired",
+  "outdated",
+  "cleared"
+]);
+
+function jsonResponse(body, status) {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Cache-Control": "no-store"
+    }
+  });
+}
+
+async function submitFeedback(request, env) {
+  if (request.method !== "POST") {
+    return jsonResponse({ error: "Method not allowed" }, 405);
+  }
+
+  if (!env.SUPABASE_URL || !env.SUPABASE_PUBLISHABLE_KEY) {
+    return jsonResponse({ error: "Feedback sync is temporarily unavailable" }, 503);
+  }
+
+  const contentLength = Number(request.headers.get("content-length") || 0);
+  if (contentLength > 4096) {
+    return jsonResponse({ error: "Feedback payload is too large" }, 413);
+  }
+
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return jsonResponse({ error: "Invalid JSON" }, 400);
+  }
+
+  const scope = String(body.scope || "").trim();
+  const value = String(body.value || "").trim();
+  const page = String(body.page || "/").trim();
+  const sessionId = String(body.sessionId || "").trim();
+
+  if (scope.length < 3 || scope.length > 180 || !/^[a-z0-9:_-]+$/i.test(scope)) {
+    return jsonResponse({ error: "Invalid feedback scope" }, 400);
+  }
+  if (!allowedFeedbackValues.has(value)) {
+    return jsonResponse({ error: "Invalid feedback value" }, 400);
+  }
+  if (!page.startsWith("/") || page.length > 240) {
+    return jsonResponse({ error: "Invalid page" }, 400);
+  }
+  if (!/^[a-z0-9_-]{8,80}$/i.test(sessionId)) {
+    return jsonResponse({ error: "Invalid session" }, 400);
+  }
+
+  try {
+    const response = await fetch(`${env.SUPABASE_URL.replace(/\/$/, "")}/rest/v1/rpc/submit_blockradar_feedback`, {
+      method: "POST",
+      headers: {
+        apikey: env.SUPABASE_PUBLISHABLE_KEY,
+        Authorization: `Bearer ${env.SUPABASE_PUBLISHABLE_KEY}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        p_scope: scope,
+        p_value: value,
+        p_page: page,
+        p_session_id: sessionId
+      })
+    });
+
+    if (!response.ok) {
+      return jsonResponse({ error: "Feedback sync is temporarily unavailable" }, 503);
+    }
+  } catch {
+    return jsonResponse({ error: "Feedback sync is temporarily unavailable" }, 503);
+  }
+
+  return jsonResponse({ synced: true }, 200);
+}

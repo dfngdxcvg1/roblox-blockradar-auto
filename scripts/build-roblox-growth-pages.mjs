@@ -339,19 +339,20 @@ function pageShell({ profile, game, slug, title, description, eyebrow, directAns
     <meta property="og:image" content="${escapeHtml(game.image)}" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">${schema}</script>
+    <script src="freshness.js" defer></script>
     <script src="feedback.js" defer></script>
     <script src="ads.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="/"><span class="brand-mark">BR</span><span>BlockRadar</span></a>
-      <nav class="nav" aria-label="Primary navigation"><a href="/games">Games</a><a href="/compare">Compare</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/safety">Safety</a></nav>
+      <nav class="nav" aria-label="Primary navigation"><a href="/games">Games</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/search">Search</a><a href="/dashboard">My Radar</a></nav>
       <a class="submit-link" href="/games/${profile.id}">Game hub</a>
     </header>
     <main class="article-shell">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/guides">Guides</a><span>/</span><strong>${escapeHtml(profile.name)}</strong></nav>
       <header class="guide-article-header">
-        <div><p class="eyebrow">${escapeHtml(eyebrow)} &middot; Updated ${reviewed}</p><h1>${escapeHtml(title)}</h1><p>${escapeHtml(description)}</p></div>
+        <div><p class="eyebrow">${escapeHtml(eyebrow)} &middot; Updated ${reviewed}</p><span data-freshness-date="${reviewedIso}" data-fresh-days="7" data-warning-days="21">Reviewed ${reviewed}</span><h1>${escapeHtml(title)}</h1><p>${escapeHtml(description)}</p></div>
         <img src="${escapeHtml(game.image)}" alt="${escapeHtml(profile.name)} official Roblox thumbnail" />
       </header>
       <section class="direct-answer"><strong>Short answer</strong><p>${escapeHtml(directAnswer)}</p></section>
@@ -365,7 +366,7 @@ function pageShell({ profile, game, slug, title, description, eyebrow, directAns
       <section class="feedback-panel article-feedback" data-feedback-scope="guide:${escapeHtml(slug)}">
         <p class="eyebrow">Improve this guide</p><h2>Did this page solve the question?</h2>
         <div class="feedback-actions"><button type="button" data-feedback-value="helpful" aria-pressed="false">Helpful</button><button type="button" data-feedback-value="not-helpful" aria-pressed="false">Not helpful</button><button type="button" data-feedback-value="outdated" aria-pressed="false">Report outdated</button></div>
-        <small data-feedback-status>Your choice is stored only on this device.</small>
+        <small data-feedback-status>Choose one answer. No account is required.</small>
       </section>
       <nav class="article-next"><a href="/games/${profile.id}">Open ${escapeHtml(profile.name)} hub</a><a href="/codes?game=${profile.id}">Check tracked codes</a><a href="/guides">More guides</a></nav>
     </main>

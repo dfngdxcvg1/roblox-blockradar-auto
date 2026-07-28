@@ -17,7 +17,10 @@ window.addEventListener("DOMContentLoaded", () => {
   if (!main || document.querySelector(".ad-slot")) return;
 
   const hero = document.querySelector(".hero, .page-title, .detail-hero");
-  insertAfter(hero, createAdSlot("leaderboard"));
+  const firstAdTarget = document.body.classList.contains("home-page")
+    ? document.querySelector(".home-trending")
+    : hero;
+  insertAfter(firstAdTarget, createAdSlot("leaderboard"));
 
   const feature = document.querySelector(".editorial-feature, .article-grid, .detail-grid, .page-grid");
   if (feature) {

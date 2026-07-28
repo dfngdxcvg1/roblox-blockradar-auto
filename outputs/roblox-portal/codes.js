@@ -41,7 +41,7 @@ function renderCodes() {
         <button type="button" data-feedback-value="worked" aria-pressed="false">Worked</button>
         <button type="button" data-feedback-value="expired" aria-pressed="false">Expired</button>
         <button type="button" data-feedback-value="outdated" aria-pressed="false">Report outdated</button>
-        <small data-feedback-status>Your choice is stored only on this device.</small>
+        <small data-feedback-status>Choose one answer. No account is required.</small>
       </div>
     </article>`).join("");
   const noCodeRows = noCodeGroups.map((group) => `
@@ -57,13 +57,14 @@ function renderCodes() {
   const sourceCards = groups.map((group) => `
     <article>
       <strong>${codeText(group.name)}</strong>
-      <span>Reviewed ${codeText(group.lastReviewed)}</span>
+      <span data-freshness-date="${codeText(group.lastReviewed)}" data-fresh-days="3" data-warning-days="7">Reviewed ${codeText(group.lastReviewed)}</span>
       <p>${codeText(group.note)}</p>
       <a href="${codeText(group.gameUrl)}">Open ${codeText(group.name)} guide</a>
       <a href="${codeText(group.sourceUrl)}" target="_blank" rel="noopener">View ${codeText(group.sourceLabel)}</a>
     </article>`).join("");
   document.querySelector("#code-sources").innerHTML = sourceCards;
   window.BlockRadarFeedback?.init(codesList);
+  window.BlockRadarFreshness?.refresh(document.querySelector("#code-sources"));
 
   const url = new URL(window.location.href);
   if (selectedGame === "all") url.searchParams.delete("game");

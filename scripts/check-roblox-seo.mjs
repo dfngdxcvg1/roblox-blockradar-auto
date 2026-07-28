@@ -9,6 +9,20 @@ const noindexPages = new Set([
   "editorial-plan.html",
   "game.html"
 ]);
+const requiredTools = [
+  "tools.html",
+  "blox-fruits-value-calculator.html",
+  "mm2-values.html",
+  "fish-it-rod-finder.html",
+  "99-nights-survival-checklist.html"
+];
+const growthPagePatterns = [
+  /-codes-not-expired\.html$/,
+  /-beginner-guide\.html$/,
+  /^is-(?:grow-a-garden-2|99-nights-in-the-forest|rivals|steal-a-brainrot|fish-it|anime-expeditions)-safe-for-kids\.html$/,
+  /(?:best-seeds-and-upgrades|best-classes-and-upgrades|rivals-best-weapons|best-brainrots-and-values|fish-it-best-rods|best-units-and-team-roles)\.html$/,
+  /(?:night-stealing-and-garden-secrets|map-and-survival-route|rivals-maps-and-positioning|base-defense-secrets|locations-and-fishing-route|progression-and-secrets)\.html$/
+];
 
 function canonicalPath(relativePath) {
   if (relativePath === "index.html") return "/";
@@ -57,6 +71,14 @@ for (const relativePath of htmlFiles) {
     if (main.includes("asset-thumbnail/image")) errors.push(`${relativePath}: uses retired Roblox thumbnail endpoint`);
   }
 
+  if (growthPagePatterns.some((pattern) => pattern.test(relativePath))) {
+    const main = html.match(/<main\b[^>]*class=["'][^"']*article-shell[^"']*["'][^>]*>([\s\S]*?)<\/main>/i)?.[1] || "";
+    if (!/<h1\b/i.test(main)) errors.push(`${relativePath}: missing article H1`);
+    if (visibleText(main).length < 1800) errors.push(`${relativePath}: focused guide content is too thin`);
+    if (!/data-feedback-scope=["']guide:/.test(main)) errors.push(`${relativePath}: missing guide feedback controls`);
+    if (!/Sources and update policy/.test(main)) errors.push(`${relativePath}: missing source policy`);
+  }
+
   const internalHtmlLinks = [...html.matchAll(/href=["']([^"']*\.html(?:[?#][^"']*)?)["']/gi)]
     .map((match) => match[1])
     .filter((href) => !/^(?:https?:)?\/\//i.test(href));
@@ -70,7 +92,7 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) =>
 if (sitemapUrls.some((url) => url.includes("/daily/") || url.endsWith("/daily-roblox-guides.html"))) {
   errors.push("sitemap.xml: daily URLs must not be indexable");
 }
-if (sitemapUrls.length < 50 || sitemapUrls.length > 80) {
+if (sitemapUrls.length < 100 || sitemapUrls.length > 180) {
   errors.push(`sitemap.xml: unexpected URL count ${sitemapUrls.length}`);
 }
 if ((sitemap.match(/<lastmod>/g) || []).length !== sitemapUrls.length) {
@@ -88,6 +110,29 @@ for (const url of sitemapUrls) {
   } catch {
     errors.push(`sitemap.xml: missing local file for ${url}`);
   }
+}
+
+const growthPages = rootFiles.filter((file) => growthPagePatterns.some((pattern) => pattern.test(file)));
+if (growthPages.length !== 30) {
+  errors.push(`growth guides: expected 30 pages, found ${growthPages.length}`);
+}
+
+for (const tool of requiredTools) {
+  if (!rootFiles.includes(tool)) errors.push(`tools: missing ${tool}`);
+}
+
+const dataSource = await readFile(path.join(root, "data.js"), "utf8");
+const codesSource = await readFile(path.join(root, "codes-data.js"), "utf8");
+const browserWindow = {};
+Function("window", `${dataSource}\n${codesSource}; return window;`)(browserWindow);
+if ((browserWindow.blockRadarGames || []).length < 35) {
+  errors.push(`game library: expected at least 35 games, found ${(browserWindow.blockRadarGames || []).length}`);
+}
+if ((browserWindow.blockRadarCodeGroups || []).length < 12) {
+  errors.push(`codes tracker: expected at least 12 games, found ${(browserWindow.blockRadarCodeGroups || []).length}`);
+}
+if (!(browserWindow.blockRadarTrending?.games || []).length) {
+  errors.push("official chart: no Top Playing Now snapshot found");
 }
 
 if (errors.length) {

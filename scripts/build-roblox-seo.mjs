@@ -85,6 +85,50 @@ const relatedGuidesByGame = {
     }
   ]
 };
+const growthGuidesByGame = {
+  "grow-a-garden-2": [
+    ["Grow a Garden 2 codes not expired", "/grow-a-garden-2-codes-not-expired"],
+    ["Grow a Garden 2 beginner guide", "/grow-a-garden-2-beginner-guide"],
+    ["Is Grow a Garden 2 safe for kids?", "/is-grow-a-garden-2-safe-for-kids"],
+    ["Best seeds and upgrades", "/grow-a-garden-2-best-seeds-and-upgrades"],
+    ["Night stealing and garden secrets", "/grow-a-garden-2-night-stealing-and-garden-secrets"]
+  ],
+  "99-nights-in-the-forest": [
+    ["99 Nights codes not expired", "/99-nights-in-the-forest-codes-not-expired"],
+    ["99 Nights beginner guide", "/99-nights-in-the-forest-beginner-guide"],
+    ["Is 99 Nights safe for kids?", "/is-99-nights-in-the-forest-safe-for-kids"],
+    ["Best classes and upgrades", "/99-nights-in-the-forest-best-classes-and-upgrades"],
+    ["Map and survival route", "/99-nights-in-the-forest-map-and-survival-route"]
+  ],
+  "rivals": [
+    ["RIVALS codes not expired", "/rivals-codes-not-expired"],
+    ["RIVALS beginner guide", "/rivals-beginner-guide"],
+    ["Is RIVALS safe for kids?", "/is-rivals-safe-for-kids"],
+    ["RIVALS best weapons", "/rivals-best-weapons"],
+    ["RIVALS maps and positioning", "/rivals-maps-and-positioning"]
+  ],
+  "steal-a-brainrot": [
+    ["Steal a Brainrot code status", "/steal-a-brainrot-codes-not-expired"],
+    ["Steal a Brainrot beginner guide", "/steal-a-brainrot-beginner-guide"],
+    ["Is Steal a Brainrot safe for kids?", "/is-steal-a-brainrot-safe-for-kids"],
+    ["Best Brainrots and value checks", "/steal-a-brainrot-best-brainrots-and-values"],
+    ["Base defense and stealing secrets", "/steal-a-brainrot-base-defense-secrets"]
+  ],
+  "fish-it": [
+    ["Fish It codes not expired", "/fish-it-codes-not-expired"],
+    ["Fish It beginner guide", "/fish-it-beginner-guide"],
+    ["Is Fish It safe for kids?", "/is-fish-it-safe-for-kids"],
+    ["Fish It best rods", "/fish-it-best-rods"],
+    ["Fish It locations and route", "/fish-it-locations-and-fishing-route"]
+  ],
+  "anime-expeditions": [
+    ["Anime Expeditions codes", "/anime-expeditions-codes-not-expired"],
+    ["Anime Expeditions beginner guide", "/anime-expeditions-beginner-guide"],
+    ["Is Anime Expeditions safe for kids?", "/is-anime-expeditions-safe-for-kids"],
+    ["Best units and team roles", "/anime-expeditions-best-units-and-team-roles"],
+    ["Progression values and secrets", "/anime-expeditions-progression-and-secrets"]
+  ]
+};
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -121,7 +165,12 @@ function spendingLabel(value) {
 }
 
 function relatedGuides(game) {
-  const guides = relatedGuidesByGame[game.id] || [];
+  const growthGuides = (growthGuidesByGame[game.id] || []).map(([title, href]) => ({
+    title,
+    href,
+    copy: "A focused, source-reviewed guide for this specific player question."
+  }));
+  const guides = [...growthGuides, ...(relatedGuidesByGame[game.id] || [])];
   if (!guides.length) return "";
   return `
         <article class="detail-card wide-card">
@@ -154,7 +203,8 @@ function gameDetail(game) {
             <span class="tag">Codes: ${escapeHtml(game.codes)}</span>
             <span class="tag">Verdict: ${verdict}</span>
             <span class="tag">${escapeHtml(game.liveLabel || "Live data pending")}</span>
-            <span class="tag">${escapeHtml(game.visitsLabel || "Visits updating")}</span>
+            <span class="tag">${escapeHtml(game.visitsLabel || "Visits updating")}</span>${game.officialRank ? `
+            <span class="tag">Official chart #${game.officialRank}</span>` : ""}
           </div>
           <div class="detail-actions">
             <a class="card-link" href="${escapeHtml(game.officialUrl)}" target="_blank" rel="noopener">Open official Roblox page</a>
@@ -201,6 +251,8 @@ function gameDetail(game) {
             <div><dt>Live players</dt><dd>${escapeHtml(game.liveLabel || "Updating")}</dd></div>
             <div><dt>Visits</dt><dd>${escapeHtml(game.visitsLabel || "Updating")}</dd></div>
             <div><dt>Player rating</dt><dd>${escapeHtml(game.ratingLabel || "Updating")}</dd></div>
+            <div><dt>Official chart</dt><dd>${game.officialRank ? `#${game.officialRank} Top Playing Now` : "Outside current snapshot"}</dd></div>
+            <div><dt>Stats updated</dt><dd>${escapeHtml((game.updatedAt || game.chartUpdatedAt || "").slice(0, 10) || "Updating")}</dd></div>
           </dl>
         </article>
 
@@ -221,6 +273,24 @@ function gameDetail(game) {
         <article class="detail-card">
           <h2>Parent notes</h2>
           <ol>${list(game.parentNotes)}</ol>
+        </article>
+
+        <article class="detail-card wide-card">
+          <h2>What the official Roblox page says</h2>
+          <p>${escapeHtml(game.officialSummary || game.summary)}</p>
+          <p class="card-note">Live players, visits, rating, thumbnail, and chart position come from Roblox endpoints. BlockRadar's safety score is an independent editorial assessment.</p>
+        </article>
+
+        <article class="detail-card wide-card feedback-panel" data-feedback-scope="game:${escapeHtml(game.id)}:scare">
+          <p class="eyebrow">Community correction</p>
+          <h2>Is the scare level accurate?</h2>
+          <div class="feedback-actions">
+            <button type="button" data-feedback-value="accurate" aria-pressed="false">Accurate</button>
+            <button type="button" data-feedback-value="too-low" aria-pressed="false">Too low</button>
+            <button type="button" data-feedback-value="too-high" aria-pressed="false">Too high</button>
+            <button type="button" data-feedback-value="outdated" aria-pressed="false">Page outdated</button>
+          </div>
+          <small data-feedback-status>Your choice is stored only on this device.</small>
         </article>
 
         <article class="detail-card wide-card">
@@ -273,6 +343,7 @@ function gamePage(game) {
     <script src="../data.js" defer></script>
     <script src="../game.js" defer></script>
     <script src="../favorites.js" defer></script>
+    <script src="../feedback.js" defer></script>
     <script src="../ads.js" defer></script>
   </head>
   <body data-game="${escapeHtml(game.id)}">
@@ -280,7 +351,7 @@ function gamePage(game) {
       <a class="brand" href="/"><span class="brand-mark">BR</span><span>BlockRadar</span></a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="/games">Games</a><a href="/compare">Compare</a><a href="/rankings">Rankings</a>
-        <a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/safety">Safety</a>
+        <a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/safety">Safety</a>
       </nav>
       <a class="submit-link" href="/creators">Submit Game</a>
     </header>
@@ -311,6 +382,17 @@ function normalizeInternalLinks(html, relativePath) {
       path.posix.join(path.posix.dirname(relativePath.replaceAll("\\", "/")), target)
     );
     return `href=${quote}${canonicalPath(resolved)}${suffix}${quote}`;
+  });
+}
+
+function ensureToolsNavigation(html) {
+  return html.replace(/<nav class="nav"([^>]*)>([\s\S]*?)<\/nav>/i, (match, attributes, links) => {
+    if (/href=["']\/tools["']/.test(links)) return match;
+    const nextLinks = links.replace(
+      /(<a href=["']\/codes["']>Codes<\/a>)/,
+      '$1<a href="/tools">Tools</a>'
+    );
+    return `<nav class="nav"${attributes}>${nextLinks}</nav>`;
   });
 }
 
@@ -346,7 +428,10 @@ const rootHtmlFiles = rootEntries
 for (const name of rootHtmlFiles) {
   const filePath = path.join(root, name);
   const html = await readFile(filePath, "utf8");
-  await writeFile(filePath, updateHead(normalizeInternalLinks(html, name), name, noindexPages.has(name)));
+  await writeFile(
+    filePath,
+    updateHead(ensureToolsNavigation(normalizeInternalLinks(html, name)), name, noindexPages.has(name))
+  );
 }
 
 const sitemapPath = path.join(root, "sitemap.xml");

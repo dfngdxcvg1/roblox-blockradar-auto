@@ -1,0 +1,958 @@
+{
+  "updatedAt": "2026-07-28T12:28:43.697Z",
+  "source": "Roblox Top Playing Now",
+  "chartCount": 95,
+  "matchedCount": 29,
+  "rankedGames": [
+    {
+      "rank": 1,
+      "universeId": "66654135",
+      "placeId": "142823291",
+      "name": "Murder Mystery 2",
+      "playerCount": 669709,
+      "maturity": "Maturity: Moderate",
+      "genre": "Survival",
+      "trackedSlug": "murder-mystery-2"
+    },
+    {
+      "rank": 2,
+      "universeId": "1686885941",
+      "placeId": "4924922222",
+      "name": "Brookhaven 🏡RP",
+      "playerCount": 556370,
+      "maturity": "Maturity: Minimal",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": "brookhaven-rp"
+    },
+    {
+      "rank": 3,
+      "universeId": "10200395747",
+      "placeId": "97598239454123",
+      "name": "Grow a Garden 2",
+      "playerCount": 474550,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": "grow-a-garden-2"
+    },
+    {
+      "rank": 4,
+      "universeId": "9584852943",
+      "placeId": "95082159892680",
+      "name": "[💲]+1 Speed Keyboard Escape | Candy & Chocolate",
+      "playerCount": 419498,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": "speed-keyboard-escape"
+    },
+    {
+      "rank": 5,
+      "universeId": "10148749921",
+      "placeId": "78515283254292",
+      "name": "Animal Hospital (Anomaly) 🧪",
+      "playerCount": 381986,
+      "maturity": "Maturity: Minimal",
+      "genre": "Survival",
+      "trackedSlug": "animal-hospital-anomaly"
+    },
+    {
+      "rank": 6,
+      "universeId": "7326934954",
+      "placeId": "79546208627805",
+      "name": "[🐝] 99 Nights in the Forest 🔦",
+      "playerCount": 358697,
+      "maturity": "Maturity: Minimal",
+      "genre": "Survival",
+      "trackedSlug": "99-nights-in-the-forest"
+    },
+    {
+      "rank": 7,
+      "universeId": "994732206",
+      "placeId": "2753915549",
+      "name": "Blox Fruits",
+      "playerCount": 298155,
+      "maturity": "Maturity: Mild",
+      "genre": "RPG",
+      "trackedSlug": "blox-fruits"
+    },
+    {
+      "rank": 8,
+      "universeId": "7613921865",
+      "placeId": "84515722934860",
+      "name": "Anime Expeditions [UPDATE 😈]",
+      "playerCount": 248155,
+      "maturity": "수위: 최소",
+      "genre": "Strategy",
+      "trackedSlug": "anime-expeditions"
+    },
+    {
+      "rank": 9,
+      "universeId": "6035872082",
+      "placeId": "17625359962",
+      "name": "RIVALS",
+      "playerCount": 245345,
+      "maturity": "Maturity: Mild",
+      "genre": "Shooter",
+      "trackedSlug": "rivals"
+    },
+    {
+      "rank": 10,
+      "universeId": "7709344486",
+      "placeId": "109983668079237",
+      "name": "Steal a Brainrot",
+      "playerCount": 186436,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": "steal-a-brainrot"
+    },
+    {
+      "rank": 11,
+      "universeId": "383310974",
+      "placeId": "920587237",
+      "name": "[🐝] Adopt Me!",
+      "playerCount": 178644,
+      "maturity": "Maturity: Minimal",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": "adopt-me"
+    },
+    {
+      "rank": 12,
+      "universeId": "3508322461",
+      "placeId": "9391468976",
+      "name": "[REGISTER] Jujutsu Shenanigans",
+      "playerCount": 142537,
+      "maturity": "Maturity: Mild",
+      "genre": "Action",
+      "trackedSlug": "jujutsu-shenanigans"
+    },
+    {
+      "rank": 13,
+      "universeId": "3317771874",
+      "placeId": "8737899170",
+      "name": "🌻 [PETS vs COINS] Pet Simulator 99! 🪙",
+      "playerCount": 138350,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": "pet-simulator-99"
+    },
+    {
+      "rank": 14,
+      "universeId": "6701277882",
+      "placeId": "121864768012064",
+      "name": "[💫UPD] Fish It! 🐟",
+      "playerCount": 118695,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": "fish-it"
+    },
+    {
+      "rank": 15,
+      "universeId": "6739698191",
+      "placeId": "93978595733734",
+      "name": "[CURE] Violence District",
+      "playerCount": 92708,
+      "maturity": "Maturity: Mild",
+      "genre": "Survival",
+      "trackedSlug": "violence-district"
+    },
+    {
+      "rank": 16,
+      "universeId": "5203828273",
+      "placeId": "15101393044",
+      "name": "[🌴] Dress To Impress",
+      "playerCount": 84432,
+      "maturity": "Maturity: Minimal",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": "dress-to-impress"
+    },
+    {
+      "rank": 17,
+      "universeId": "6331902150",
+      "placeId": "18687417158",
+      "name": "Forsaken",
+      "playerCount": 76747,
+      "maturity": "成年適宜內容：輕度",
+      "genre": "Survival",
+      "trackedSlug": "forsaken"
+    },
+    {
+      "rank": 18,
+      "universeId": "2711375305",
+      "placeId": "7041939546",
+      "name": "Catalog Avatar Creator",
+      "playerCount": 74427,
+      "maturity": "Maturité : Minimum",
+      "genre": "Shopping",
+      "trackedSlug": "catalog-avatar-creator"
+    },
+    {
+      "rank": 19,
+      "universeId": "3808081382",
+      "placeId": "10449761463",
+      "name": "The Strongest Battlegrounds",
+      "playerCount": 71559,
+      "maturity": "Maturity: Mild",
+      "genre": "Action",
+      "trackedSlug": "strongest-battlegrounds"
+    },
+    {
+      "rank": 20,
+      "universeId": "5750914919",
+      "placeId": "16732694052",
+      "name": "Fisch 🐟 [CHAPEL]",
+      "playerCount": 68668,
+      "maturity": "Maturità: minima",
+      "genre": "Simulation",
+      "trackedSlug": "fisch"
+    },
+    {
+      "rank": 21,
+      "universeId": "3647333358",
+      "placeId": "9872472334",
+      "name": "Evade [🌊 ]",
+      "playerCount": 63484,
+      "maturity": "Maturity: Mild",
+      "genre": "Survival",
+      "trackedSlug": "evade"
+    },
+    {
+      "rank": 22,
+      "universeId": "10004244222",
+      "placeId": "89469502395769",
+      "name": "[❄️] Kick a Lucky Block",
+      "playerCount": 58475,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": "kick-a-lucky-block"
+    },
+    {
+      "rank": 23,
+      "universeId": "9348272796",
+      "placeId": "114204398207377",
+      "name": "[UPD] Survive Zombie Arena",
+      "playerCount": 53747,
+      "maturity": "Maturity: Mild",
+      "genre": "Survival",
+      "trackedSlug": "survive-zombie-arena"
+    },
+    {
+      "rank": 24,
+      "universeId": "4839802560",
+      "placeId": "13967668166",
+      "name": "LifeTogether 🏠 RP ",
+      "playerCount": 53594,
+      "maturity": "Maturity: Minimal",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": "lifetogether-rp"
+    },
+    {
+      "rank": 25,
+      "universeId": "10131390815",
+      "placeId": "115681808123944",
+      "name": "[🌎W3] Throw a Coin",
+      "playerCount": 51174,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 26,
+      "universeId": "2668101271",
+      "placeId": "6961824067",
+      "name": "Fling Things and People",
+      "playerCount": 46602,
+      "maturity": "Maturity: Mild",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 27,
+      "universeId": "3240075297",
+      "placeId": "8481844229",
+      "name": "Berry Avenue 🏠 RP",
+      "playerCount": 46435,
+      "maturity": "Madurez: Mínima",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": null
+    },
+    {
+      "rank": 28,
+      "universeId": "10199301628",
+      "placeId": "128784467030899",
+      "name": "Merge a Nuke!",
+      "playerCount": 45929,
+      "maturity": "المحتوى الخاص بالبالغين: محدود للغاية",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 29,
+      "universeId": "1202096104",
+      "placeId": "3351674303",
+      "name": "[LAMBORGHINI UPD] Driving Empire🏎️ Car Racing📦RP",
+      "playerCount": 45271,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 30,
+      "universeId": "7436755782",
+      "placeId": "126884695634066",
+      "name": "[🏖️] Grow a Garden 🌶️",
+      "playerCount": 44410,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 31,
+      "universeId": "703124385",
+      "placeId": "1962086868",
+      "name": "Tower of Hell",
+      "playerCount": 42306,
+      "maturity": "Einstufung: Minimal",
+      "genre": "Obby & Platformer",
+      "trackedSlug": "tower-of-hell"
+    },
+    {
+      "rank": 32,
+      "universeId": "9167377564",
+      "placeId": "70411440483149",
+      "name": "100 Days At Sea",
+      "playerCount": 42240,
+      "maturity": "Maturity: Minimal",
+      "genre": "Survival",
+      "trackedSlug": null
+    },
+    {
+      "rank": 33,
+      "universeId": "9978329815",
+      "placeId": "74188431054457",
+      "name": "Mukbang Game [Testing] 🍣🐟!",
+      "playerCount": 41630,
+      "maturity": "Maturity: Minimal",
+      "genre": "Not supplied",
+      "trackedSlug": null
+    },
+    {
+      "rank": 34,
+      "universeId": "1831550657",
+      "placeId": "5233782396",
+      "name": "💥 Creatures of Sonaria ✨ Survive Kaiju Animals",
+      "playerCount": 37269,
+      "maturity": "Maturity: Minimal",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": null
+    },
+    {
+      "rank": 35,
+      "universeId": "7008097940",
+      "placeId": "99567941238278",
+      "name": "[🎂] Ink Game",
+      "playerCount": 37028,
+      "maturity": "Maturity: Mild",
+      "genre": "Party & Casual",
+      "trackedSlug": null
+    },
+    {
+      "rank": 36,
+      "universeId": "10456832990",
+      "placeId": "82554996468034",
+      "name": "+1 Pickaxe Swing Escape",
+      "playerCount": 36724,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 37,
+      "universeId": "5361032378",
+      "placeId": "15532962292",
+      "name": "Sol's RNG [ Boss Raid Hell🔥]",
+      "playerCount": 35041,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 38,
+      "universeId": "6931042565",
+      "placeId": "73956553001240",
+      "name": "[UPD] Volleyball Legends",
+      "playerCount": 33899,
+      "maturity": "수위: 최소",
+      "genre": "Sports & Racing",
+      "trackedSlug": null
+    },
+    {
+      "rank": 39,
+      "universeId": "2619619496",
+      "placeId": "6872265039",
+      "name": "BedWars [🎃 JACK]",
+      "playerCount": 32827,
+      "maturity": "Maturity: Minimal",
+      "genre": "Action",
+      "trackedSlug": null
+    },
+    {
+      "rank": 40,
+      "universeId": "4293374620",
+      "placeId": "12177325772",
+      "name": "[UPD] FIFA Super Soccer",
+      "playerCount": 32620,
+      "maturity": "Maturity: Minimal",
+      "genre": "Sports & Racing",
+      "trackedSlug": null
+    },
+    {
+      "rank": 41,
+      "universeId": "5569032992",
+      "placeId": "16116270224",
+      "name": "🧹 Dandy's World [ALPHA]",
+      "playerCount": 31951,
+      "maturity": "Maturity: Mild",
+      "genre": "Survival",
+      "trackedSlug": null
+    },
+    {
+      "rank": 42,
+      "universeId": "1511883870",
+      "placeId": "4616652839",
+      "name": "Shindo Life [249]",
+      "playerCount": 31231,
+      "maturity": "Maturity: Minimal",
+      "genre": "RPG",
+      "trackedSlug": null
+    },
+    {
+      "rank": 43,
+      "universeId": "7089588429",
+      "placeId": "131378148336503",
+      "name": "(LIMITED x SUPERMAN UPDATE) Drag Drive Simulator",
+      "playerCount": 31064,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 44,
+      "universeId": "4949420752",
+      "placeId": "14315258385",
+      "name": "Realistic Street Soccer",
+      "playerCount": 30770,
+      "maturity": "Maturity: Minimal",
+      "genre": "Sports & Racing",
+      "trackedSlug": null
+    },
+    {
+      "rank": 45,
+      "universeId": "10144280947",
+      "placeId": "114697347887839",
+      "name": "🐒 +1 Speed Monkey Escape",
+      "playerCount": 30588,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 46,
+      "universeId": "10253235584",
+      "placeId": "99108783264633",
+      "name": "Build a base RNG 🎲",
+      "playerCount": 29847,
+      "maturity": "Maturity: Mild",
+      "genre": "Strategy",
+      "trackedSlug": null
+    },
+    {
+      "rank": 47,
+      "universeId": "10187294555",
+      "placeId": "125927821145949",
+      "name": "[⛰️] Mine a Mountain",
+      "playerCount": 29502,
+      "maturity": "เนื้อหาสำหรับผู้ใหญ่: น้อยมาก",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 48,
+      "universeId": "10454554751",
+      "placeId": "112233638491976",
+      "name": "[🍯] Unbox ASMR!",
+      "playerCount": 28030,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 49,
+      "universeId": "10261267004",
+      "placeId": "98800969324557",
+      "name": "[🚂UPD] Storage Hunters: Open World",
+      "playerCount": 27927,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 50,
+      "universeId": "10397566868",
+      "placeId": "74511210941284",
+      "name": "[UPDATE🪙] PAINT OR DIE!",
+      "playerCount": 27630,
+      "maturity": "Maturity: Mild",
+      "genre": "Party & Casual",
+      "trackedSlug": null
+    },
+    {
+      "rank": 51,
+      "universeId": "9837612476",
+      "placeId": "131346454575416",
+      "name": "[UPD] Mini War",
+      "playerCount": 27115,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 52,
+      "universeId": "7395930870",
+      "placeId": "79268393072444",
+      "name": "[🛸] Sell Lemons 🍋",
+      "playerCount": 27025,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 53,
+      "universeId": "9826885587",
+      "placeId": "134381727982611",
+      "name": "Evomon[Season1]",
+      "playerCount": 26339,
+      "maturity": "Age Rating: 12+",
+      "genre": "Adventure",
+      "trackedSlug": null
+    },
+    {
+      "rank": 54,
+      "universeId": "5578556129",
+      "placeId": "16146832113",
+      "name": "Anime Vanguards: Extermination Event Pt. 2",
+      "playerCount": 26139,
+      "maturity": "Maturity: Minimal",
+      "genre": "Strategy",
+      "trackedSlug": null
+    },
+    {
+      "rank": 55,
+      "universeId": "210851291",
+      "placeId": "537413528",
+      "name": "Build A Boat For Treasure",
+      "playerCount": 25938,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": "build-a-boat-for-treasure"
+    },
+    {
+      "rank": 56,
+      "universeId": "9855761734",
+      "placeId": "136020512003847",
+      "name": "San Diego Border Roleplay",
+      "playerCount": 25378,
+      "maturity": "Maturity: Mild",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": null
+    },
+    {
+      "rank": 57,
+      "universeId": "1176784616",
+      "placeId": "3260590327",
+      "name": "Tower Defense Simulator",
+      "playerCount": 25163,
+      "maturity": "Maturity: Minimal",
+      "genre": "Strategy",
+      "trackedSlug": null
+    },
+    {
+      "rank": 58,
+      "universeId": "5995470825",
+      "placeId": "17516596118",
+      "name": "[🔥SLIME BUNDLE] Hypershot",
+      "playerCount": 23902,
+      "maturity": "Maturity: Mild",
+      "genre": "Shooter",
+      "trackedSlug": null
+    },
+    {
+      "rank": 59,
+      "universeId": "4540138978",
+      "placeId": "12985361032",
+      "name": "Metro Life 🏡 City RP",
+      "playerCount": 22797,
+      "maturity": "Kedewasaan: Minimal",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": null
+    },
+    {
+      "rank": 60,
+      "universeId": "10144587520",
+      "placeId": "125039473548047",
+      "name": "[CRAFT🔨] Anime Card Farm",
+      "playerCount": 22348,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 61,
+      "universeId": "2992873140",
+      "placeId": "7711635737",
+      "name": "Emergency Hamburg",
+      "playerCount": 21970,
+      "maturity": "Maturity: Mild",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": null
+    },
+    {
+      "rank": 62,
+      "universeId": "9294074907",
+      "placeId": "90568084448279",
+      "name": "[FPS] One Tap",
+      "playerCount": 21901,
+      "maturity": "Maturity: Mild",
+      "genre": "Shooter",
+      "trackedSlug": null
+    },
+    {
+      "rank": 63,
+      "universeId": "601130232",
+      "placeId": "1537690962",
+      "name": "Bee Swarm Simulator",
+      "playerCount": 21586,
+      "maturity": "Age Rating: 12+",
+      "genre": "Simulation",
+      "trackedSlug": "bee-swarm-simulator"
+    },
+    {
+      "rank": 64,
+      "universeId": "10393620082",
+      "placeId": "125306084071551",
+      "name": "[☀️SUMMER] Build an ASMR Tower",
+      "playerCount": 21575,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 65,
+      "universeId": "10502841145",
+      "placeId": "102072869879193",
+      "name": "[CURSED] Anime Astral Simulator",
+      "playerCount": 21518,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 66,
+      "universeId": "6325068386",
+      "placeId": "18668065416",
+      "name": "[🏆UPD] Blue Lock: Rivals",
+      "playerCount": 21482,
+      "maturity": "Maturité : Minimum",
+      "genre": "Sports & Racing",
+      "trackedSlug": null
+    },
+    {
+      "rank": 67,
+      "universeId": "372226183",
+      "placeId": "893973440",
+      "name": "☀️Flee the Facility🍧",
+      "playerCount": 20680,
+      "maturity": "Maturity: Mild",
+      "genre": "Survival",
+      "trackedSlug": null
+    },
+    {
+      "rank": 68,
+      "universeId": "2440500124",
+      "placeId": "6516141723",
+      "name": "DOORS 👁️",
+      "playerCount": 20285,
+      "maturity": "Maturity: Mild",
+      "genre": "Survival",
+      "trackedSlug": "doors"
+    },
+    {
+      "rank": 69,
+      "universeId": "2644656496",
+      "placeId": "6918802270",
+      "name": "Haze Seas [SATURN + 2X MASTERY]",
+      "playerCount": 19995,
+      "maturity": "Người lớn: Nhẹ",
+      "genre": "RPG",
+      "trackedSlug": null
+    },
+    {
+      "rank": 70,
+      "universeId": "6521100398",
+      "placeId": "74395953411817",
+      "name": "Dreamville 🏡 RP [New Mansion!]",
+      "playerCount": 19980,
+      "maturity": "Maturity: Minimal",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": null
+    },
+    {
+      "rank": 71,
+      "universeId": "8719555347",
+      "placeId": "79480724066456",
+      "name": "[🐠Boats & Fishing] Southern Mudding 🚜 OffRoading",
+      "playerCount": 19640,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 72,
+      "universeId": "2936053166",
+      "placeId": "7554888362",
+      "name": "[🦑] Squid Game X",
+      "playerCount": 19189,
+      "maturity": "Maturity: Mild",
+      "genre": "Party & Casual",
+      "trackedSlug": null
+    },
+    {
+      "rank": 73,
+      "universeId": "10278774552",
+      "placeId": "85245205758607",
+      "name": "[NEW!🔥] Paint Or Seek",
+      "playerCount": 18792,
+      "maturity": "Maturity: Mild",
+      "genre": "Survival",
+      "trackedSlug": null
+    },
+    {
+      "rank": 74,
+      "universeId": "88070565",
+      "placeId": "185655149",
+      "name": "[🔌] Welcome to Bloxburg ",
+      "playerCount": 18654,
+      "maturity": "Maturity: Minimal",
+      "genre": "Roleplay & Avatar Sim",
+      "trackedSlug": null
+    },
+    {
+      "rank": 75,
+      "universeId": "10209534490",
+      "placeId": "137233438285284",
+      "name": "[UPD⭐] Chicken Farm 🐣",
+      "playerCount": 18632,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 76,
+      "universeId": "7018190066",
+      "placeId": "116495829188952",
+      "name": "Dead Rails [HEATWAVE]",
+      "playerCount": 18283,
+      "maturity": "Maturity: Moderate",
+      "genre": "Adventure",
+      "trackedSlug": null
+    },
+    {
+      "rank": 77,
+      "universeId": "10267363348",
+      "placeId": "138381251771774",
+      "name": "[🔱ATLANTIS] Drain the Lake",
+      "playerCount": 18145,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 78,
+      "universeId": "7554119808",
+      "placeId": "75387700043737",
+      "name": "🛍️ My Avatar!",
+      "playerCount": 18032,
+      "maturity": "Maturity: Minimal",
+      "genre": "Shopping",
+      "trackedSlug": null
+    },
+    {
+      "rank": 79,
+      "universeId": "1000233041",
+      "placeId": "2768379856",
+      "name": "3008 [2.74]",
+      "playerCount": 17735,
+      "maturity": "Maturity: Minimal",
+      "genre": "Survival",
+      "trackedSlug": null
+    },
+    {
+      "rank": 80,
+      "universeId": "9910245722",
+      "placeId": "117533937949084",
+      "name": "Iron Soul: Dungeon",
+      "playerCount": 17677,
+      "maturity": "Derecelendirme: Hafif düzey",
+      "genre": "RPG",
+      "trackedSlug": null
+    },
+    {
+      "rank": 81,
+      "universeId": "5650396773",
+      "placeId": "16389395869",
+      "name": "a dusty trip [🏍️BIKE]",
+      "playerCount": 17464,
+      "maturity": "Maturity: Minimal",
+      "genre": "Adventure",
+      "trackedSlug": null
+    },
+    {
+      "rank": 82,
+      "universeId": "7474367816",
+      "placeId": "123921593837160",
+      "name": "Climb and Jump Tower [NEW WORLD]",
+      "playerCount": 17347,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 83,
+      "universeId": "9912025777",
+      "placeId": "102054284786904",
+      "name": "Secure the Airport",
+      "playerCount": 17129,
+      "maturity": "Maturity: Mild",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 84,
+      "universeId": "4658598196",
+      "placeId": "13379208636",
+      "name": "Attack on Titan Revolution",
+      "playerCount": 16735,
+      "maturity": "Maturity: Mild",
+      "genre": "RPG",
+      "trackedSlug": null
+    },
+    {
+      "rank": 85,
+      "universeId": "10356701370",
+      "placeId": "132016691802922",
+      "name": "Build a Base and Steal😈",
+      "playerCount": 16523,
+      "maturity": "成年適宜內容：極低",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 86,
+      "universeId": "7094518649",
+      "placeId": "119048529960596",
+      "name": "[🏖️] Restaurant Tycoon 3",
+      "playerCount": 16433,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 87,
+      "universeId": "10123059921",
+      "placeId": "87468080405188",
+      "name": "Home Alone (Anomaly)",
+      "playerCount": 16265,
+      "maturity": "Maturity: Minimal",
+      "genre": "Survival",
+      "trackedSlug": null
+    },
+    {
+      "rank": 88,
+      "universeId": "3079618996",
+      "placeId": "7971857341",
+      "name": "Youtuber Tycoon! [Vehicles] ",
+      "playerCount": 16174,
+      "maturity": "Maturity: Mild",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 89,
+      "universeId": "10067258922",
+      "placeId": "109509029034984",
+      "name": "[👑] +1 Aura Per Click",
+      "playerCount": 15967,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 90,
+      "universeId": "7488668004",
+      "placeId": "86479448397834",
+      "name": "🍰 Bake or Die 💀 ",
+      "playerCount": 15889,
+      "maturity": "Maturity: Mild",
+      "genre": "Adventure",
+      "trackedSlug": null
+    },
+    {
+      "rank": 91,
+      "universeId": "10178802449",
+      "placeId": "74193805629461",
+      "name": "+1 Mine Per Click ⛏️",
+      "playerCount": 15698,
+      "maturity": "Treści dla dorosłych: minimalne",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 92,
+      "universeId": "4777817887",
+      "placeId": "13772394625",
+      "name": "Blade Ball",
+      "playerCount": 15651,
+      "maturity": "Maturity: Mild",
+      "genre": "Action",
+      "trackedSlug": "blade-ball"
+    },
+    {
+      "rank": 93,
+      "universeId": "10214798872",
+      "placeId": "102990893659741",
+      "name": "Brainblast a Lucky Block!",
+      "playerCount": 15218,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 94,
+      "universeId": "9330616906",
+      "placeId": "99702578544768",
+      "name": "🐟 BE A FISH BAIT! [UPD UwU]",
+      "playerCount": 14782,
+      "maturity": "Maturity: Mild",
+      "genre": "Simulation",
+      "trackedSlug": null
+    },
+    {
+      "rank": 95,
+      "universeId": "9970645639",
+      "placeId": "77843161404023",
+      "name": "Run a Restaurant!",
+      "playerCount": 14625,
+      "maturity": "Maturity: Minimal",
+      "genre": "Simulation",
+      "trackedSlug": null
+    }
+  ]
+}

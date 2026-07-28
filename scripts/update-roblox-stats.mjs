@@ -13,16 +13,24 @@ const games = window.blockRadarGames || [];
 const meta = window.blockRadarGameMeta || {};
 
 async function getJson(url) {
-  const response = await fetch(url, {
-    headers: {
-      "accept": "application/json",
-      "user-agent": "BlockRadarBot/1.0 (+https://roblox.pingdou123.uk/)"
+  let lastError;
+  for (let attempt = 1; attempt <= 3; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        headers: {
+          "accept": "application/json",
+          "user-agent": "BlockRadarBot/1.0 (+https://roblox.pingdou123.uk/)"
+        },
+        signal: AbortSignal.timeout(20000)
+      });
+      if (!response.ok) throw new Error(`${response.status} ${url}`);
+      return await response.json();
+    } catch (error) {
+      lastError = error;
+      if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, attempt * 750));
     }
-  });
-  if (!response.ok) {
-    throw new Error(`${response.status} ${url}`);
   }
-  return response.json();
+  throw lastError;
 }
 
 async function resolveUniverseId(placeId) {

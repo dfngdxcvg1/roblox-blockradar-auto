@@ -12,12 +12,13 @@
     <meta name="robots" content="index,follow,max-image-preview:large" />
   </head>
   <body>
-    <header class="site-header"><a class="brand" href="/"><span class="brand-mark">BR</span><span>BlockRadar</span></a><nav class="nav"><a href="/games">Games</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/safety">Safety</a><a href="/creators">Creators</a></nav><a class="submit-link" href="/creators">Submit Game</a></header>
+    <header class="site-header"><a class="brand" href="/"><span class="brand-mark">BR</span><span>BlockRadar</span></a><nav class="nav"><a href="/games">Games</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/safety">Safety</a><a href="/creators">Creators</a></nav><a class="submit-link" href="/creators">Submit Game</a></header>
     <main class="article-shell">
       <article class="long-article">
         <p class="eyebrow">Live Rankings</p>
         <h1>Most played Roblox games today</h1>
-        <p class="lead">This page uses BlockRadar's daily Roblox activity update to turn live player counts into a useful discovery list. It is not just a popularity chart: each pick also includes safety, spending, and player-fit notes.</p>
+        <p class="lead">This page reads Roblox's official Top Playing Now chart, matches it to BlockRadar's reviewed game library, and adds live player counts, safety, spending, and player-fit notes.</p>
+        <p id="chart-updated" class="source-note">Official chart snapshot updating...</p>
         <section id="most-played-list" class="article-grid"></section>
         <h2>How to use this ranking</h2>
         <p>A high live player count means a game has active servers right now, but it does not always mean the game is the best fit. Younger players should also check chat risk, scam risk, scare level, and whether the game pushes trading or spending.</p>
@@ -25,12 +26,17 @@
         <p>Choose <a href="/games/brookhaven-rp">Brookhaven RP</a> for casual roleplay, <a href="/games/blox-fruits">Blox Fruits</a> for long progression, <a href="/games/dress-to-impress">Dress to Impress</a> for creative fashion rounds, and <a href="/games/doors">Doors</a> for co-op horror.</p>
       </article>
     </main>
-    <footer class="site-footer"><strong>BlockRadar</strong><span><a href="/parents">Parents</a> · <a href="/about">About</a> · Independent Roblox discovery concept.</span></footer>
+    <footer class="site-footer"><strong>BlockRadar</strong><span><a href="/parents">Parents</a> | <a href="/about">About</a> | Independent Roblox discovery site.</span></footer>
     <script>
       window.addEventListener("DOMContentLoaded", () => {
         const list = document.querySelector("#most-played-list");
-        const games = [...(window.blockRadarGames || [])].sort((a, b) => (b.playing || 0) - (a.playing || 0)).slice(0, 12);
-        list.innerHTML = games.map((game, index) => `<article><span class="tag">#${index + 1} · ${game.liveLabel || "Updating"}</span><h2><a href="${game.page}">${game.name}</a></h2><p>${game.summary}</p><p><strong>${game.visitsLabel || "Visits updating"}</strong> · ${game.ratingLabel || "Rating updating"} · Safety ${game.safety.toFixed(1)}/10</p></article>`).join("");
+        const games = [...(window.blockRadarGames || [])]
+          .filter((game) => game.officialRank)
+          .sort((a, b) => a.officialRank - b.officialRank)
+          .slice(0, 20);
+        list.innerHTML = games.map((game) => `<article><span class="tag">Official #${game.officialRank} | ${game.liveLabel || "Updating"}</span><h2><a href="${game.page}">${game.name}</a></h2><p>${game.summary}</p><p><strong>${game.visitsLabel || "Visits updating"}</strong> | ${game.ratingLabel || "Rating updating"} | Safety ${game.safety.toFixed(1)}/10</p></article>`).join("");
+        const updated = window.blockRadarTrending?.updatedAt;
+        if (updated) document.querySelector("#chart-updated").textContent = `Source: Roblox Top Playing Now. Snapshot updated ${new Date(updated).toLocaleString()}.`;
       });
     </script>
   </body>

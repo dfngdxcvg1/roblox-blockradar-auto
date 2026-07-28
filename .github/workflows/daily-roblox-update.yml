@@ -30,8 +30,14 @@ jobs:
         with:
           node-version: "24"
 
+      - name: Update official Roblox chart
+        run: node scripts/update-roblox-trending.mjs
+
       - name: Update Roblox stats
         run: node scripts/update-roblox-stats.mjs
+
+      - name: Build focused Roblox guides
+        run: node scripts/build-roblox-growth-pages.mjs
 
       - name: Build indexable Roblox pages
         run: node scripts/build-roblox-seo.mjs
@@ -49,7 +55,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add outputs/roblox-portal work/roblox-auto-update-report.json
+          git add outputs/roblox-portal work/roblox-auto-update-report.json work/roblox-trending-report.json
           if git diff --cached --quiet; then
             echo "No Roblox updates to commit."
           else

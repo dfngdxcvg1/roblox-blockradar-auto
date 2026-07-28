@@ -25,24 +25,31 @@ function formatGameMini(game) {
   return `
     <a href="${game.page}">
       <strong>${game.name}</strong>
-      <span>${game.category} · ${game.liveLabel || "Live data pending"} · ${game.ratingLabel || "Rating updating"}</span>
+      <span>${game.category} | ${game.liveLabel || "Live data pending"} | ${game.ratingLabel || "Rating updating"}</span>
     </a>
   `;
 }
 
 function renderLiveBoard() {
   if (!liveBoard) return;
-  const hot = [...games].sort((a, b) => (b.playing || 0) - (a.playing || 0)).slice(0, 7);
+  const hot = [...games]
+    .sort((a, b) => {
+      if (a.officialRank && b.officialRank) return a.officialRank - b.officialRank;
+      if (a.officialRank) return -1;
+      if (b.officialRank) return 1;
+      return (b.playing || 0) - (a.playing || 0);
+    })
+    .slice(0, 7);
   liveBoard.innerHTML = hot.map((game, index) => `
     <li>
-      <span class="rank">${index + 1}</span>
+      <span class="rank">${game.officialRank || index + 1}</span>
       ${formatGameMini(game)}
       <em>${game.visitsLabel || ""}</em>
     </li>
   `).join("");
   const latest = games.map((game) => game.updatedAt).filter(Boolean).sort().at(-1);
   if (liveUpdated && latest) {
-    liveUpdated.textContent = `Updated ${new Date(latest).toLocaleString([], { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}`;
+    liveUpdated.textContent = `Official chart and stats updated ${new Date(latest).toLocaleString([], { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}`;
   }
 }
 
@@ -126,6 +133,7 @@ function renderGames() {
           <span class="tag">${game.liveLabel || "Live data pending"}</span>
           <span class="tag">${game.visitsLabel || "Visits updating"}</span>
           <span class="tag">${game.ratingLabel || "Rating updating"}</span>
+          ${game.officialRank ? `<span class="tag">Official #${game.officialRank}</span>` : ""}
         </div>
         <div class="tag">${game.spend}</div>
         <div class="result-actions">

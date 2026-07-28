@@ -25,8 +25,9 @@ function renderCodes() {
     .filter((item) => [item.code, item.reward, group.name].join(" ").toLowerCase().includes(query))
     .map((item) => ({ ...item, group })));
 
-  codesSummary.textContent = `${rows.length} code${rows.length === 1 ? "" : "s"} shown.`;
-  codesList.innerHTML = rows.length ? rows.map(({ group, code, reward, status }) => `
+  const noCodeGroups = groups.filter((group) => !group.codes.length);
+  codesSummary.textContent = `${rows.length} code${rows.length === 1 ? "" : "s"} across ${groups.length} tracked game${groups.length === 1 ? "" : "s"}.`;
+  const codeRows = rows.map(({ group, code, reward, status }) => `
     <article class="code-row">
       <div>
         <span class="code-game">${codeText(group.name)}</span>
@@ -35,16 +36,34 @@ function renderCodes() {
       <p>${codeText(reward)}</p>
       <span class="code-status ${status}">${status === "active" ? "Active in source review" : "Expired"}</span>
       <button class="copy-code" type="button" data-code="${codeText(code)}">Copy</button>
-    </article>`).join("") : '<div class="empty-state">No codes match these filters.</div>';
+      <div class="feedback-inline" data-feedback-scope="code:${codeText(group.id)}:${codeText(code)}">
+        <span>Did it work?</span>
+        <button type="button" data-feedback-value="worked" aria-pressed="false">Worked</button>
+        <button type="button" data-feedback-value="expired" aria-pressed="false">Expired</button>
+        <button type="button" data-feedback-value="outdated" aria-pressed="false">Report outdated</button>
+        <small data-feedback-status>Your choice is stored only on this device.</small>
+      </div>
+    </article>`).join("");
+  const noCodeRows = noCodeGroups.map((group) => `
+    <article class="empty-state code-empty">
+      <strong>${codeText(group.name)}: ${codeText(group.statusMessage || "No active codes confirmed")}</strong>
+      <p>${codeText(group.note)}</p>
+      <a href="${codeText(group.gameUrl)}">Open the game guide</a>
+    </article>`).join("");
+  codesList.innerHTML = codeRows || noCodeRows
+    ? `${codeRows}${noCodeRows}`
+    : '<div class="empty-state">No codes match these filters.</div>';
 
   const sourceCards = groups.map((group) => `
     <article>
       <strong>${codeText(group.name)}</strong>
       <span>Reviewed ${codeText(group.lastReviewed)}</span>
       <p>${codeText(group.note)}</p>
+      <a href="${codeText(group.gameUrl)}">Open ${codeText(group.name)} guide</a>
       <a href="${codeText(group.sourceUrl)}" target="_blank" rel="noopener">View ${codeText(group.sourceLabel)}</a>
     </article>`).join("");
   document.querySelector("#code-sources").innerHTML = sourceCards;
+  window.BlockRadarFeedback?.init(codesList);
 
   const url = new URL(window.location.href);
   if (selectedGame === "all") url.searchParams.delete("game");

@@ -58,6 +58,24 @@ for (let i = 0; i < validUniverseIds.length; i += 50) {
   }
 }
 
+const thumbnailsByPlace = new Map();
+const validPlaceIds = resolved.map((item) => item.placeId);
+for (let i = 0; i < validPlaceIds.length; i += 100) {
+  const chunk = validPlaceIds.slice(i, i + 100);
+  try {
+    const thumbnails = await getJson(
+      `https://thumbnails.roblox.com/v1/places/gameicons?placeIds=${chunk.join(",")}&returnPolicy=PlaceHolder&size=512x512&format=Png&isCircular=false`
+    );
+    for (const item of thumbnails.data || []) {
+      if (item.state === "Completed" && item.imageUrl) {
+        thumbnailsByPlace.set(String(item.targetId), item.imageUrl);
+      }
+    }
+  } catch (error) {
+    console.warn(`Thumbnail refresh skipped: ${error.message}`);
+  }
+}
+
 function compactNumber(value) {
   const number = Number(value || 0);
   return new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(number);
@@ -89,7 +107,8 @@ for (const item of resolved) {
     liveLabel: `${compactNumber(details.playing)} playing`,
     visitsLabel: `${compactNumber(details.visits)} visits`,
     favoritesLabel: `${compactNumber(details.favoritedCount)} favorites`,
-    ratingLabel: ratio == null ? "Rating unavailable" : `${ratio}% like ratio`
+    ratingLabel: ratio == null ? "Rating unavailable" : `${ratio}% like ratio`,
+    image: thumbnailsByPlace.get(item.placeId) || item.game.image
   };
   updated.push({
     id: item.game.id,

@@ -1,4 +1,9 @@
 name = "123456"
 compatibility_date = "2026-07-09"
-assets = { directory = "outputs/roblox-portal" }
+main = "src/worker.js"
 preview_urls = false
+
+[assets]
+directory = "outputs/roblox-portal"
+binding = "ASSETS"
+run_worker_first = true

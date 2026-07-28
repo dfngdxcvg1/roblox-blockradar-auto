@@ -32,6 +32,7 @@ function spendingLabel(text) {
   return "High pressure";
 }
 
+if (!detail.hasChildNodes()) {
 detail.innerHTML = `
   <section class="detail-hero">
     <div class="detail-media" style="background:${game.color}">
@@ -128,3 +129,4 @@ detail.innerHTML = `
     </article>
   </section>
 `;
+}

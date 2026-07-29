@@ -6,6 +6,10 @@ export default {
       return submitFeedback(request, env);
     }
 
+    if (url.pathname === "/api/query-gap") {
+      return submitQueryGap(request, env);
+    }
+
     const isLegacyDaily = url.pathname === "/daily"
       || url.pathname.startsWith("/daily/")
       || url.pathname === "/daily-roblox-guides"
@@ -130,6 +134,59 @@ async function submitFeedback(request, env) {
     `).bind(scope, value, page, sessionId).run();
   } catch {
     return jsonResponse({ error: "Feedback sync is temporarily unavailable" }, 503);
+  }
+
+  return jsonResponse({ synced: true }, 200);
+}
+
+async function submitQueryGap(request, env) {
+  if (request.method !== "POST") {
+    return jsonResponse({ error: "Method not allowed" }, 405);
+  }
+
+  if (!env.FEEDBACK_DB) {
+    return jsonResponse({ error: "Search-gap sync is temporarily unavailable" }, 503);
+  }
+
+  const contentLength = Number(request.headers.get("content-length") || 0);
+  if (contentLength > 2048) {
+    return jsonResponse({ error: "Search-gap payload is too large" }, 413);
+  }
+
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return jsonResponse({ error: "Invalid JSON" }, 400);
+  }
+
+  const query = String(body.query || "").trim().replace(/\s+/g, " ");
+  const normalizedQuery = query.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const page = String(body.page || "/search").trim();
+  const sessionId = String(body.sessionId || "").trim();
+  const looksPrivate = /@|https?:\/\/|www\.|\b\d{7,}\b/i.test(query);
+
+  if (query.length < 3 || query.length > 120 || normalizedQuery.length < 3 || looksPrivate) {
+    return jsonResponse({ error: "Invalid search query" }, 400);
+  }
+  if (!page.startsWith("/") || page.length > 240) {
+    return jsonResponse({ error: "Invalid page" }, 400);
+  }
+  if (!/^[a-z0-9_-]{8,80}$/i.test(sessionId)) {
+    return jsonResponse({ error: "Invalid session" }, 400);
+  }
+
+  try {
+    await env.FEEDBACK_DB.prepare(`
+      INSERT INTO blockradar_query_gaps (query, normalized_query, page, session_id)
+      VALUES (?, ?, ?, ?)
+      ON CONFLICT(session_id, normalized_query) DO UPDATE SET
+        occurrences = MIN(1000, blockradar_query_gaps.occurrences + 1),
+        page = excluded.page,
+        updated_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
+    `).bind(query, normalizedQuery, page, sessionId).run();
+  } catch {
+    return jsonResponse({ error: "Search-gap sync is temporarily unavailable" }, 503);
   }
 
   return jsonResponse({ synced: true }, 200);

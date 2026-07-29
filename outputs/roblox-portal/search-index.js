@@ -6,7 +6,7 @@ window.blockRadarSearchIndex = [
     "description": "Long-form anime-inspired progression with codes, fruit choices, trading caution, and leveling guides.",
     "image": "https://tr.rbxcdn.com/180DAY-a64f70da20fc1e80ee76fe5d49c1be0a/512/512/Image/Png/noFilter",
     "keywords": "Adventure 10+ Active code tracking recommended Players who like long progression, combat mastery, and anime-inspired worlds. High grind, optional passes Low Blade Ball Anime Fighters King Legacy",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 112
   },
   {
@@ -16,7 +16,7 @@ window.blockRadarSearchIndex = [
     "description": "Easy social roleplay with houses, vehicles, family play, and parent-friendly moderation checklists.",
     "image": "https://tr.rbxcdn.com/180DAY-f52be549a738cb3248bafa63cbee37eb/512/512/Image/Png/noFilter",
     "keywords": "Roleplay 9+ Not code-focused Relaxed social roleplay, houses, vehicles, and pretend-play with friends. Cosmetic and convenience None Livetopia Berry Avenue Adopt Me!",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 117
   },
   {
@@ -26,7 +26,7 @@ window.blockRadarSearchIndex = [
     "description": "Co-op horror with strong jump scares, room-by-room guides, monster tells, and age guidance.",
     "image": "https://tr.rbxcdn.com/180DAY-53f81a48fb348823169b97fd42a1094a/512/512/Image/Png/noFilter",
     "keywords": "Horror 12+ Occasional Co-op players who enjoy tension, pattern learning, and jump-scare survival. Low to medium High Pressure Rainbow Friends Evade",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 20
   },
   {
@@ -36,7 +36,7 @@ window.blockRadarSearchIndex = [
     "description": "Fashion rounds, theme guides, voting tips, outfit inspiration, and social pressure notes.",
     "image": "https://tr.rbxcdn.com/180DAY-2b3c147ddf485ca9fbbb390803c51eee/512/512/Image/Png/noFilter",
     "keywords": "Fashion 9+ Active style codes Creative players who like themes, outfit building, voting, and social rounds. Style items and VIP None Fashion Famous Royal High Catalog Avatar Creator",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 103
   },
   {
@@ -46,7 +46,7 @@ window.blockRadarSearchIndex = [
     "description": "Pet collecting and roleplay with trading safety, value guides, event tracking, and parent notes.",
     "image": "https://tr.rbxcdn.com/180DAY-eda3ccc488eabe19cc17f5caa711ac75/512/512/Image/Png/noFilter",
     "keywords": "Pet Sim 8+ Event-based Pet collecting, roleplay, light home decoration, and seasonal events. Trading and pets None Pet Simulator 99 Brookhaven RP Livetopia",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 110
   },
   {
@@ -56,7 +56,7 @@ window.blockRadarSearchIndex = [
     "description": "Fast skill-based obstacle courses with practice tips, no-code-needed play, and low purchase pressure.",
     "image": "https://tr.rbxcdn.com/180DAY-9704151d9c8a70e7ebe0ced8cb2b95c1/512/512/Image/Png/noFilter",
     "keywords": "Obby 9+ Not code-focused Players who want skill practice, quick retries, and low monetization pressure. Low None Mega Easy Obby Obby Creator Speed Run 4",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 43
   },
   {
@@ -66,7 +66,7 @@ window.blockRadarSearchIndex = [
     "description": "Quick competitive matches with ability rankings, reaction drills, and spending-pressure tracking.",
     "image": "https://tr.rbxcdn.com/180DAY-b7317d44fd85c141d154cede4aacf4b0/512/512/Image/Png/noFilter",
     "keywords": "Adventure 10+ Frequent code demand Fast competitive rounds, reflex practice, abilities, and friend duels. Abilities and cosmetics None Death Ball Blox Fruits The Strongest Battlegrounds",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 27
   },
   {
@@ -76,7 +76,7 @@ window.blockRadarSearchIndex = [
     "description": "Classic round-based survival with simple objectives, strong replay value, and easy family approval.",
     "image": "https://tr.rbxcdn.com/180DAY-ac1c764a99cfae201fd4fe916170a218/512/512/Image/Png/noFilter",
     "keywords": "Adventure 8+ Not code-focused Simple rounds, family-friendly chaos, and easy group play. Low Low Epic Minigames Flood Escape 2 Survive the Killer",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 20
   },
   {
@@ -86,7 +86,7 @@ window.blockRadarSearchIndex = [
     "description": "Pet collecting and upgrade loops with event guides, value notes, and spending-pressure warnings.",
     "image": "https://tr.rbxcdn.com/180DAY-295e9baf96652889e8bd2cce871a720e/512/512/Image/Png/noFilter",
     "keywords": "Pet Sim 9+ High search demand Collectors who enjoy pets, upgrades, events, and steady reward loops. Collection pressure and boosts None Adopt Me! Bee Swarm Simulator Mining Simulator",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 108
   },
   {
@@ -96,7 +96,7 @@ window.blockRadarSearchIndex = [
     "description": "Round-based chase survival with movement tips, revive habits, and friend-party recommendations.",
     "image": "https://tr.rbxcdn.com/180DAY-e69722a0f4be1d1ad2ee563accca4f76/512/512/Image/Png/noFilter",
     "keywords": "Adventure 10+ Occasional Friends who want quick survival rounds and team revives. Mostly optional Medium Doors Natural Disaster Survival Nico's Nextbots",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 96
   },
   {
@@ -106,7 +106,7 @@ window.blockRadarSearchIndex = [
     "description": "Creative building and management with low risk, strong family fit, and long-term sandbox value.",
     "image": "https://tr.rbxcdn.com/180DAY-cdddc8bcd502f7c749cd5ea7692ba940/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Not code-focused Creative builders who like designing rides, shops, paths, and park layouts. Low to medium None Restaurant Tycoon 2 Retail Tycoon 2 Build A Boat For Treasure",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 20
   },
   {
@@ -116,7 +116,7 @@ window.blockRadarSearchIndex = [
     "description": "Quest-driven farming simulator with strong code searches, upgrade paths, and free-player planning.",
     "image": "https://tr.rbxcdn.com/180DAY-47a5cb3cce196ed1f9ddbc097c415ad1/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Strong code demand Players who enjoy farming, quests, upgrades, and code optimization. Boosts and progression None Pet Simulator 99 Mining Simulator Restaurant Tycoon 2",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 57
   },
   {
@@ -126,7 +126,7 @@ window.blockRadarSearchIndex = [
     "description": "Fashion roleplay with social play, cosmetics, trading caution, and event guides.",
     "image": "https://tr.rbxcdn.com/180DAY-70261ea10395ff2b3e27f1d562ade61c/512/512/Image/Png/noFilter",
     "keywords": "Roleplay 9+ Not code-focused Players who like fashion, roleplay, seasonal events, and avatar expression. Cosmetics and trading None Dress to Impress Brookhaven RP Catalog Avatar Creator",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 20
   },
   {
@@ -136,7 +136,7 @@ window.blockRadarSearchIndex = [
     "description": "Classic social-deduction rounds with trading risk, weapon-theme review, and age guidance.",
     "image": "https://tr.rbxcdn.com/180DAY-313f1416cd5e4335a97d054183743fdd/512/512/Image/Png/noFilter",
     "keywords": "Adventure 12+ Low current demand Players who like social deduction, quick rounds, and cosmetic collecting. Trading and cosmetics Medium Flee the Facility Evade Survive the Killer",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 119
   },
   {
@@ -146,7 +146,7 @@ window.blockRadarSearchIndex = [
     "description": "Arcade shooter with skill emphasis, cosmetic spending, chat moderation notes, and age review.",
     "image": "https://tr.rbxcdn.com/180DAY-29023c3f115f5eac513c836ef674fd42/512/512/Image/Png/noFilter",
     "keywords": "Shooter 12+ Occasional Players who like fast arcade shooting and skill-based rounds. Cosmetics None Phantom Forces Counter Blox Blade Ball",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 20
   },
   {
@@ -156,7 +156,7 @@ window.blockRadarSearchIndex = [
     "description": "Creative physics building with strong group fun, low safety concern, and code/update opportunities.",
     "image": "https://tr.rbxcdn.com/180DAY-a16e27d3d8380da38b43960549590ca2/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Occasional Creative players who enjoy building, testing, failing, and improving designs. Low to medium Low Theme Park Tycoon 2 Obby Creator Natural Disaster Survival",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 54
   },
   {
@@ -166,7 +166,7 @@ window.blockRadarSearchIndex = [
     "description": "Restaurant building and management with low risk, family-friendly loops, and practical beginner routes.",
     "image": "https://tr.rbxcdn.com/180DAY-68fe1115430d39e2be8be57ee0a4ffe2/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Useful for boosts Builders who like decorating, menus, staff upgrades, and management loops. Low to medium None Theme Park Tycoon 2 Retail Tycoon 2 Work at a Pizza Place",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 20
   },
   {
@@ -176,7 +176,7 @@ window.blockRadarSearchIndex = [
     "description": "Classic teamwork roleplay with easy jobs, low purchase pressure, and strong family suitability.",
     "image": "https://tr.rbxcdn.com/180DAY-ae06e2703a3f516a9946173e656912c0/512/512/Image/Png/noFilter",
     "keywords": "Roleplay 8+ Not code-focused Casual teamwork, simple jobs, home decoration, and low-pressure social play. Low None Restaurant Tycoon 2 Brookhaven RP Theme Park Tycoon 2",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 20
   },
   {
@@ -186,7 +186,7 @@ window.blockRadarSearchIndex = [
     "description": "Accessible horror adventure with creature guides, scare review, and co-op survival tips.",
     "image": "https://tr.rbxcdn.com/180DAY-52711cf678d6a095888b0d4c8f893809/512/512/Image/Png/noFilter",
     "keywords": "Horror 10+ Occasional Players who want beginner-friendly horror with clear objectives. Low to medium Medium Doors Pressure Evade",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 20
   },
   {
@@ -196,7 +196,7 @@ window.blockRadarSearchIndex = [
     "description": "Avatar styling sandbox with outfit ideas, purchase-awareness notes, and social-space review.",
     "image": "https://tr.rbxcdn.com/180DAY-4091747afd807e31c643fac0b3ad3448/512/512/Image/Png/noFilter",
     "keywords": "Fashion 8+ Not code-focused Players who like trying outfits, saving looks, and exploring avatar ideas. Avatar items None Dress to Impress Royale High Fashion Famous",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 105
   },
   {
@@ -206,7 +206,7 @@ window.blockRadarSearchIndex = [
     "description": "Plant, harvest, sell, and build a guild while preparing for the game's night-time stealing phase.",
     "image": "https://tr.rbxcdn.com/180DAY-076fa0b396f5eac77ef9bb004dac1842/512/512/Image/Png/noFilter",
     "keywords": "Simulator 9+ Active codes tracked Players who like farming loops, shop restocks, guild goals, and gardens that progress while offline. Seeds, boosts, and progression Low Grow a Garden Bee Swarm Simulator Pet Simulator 99",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 118
   },
   {
@@ -216,7 +216,7 @@ window.blockRadarSearchIndex = [
     "description": "Gain speed from movement, train multipliers, and race through candy-themed keyboard obstacles.",
     "image": "https://tr.rbxcdn.com/180DAY-85c55fb673386f3fb1464bbf4e3de638/512/512/Image/Png/noFilter",
     "keywords": "Obby 8+ Group reward, not code-focused Players who enjoy simple speed progression, obstacle routes, and racing friends. Multipliers and convenience Low Tower of Hell Speed Run 4 Mega Easy Obby",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 115
   },
   {
@@ -226,7 +226,7 @@ window.blockRadarSearchIndex = [
     "description": "Build and maintain a camp with friends, rescue missing children, and prepare each day for escalating nights.",
     "image": "https://tr.rbxcdn.com/180DAY-a198d6613f29d09c503e41f1357ab002/512/512/Image/Png/noFilter",
     "keywords": "Horror 10+ Active codes tracked Co-op survival players who enjoy building a camp, collecting resources, and planning around dangerous nights. Classes and optional progression High Doors Forsaken Rainbow Friends",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 113
   },
   {
@@ -236,7 +236,7 @@ window.blockRadarSearchIndex = [
     "description": "Work a night shift, treat animal patients, and identify when something at the hospital is not normal.",
     "image": "https://tr.rbxcdn.com/180DAY-4061a6ecfbe3aafe7a049fb24507eede/512/512/Image/Png/noFilter",
     "keywords": "Horror 10+ No verified code system Players who like observation games, unusual patients, and short mystery-horror sessions. Optional Medium Pressure Doors The Mimic",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 116
   },
   {
@@ -246,7 +246,7 @@ window.blockRadarSearchIndex = [
     "description": "Build an anime-inspired unit team, evolve abilities, and clear expeditions, waves, and bosses.",
     "image": "https://tr.rbxcdn.com/180DAY-ff30bfc6dff778cfc9fec04606670eaa/512/512/Image/Png/noFilter",
     "keywords": "Adventure 9+ Active codes tracked Tower-defense players who enjoy summoning units, evolving teams, and clearing waves with friends. Summons and progression Low Anime Vanguards Anime Adventures All Star Tower Defense",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 114
   },
   {
@@ -256,7 +256,7 @@ window.blockRadarSearchIndex = [
     "description": "Fast first-person duels where the first team to five rounds wins, with contracts, keys, and weapon unlocks.",
     "image": "https://tr.rbxcdn.com/180DAY-e162b9799dc941a9d132ac0dee2b79e7/512/512/Image/Png/noFilter",
     "keywords": "Shooter 12+ Active codes tracked Competitive FPS players who want short 1v1 to 5v5 duels and visible skill progression. Weapons, skins, and progression None Arsenal Bad Business Phantom Forces",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 111
   },
   {
@@ -266,7 +266,7 @@ window.blockRadarSearchIndex = [
     "description": "Buy collectible Brainrots, generate money, raid other plots, rebirth, and defend against other players.",
     "image": "https://tr.rbxcdn.com/180DAY-ed33a138f484b844838da6c6ff062d51/512/512/Image/Png/noFilter",
     "keywords": "Simulator 9+ No redeem system confirmed Players who enjoy chaotic collection, base defense, rebirth loops, and social competition. Collection, rebirth, and troll gear None Grow a Garden 2 Kick a Lucky Block Pet Simulator 99",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 109
   },
   {
@@ -276,7 +276,7 @@ window.blockRadarSearchIndex = [
     "description": "An anime-inspired battleground focused on melee strings, skills, blocking, dashing, and destructive fights.",
     "image": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/512/512/Image/Png/noFilter",
     "keywords": "Adventure 12+ No active codes confirmed Players who like battleground combat, destructible environments, combos, dashes, blocks, and awakenings. Optional cosmetics and access Low The Strongest Battlegrounds Heroes Battlegrounds Realm Rampage",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 107
   },
   {
@@ -286,7 +286,7 @@ window.blockRadarSearchIndex = [
     "description": "Charge casts, complete the catch interaction, upgrade rods, and explore islands for a large fish collection.",
     "image": "https://tr.rbxcdn.com/180DAY-ad3e5dd4cd9b48ec0a93d1ba77aa8c64/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Active codes tracked Players who enjoy fishing progression, rod upgrades, collecting variations, sailing, and exploring with friends. Rods, boosts, and collection None Fisch Fishing Simulator Bee Swarm Simulator",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 106
   },
   {
@@ -296,7 +296,7 @@ window.blockRadarSearchIndex = [
     "description": "Five survivors complete objectives and manage scarce pallets while a player-controlled killer hunts them.",
     "image": "https://tr.rbxcdn.com/180DAY-24a7fe15374c20384a33ba2f9d4dc362/512/512/Image/Png/noFilter",
     "keywords": "Horror 13+ No verified code system Older players who enjoy asymmetrical team horror and survivor-versus-killer matches. Optional High Forsaken Dead by Daylight-style games Survive the Killer",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 97
   },
   {
@@ -306,7 +306,7 @@ window.blockRadarSearchIndex = [
     "description": "Train and fight in an open battleground using punches, blocks, dashes, evasives, and ultimate modes.",
     "image": "https://tr.rbxcdn.com/180DAY-68c92fc62a8753793f7963e146b5197f/512/512/Image/Png/noFilter",
     "keywords": "Adventure 12+ Not code-focused Players who want open battleground fights, blocks, dashes, ultimates, and skill-based improvement. Cosmetics and randomized rewards Low Jujutsu Shenanigans Heroes Battlegrounds Blade Ball",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 102
   },
   {
@@ -316,7 +316,7 @@ window.blockRadarSearchIndex = [
     "description": "Survivors protect teammates and finish objectives while killers try to eliminate the group before time expires.",
     "image": "https://tr.rbxcdn.com/180DAY-d617c6321e19ca67bd096866ed2136ac/512/512/Image/Png/noFilter",
     "keywords": "Horror 13+ Occasional Older co-op players who enjoy survivor roles, objectives, killers, and tense team coordination. Optional characters and cosmetics High Violence District 99 Nights in the Forest Survive the Killer",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 104
   },
   {
@@ -326,7 +326,7 @@ window.blockRadarSearchIndex = [
     "description": "Cast, attract bites, follow the catch bar, upgrade equipment, and explore a growing fishing world.",
     "image": "https://tr.rbxcdn.com/180DAY-0e27d7331e80b64dc1d9b7b25105499f/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Active codes tracked Players who want an exploration-focused fishing adventure with rods, rare catches, and a timing minigame. Rods, boats, and progression Low Fish It! Fishing Simulator Islands",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 100
   },
   {
@@ -336,7 +336,7 @@ window.blockRadarSearchIndex = [
     "description": "Train leg strength, kick a lucky block, survive the triggered tsunami, and place rewards on a money-making plot.",
     "image": "https://tr.rbxcdn.com/180DAY-ea8d76e67d4b54024febef92dfbcb4db/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Occasional Players who like short training loops, random collection rewards, plot income, and distance progression. Training and collection boosts Low Steal a Brainrot Pet Simulator 99 Speed Keyboard Escape",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 87
   },
   {
@@ -346,7 +346,7 @@ window.blockRadarSearchIndex = [
     "description": "Fight very large zombie waves, unlock guns, team up, and push for a higher wave record.",
     "image": "https://tr.rbxcdn.com/180DAY-533545c4eceda58c2f308e15de0fd03e/512/512/Image/Png/noFilter",
     "keywords": "Shooter 12+ Occasional Players who like wave defense, weapon unlocks, team survival, and leaderboard challenges. Guns and progression Medium Zombie Uprising Arsenal Tower Defense Simulator",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 91
   },
   {
@@ -356,7 +356,7 @@ window.blockRadarSearchIndex = [
     "description": "A broad life-roleplay sandbox centered on homes, family scenarios, city spaces, and player-created stories.",
     "image": "https://tr.rbxcdn.com/180DAY-662f88fef8ef8dab0f8d8bad602a9d52/512/512/Image/Png/noFilter",
     "keywords": "Roleplay 9+ Occasional Players who enjoy open-ended family, home, city, and social roleplay. Homes, vehicles, and cosmetics None Brookhaven RP Berry Avenue Livetopia",
-    "freshness": "2026-07-29T04:35:39.291Z",
+    "freshness": "2026-07-29T05:27:09.812Z",
     "popularity": 99
   },
   {
@@ -367,6 +367,16 @@ window.blockRadarSearchIndex = [
     "image": null,
     "keywords": "99 Nights in the Forest beginner guide A practical first-session route for 99 Nights in the Forest, with progression priorities, common mistakes, and a clear stopping point. Guide",
     "freshness": "2026-07-28",
+    "popularity": 40
+  },
+  {
+    "type": "Guide",
+    "title": "Best 99 Nights in the Forest base plan",
+    "url": "/99-nights-in-the-forest-best-base-plan",
+    "description": "Build a 99 Nights base around visibility, short supply paths, a protected fire, assigned storage, and a simple night recovery route.",
+    "image": null,
+    "keywords": "Best 99 Nights in the Forest base plan Build a 99 Nights base around visibility, short supply paths, a protected fire, assigned storage, and a simple night recovery route. Guide",
+    "freshness": "2026-07-29",
     "popularity": 40
   },
   {
@@ -388,6 +398,16 @@ window.blockRadarSearchIndex = [
     "keywords": "99 Nights in the Forest codes not expired Current 99 Nights in the Forest code status, reviewed rewards, safe redemption steps, and clear reasons a code may not work. Codes",
     "freshness": "2026-07-28",
     "popularity": 90
+  },
+  {
+    "type": "Guide",
+    "title": "How to win 99 Nights in the Forest",
+    "url": "/99-nights-in-the-forest-how-to-win",
+    "description": "A reliable 99 Nights survival plan covering fire, daylight objectives, rescued children, camp roles, night preparation, and recovery.",
+    "image": null,
+    "keywords": "How to win 99 Nights in the Forest A reliable 99 Nights survival plan covering fire, daylight objectives, rescued children, camp roles, night preparation, and recovery. Guide",
+    "freshness": "2026-07-29",
+    "popularity": 40
   },
   {
     "type": "Guide",
@@ -458,6 +478,16 @@ window.blockRadarSearchIndex = [
     "keywords": "Anime Expeditions progression values and secrets Anime Expeditions progression values and secrets, with an ordered route, resource checkpoints, recovery plan, and repeatable session loop. Guide",
     "freshness": "2026-07-28",
     "popularity": 40
+  },
+  {
+    "type": "Codes",
+    "title": "Bee Swarm Simulator codes not expired",
+    "url": "/bee-swarm-simulator-codes-not-expired",
+    "description": "Current Bee Swarm Simulator codes, reviewed rewards, expiration status, safe redemption steps, and reasons a code may not work.",
+    "image": null,
+    "keywords": "Bee Swarm Simulator codes not expired Current Bee Swarm Simulator codes, reviewed rewards, expiration status, safe redemption steps, and reasons a code may not work. Codes",
+    "freshness": "2026-07-28",
+    "popularity": 90
   },
   {
     "type": "Guide",
@@ -601,6 +631,26 @@ window.blockRadarSearchIndex = [
   },
   {
     "type": "Codes",
+    "title": "Blade Ball codes not expired",
+    "url": "/blade-ball-codes-not-expired",
+    "description": "Current Blade Ball codes, reviewed rewards, expiration status, safe redemption steps, and reasons a code may not work.",
+    "image": null,
+    "keywords": "Blade Ball codes not expired Current Blade Ball codes, reviewed rewards, expiration status, safe redemption steps, and reasons a code may not work. Codes",
+    "freshness": "2026-07-28",
+    "popularity": 90
+  },
+  {
+    "type": "Guide",
+    "title": "Best Blox Fruits for grinding",
+    "url": "/blox-fruits-best-fruits-for-grinding",
+    "description": "Choose a Blox Fruit for leveling by survivability, travel, area damage, and current sea instead of trade hype or rarity alone.",
+    "image": null,
+    "keywords": "Best Blox Fruits for grinding Choose a Blox Fruit for leveling by survivability, travel, area damage, and current sea instead of trade hype or rarity alone. Guide",
+    "freshness": "2026-07-29",
+    "popularity": 40
+  },
+  {
+    "type": "Codes",
     "title": "Blox Fruits codes: safe redemption guide",
     "url": "/blox-fruits-codes",
     "description": "Blox Fruits codes guide with safe redemption steps, expired-code tracking structure, XP boost timing, and Roblox scam warnings.",
@@ -608,6 +658,26 @@ window.blockRadarSearchIndex = [
     "keywords": "Blox Fruits Codes - Safe Redemption Guide and Scam Warnings Blox Fruits codes guide with safe redemption steps, expired-code tracking structure, XP boost timing, and Roblox scam warnings. Codes",
     "freshness": null,
     "popularity": 90
+  },
+  {
+    "type": "Guide",
+    "title": "How to get Fragments in Blox Fruits",
+    "url": "/blox-fruits-how-to-get-fragments",
+    "description": "A practical Blox Fruits Fragment route using raids first, with preparation, reward checks, and ways to avoid wasting Beli or raid time.",
+    "image": null,
+    "keywords": "How to get Fragments in Blox Fruits A practical Blox Fruits Fragment route using raids first, with preparation, reward checks, and ways to avoid wasting Beli or raid time. Guide",
+    "freshness": "2026-07-29",
+    "popularity": 40
+  },
+  {
+    "type": "Guide",
+    "title": "How to reach Second Sea in Blox Fruits",
+    "url": "/blox-fruits-how-to-reach-second-sea",
+    "description": "The exact Second Sea unlock route in Blox Fruits, including the level requirement, Military Detective quest, Ice Admiral, and Experienced Captain.",
+    "image": null,
+    "keywords": "How to reach Second Sea in Blox Fruits The exact Second Sea unlock route in Blox Fruits, including the level requirement, Military Detective quest, Ice Admiral, and Experienced Captain. Guide",
+    "freshness": "2026-07-29",
+    "popularity": 40
   },
   {
     "type": "Safety",
@@ -670,6 +740,26 @@ window.blockRadarSearchIndex = [
     "popularity": 100
   },
   {
+    "type": "Codes",
+    "title": "Dress to Impress codes not expired",
+    "url": "/dress-to-impress-codes-not-expired",
+    "description": "Current Dress to Impress codes, reviewed rewards, expiration status, safe redemption steps, and reasons a code may not work.",
+    "image": null,
+    "keywords": "Dress to Impress codes not expired Current Dress to Impress codes, reviewed rewards, expiration status, safe redemption steps, and reasons a code may not work. Codes",
+    "freshness": "2026-07-28",
+    "popularity": 90
+  },
+  {
+    "type": "Codes",
+    "title": "Fisch codes not expired",
+    "url": "/fisch-codes-not-expired",
+    "description": "Current Fisch codes, reviewed rewards, expiration status, safe redemption steps, and reasons a code may not work.",
+    "image": null,
+    "keywords": "Fisch codes not expired Current Fisch codes, reviewed rewards, expiration status, safe redemption steps, and reasons a code may not work. Codes",
+    "freshness": "2026-07-28",
+    "popularity": 90
+  },
+  {
     "type": "Guide",
     "title": "Fish It! beginner guide",
     "url": "/fish-it-beginner-guide",
@@ -690,6 +780,16 @@ window.blockRadarSearchIndex = [
     "popularity": 40
   },
   {
+    "type": "Guide",
+    "title": "Best Fish It spot for money",
+    "url": "/fish-it-best-spot-for-money",
+    "description": "Find the most profitable Fish It location for your current rod by measuring successful catches, sell value, travel time, and weight limits.",
+    "image": null,
+    "keywords": "Best Fish It spot for money Find the most profitable Fish It location for your current rod by measuring successful catches, sell value, travel time, and weight limits. Guide",
+    "freshness": "2026-07-29",
+    "popularity": 40
+  },
+  {
     "type": "Codes",
     "title": "Fish It! codes not expired",
     "url": "/fish-it-codes-not-expired",
@@ -698,6 +798,16 @@ window.blockRadarSearchIndex = [
     "keywords": "Fish It! codes not expired Current Fish It! code status, reviewed rewards, safe redemption steps, and clear reasons a code may not work. Codes",
     "freshness": "2026-07-28",
     "popularity": 90
+  },
+  {
+    "type": "Guide",
+    "title": "How to enchant a rod in Fish It",
+    "url": "/fish-it-how-to-enchant-a-rod",
+    "description": "A safe Fish It rod-enchanting workflow covering the target rod, Enchant Stone, altar confirmation, result checks, and when to stop rerolling.",
+    "image": null,
+    "keywords": "How to enchant a rod in Fish It A safe Fish It rod-enchanting workflow covering the target rod, Enchant Stone, altar confirmation, result checks, and when to stop rerolling. Guide",
+    "freshness": "2026-07-29",
+    "popularity": 40
   },
   {
     "type": "Guide",
@@ -798,6 +908,16 @@ window.blockRadarSearchIndex = [
     "keywords": "Grow a Garden 2 codes not expired Current Grow a Garden 2 code status, reviewed rewards, safe redemption steps, and clear reasons a code may not work. Codes",
     "freshness": "2026-07-28",
     "popularity": 90
+  },
+  {
+    "type": "Guide",
+    "title": "How to make money fast in Grow a Garden 2",
+    "url": "/grow-a-garden-2-how-to-make-money-fast",
+    "description": "A repeatable Grow a Garden 2 money route using affordable seeds, clean harvest cycles, a sheckle reserve, planned upgrades, and night preparation.",
+    "image": null,
+    "keywords": "How to make money fast in Grow a Garden 2 A repeatable Grow a Garden 2 money route using affordable seeds, clean harvest cycles, a sheckle reserve, planned upgrades, and night preparation. Guide",
+    "freshness": "2026-07-29",
+    "popularity": 40
   },
   {
     "type": "Guide",
@@ -920,6 +1040,16 @@ window.blockRadarSearchIndex = [
     "popularity": 40
   },
   {
+    "type": "Codes",
+    "title": "Jujutsu Shenanigans codes not expired",
+    "url": "/jujutsu-shenanigans-codes-not-expired",
+    "description": "Current Jujutsu Shenanigans codes, reviewed rewards, expiration status, safe redemption steps, and reasons a code may not work.",
+    "image": null,
+    "keywords": "Jujutsu Shenanigans codes not expired Current Jujutsu Shenanigans codes, reviewed rewards, expiration status, safe redemption steps, and reasons a code may not work. Codes",
+    "freshness": "2026-07-28",
+    "popularity": 90
+  },
+  {
     "type": "Guide",
     "title": "How BlockRadar scores Roblox games",
     "url": "/methodology",
@@ -1011,6 +1141,26 @@ window.blockRadarSearchIndex = [
   },
   {
     "type": "Tool",
+    "title": "RIVALS settings and crosshair builder",
+    "url": "/rivals-settings-builder",
+    "description": "Build a practical RIVALS starting setup for PC, mobile, controller, or console, then use a short test to tune aim, movement, visibility, and crosshair.",
+    "image": null,
+    "keywords": "RIVALS settings and crosshair builder Build a practical RIVALS starting setup for PC, mobile, controller, or console, then use a short test to tune aim, movement, visibility, and crosshair. Tool",
+    "freshness": null,
+    "popularity": 100
+  },
+  {
+    "type": "Tool",
+    "title": "Roblox game not loading fixer",
+    "url": "/roblox-device-fixer",
+    "description": "Choose a device and symptom to get an ordered Roblox loading, connection, graphics, launcher, or asset troubleshooting checklist.",
+    "image": null,
+    "keywords": "Roblox game not loading fixer Choose a device and symptom to get an ordered Roblox loading, connection, graphics, launcher, or asset troubleshooting checklist. Tool",
+    "freshness": null,
+    "popularity": 100
+  },
+  {
+    "type": "Tool",
     "title": "What Roblox game should I play?",
     "url": "/roblox-game-finder",
     "description": "Find Roblox games by age, group size, session length, mood, spending pressure, and scare level with personalized live recommendations.",
@@ -1030,6 +1180,16 @@ window.blockRadarSearchIndex = [
     "popularity": 40
   },
   {
+    "type": "Tool",
+    "title": "Roblox scam link checker",
+    "url": "/roblox-scam-link-checker",
+    "description": "Check whether a Roblox login, Robux, code, trade, or reward link uses an official Roblox domain and see common phishing warning signs without opening it.",
+    "image": null,
+    "keywords": "Roblox scam link checker Check whether a Roblox login, Robux, code, trade, or reward link uses an official Roblox domain and see common phishing warning signs without opening it. Tool",
+    "freshness": null,
+    "popularity": 100
+  },
+  {
     "type": "Safety",
     "title": "Roblox scam warning guide",
     "url": "/roblox-scams",
@@ -1040,14 +1200,14 @@ window.blockRadarSearchIndex = [
     "popularity": 40
   },
   {
-    "type": "Guide",
+    "type": "Tool",
     "title": "Roblox spending risk checker",
     "url": "/roblox-spending-risk-checker",
     "description": "A Roblox spending risk checker for parents and players: passes, boosts, trading, limited items, codes, and pressure signs.",
     "image": null,
-    "keywords": "Roblox Spending Risk Checker A Roblox spending risk checker for parents and players: passes, boosts, trading, limited items, codes, and pressure signs. Guide",
+    "keywords": "Roblox Spending Risk Checker A Roblox spending risk checker for parents and players: passes, boosts, trading, limited items, codes, and pressure signs. Tool",
     "freshness": null,
-    "popularity": 40
+    "popularity": 100
   },
   {
     "type": "Safety",
@@ -1120,12 +1280,32 @@ window.blockRadarSearchIndex = [
     "popularity": 90
   },
   {
+    "type": "Guide",
+    "title": "How to rebirth in Steal a Brainrot",
+    "url": "/steal-a-brainrot-how-to-rebirth",
+    "description": "Use the Steal a Brainrot rebirth screen safely by checking current requirements, reset losses, protected assets, multiplier gains, and recovery time.",
+    "image": null,
+    "keywords": "How to rebirth in Steal a Brainrot Use the Steal a Brainrot rebirth screen safely by checking current requirements, reset losses, protected assets, multiplier gains, and recovery time. Guide",
+    "freshness": "2026-07-29",
+    "popularity": 40
+  },
+  {
     "type": "Tool",
     "title": "Useful between every Roblox session.",
     "url": "/tools",
-    "description": "Use BlockRadar",
+    "description": "Use Roblox update tracking, device troubleshooting, RIVALS settings, scam-link checks, value calculators, item finders, and saved survival tools.",
     "image": null,
-    "keywords": "Free Roblox Player Tools Use BlockRadar Tool",
+    "keywords": "Free Roblox Player Tools, Fixers and Trackers Use Roblox update tracking, device troubleshooting, RIVALS settings, scam-link checks, value calculators, item finders, and saved survival tools. Tool",
+    "freshness": null,
+    "popularity": 100
+  },
+  {
+    "type": "Tool",
+    "title": "Roblox game updates today",
+    "url": "/updates",
+    "description": "Track official Roblox experience update activity, live player counts, and creator description changes without pretending every update has public patch notes.",
+    "image": null,
+    "keywords": "Roblox game updates today Track official Roblox experience update activity, live player counts, and creator description changes without pretending every update has public patch notes. Tool",
     "freshness": null,
     "popularity": 100
   }

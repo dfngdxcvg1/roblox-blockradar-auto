@@ -11,6 +11,10 @@ const noindexPages = new Set([
 ]);
 const requiredTools = [
   "tools.html",
+  "updates.html",
+  "roblox-device-fixer.html",
+  "rivals-settings-builder.html",
+  "roblox-scam-link-checker.html",
   "blox-fruits-value-calculator.html",
   "mm2-values.html",
   "fish-it-rod-finder.html",
@@ -22,7 +26,15 @@ const growthPagePatterns = [
   /-beginner-guide\.html$/,
   /^is-(?:grow-a-garden-2|99-nights-in-the-forest|rivals|steal-a-brainrot|fish-it|anime-expeditions)-safe-for-kids\.html$/,
   /(?:best-seeds-and-upgrades|best-classes-and-upgrades|rivals-best-weapons|best-brainrots-and-values|fish-it-best-rods|best-units-and-team-roles)\.html$/,
-  /(?:night-stealing-and-garden-secrets|map-and-survival-route|rivals-maps-and-positioning|base-defense-secrets|locations-and-fishing-route|progression-and-secrets)\.html$/
+  /(?:night-stealing-and-garden-secrets|map-and-survival-route|rivals-maps-and-positioning|base-defense-secrets|locations-and-fishing-route|progression-and-secrets)\.html$/,
+  /^(?:blox-fruits-how-to-reach-second-sea|blox-fruits-how-to-get-fragments|blox-fruits-best-fruits-for-grinding|99-nights-in-the-forest-how-to-win|99-nights-in-the-forest-best-base-plan|fish-it-how-to-enchant-a-rod|fish-it-best-spot-for-money|grow-a-garden-2-how-to-make-money-fast|steal-a-brainrot-how-to-rebirth)\.html$/
+];
+const requiredCodePages = [
+  "dress-to-impress-codes-not-expired.html",
+  "blade-ball-codes-not-expired.html",
+  "bee-swarm-simulator-codes-not-expired.html",
+  "fisch-codes-not-expired.html",
+  "jujutsu-shenanigans-codes-not-expired.html"
 ];
 
 function canonicalPath(relativePath) {
@@ -93,7 +105,7 @@ const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) =>
 if (sitemapUrls.some((url) => url.includes("/daily/") || url.endsWith("/daily-roblox-guides.html"))) {
   errors.push("sitemap.xml: daily URLs must not be indexable");
 }
-if (sitemapUrls.length < 100 || sitemapUrls.length > 180) {
+if (sitemapUrls.length < 125 || sitemapUrls.length > 220) {
   errors.push(`sitemap.xml: unexpected URL count ${sitemapUrls.length}`);
 }
 if ((sitemap.match(/<lastmod>/g) || []).length !== sitemapUrls.length) {
@@ -117,12 +129,15 @@ for (const url of sitemapUrls) {
 }
 
 const growthPages = rootFiles.filter((file) => growthPagePatterns.some((pattern) => pattern.test(file)));
-if (growthPages.length !== 30) {
-  errors.push(`growth guides: expected 30 pages, found ${growthPages.length}`);
+if (growthPages.length < 44) {
+  errors.push(`growth guides: expected at least 44 pages, found ${growthPages.length}`);
 }
 
 for (const tool of requiredTools) {
   if (!rootFiles.includes(tool)) errors.push(`tools: missing ${tool}`);
+}
+for (const codePage of requiredCodePages) {
+  if (!rootFiles.includes(codePage)) errors.push(`codes: missing ${codePage}`);
 }
 for (const surface of requiredPlayerSurfaces) {
   if (!rootFiles.includes(surface)) errors.push(`player surface: missing ${surface}`);
@@ -144,8 +159,8 @@ if (!(browserWindow.blockRadarTrending?.games || []).length) {
 
 const searchSource = await readFile(path.join(root, "search-index.js"), "utf8");
 Function("window", `${searchSource}; return window;`)(browserWindow);
-if ((browserWindow.blockRadarSearchIndex || []).length < 100) {
-  errors.push(`site search: expected at least 100 indexed items, found ${(browserWindow.blockRadarSearchIndex || []).length}`);
+if ((browserWindow.blockRadarSearchIndex || []).length < 125) {
+  errors.push(`site search: expected at least 125 indexed items, found ${(browserWindow.blockRadarSearchIndex || []).length}`);
 }
 
 if (errors.length) {

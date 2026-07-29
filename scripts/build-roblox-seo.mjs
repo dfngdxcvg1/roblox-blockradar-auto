@@ -17,6 +17,21 @@ const sitemapExcluded = new Set([
 const relatedGuidesByGame = {
   "blox-fruits": [
     {
+      title: "How to reach Second Sea",
+      href: "/blox-fruits-how-to-reach-second-sea",
+      copy: "Follow the level 700, Military Detective, Ice Admiral, and Experienced Captain route."
+    },
+    {
+      title: "How to get Fragments",
+      href: "/blox-fruits-how-to-get-fragments",
+      copy: "Build a repeatable Second Sea raid route and protect the currency from waste."
+    },
+    {
+      title: "Best fruits for grinding",
+      href: "/blox-fruits-best-fruits-for-grinding",
+      copy: "Choose by sea, travel, area damage, survivability, and the build you can use now."
+    },
+    {
       title: "Blox Fruits trading scam guide",
       href: "/blox-fruits-trading-scam-guide",
       copy: "Recognize trust trades, fake middlemen, phishing links, and off-platform deals."
@@ -47,7 +62,7 @@ const relatedGuidesByGame = {
     },
     {
       title: "Reviewed Dress to Impress codes",
-      href: "/codes?game=dress-to-impress",
+      href: "/dress-to-impress-codes-not-expired",
       copy: "Filter and copy outfit codes with source-review dates and redemption warnings."
     }
   ],
@@ -66,14 +81,14 @@ const relatedGuidesByGame = {
   "bee-swarm-simulator": [
     {
       title: "Reviewed Bee Swarm Simulator codes",
-      href: "/codes?game=bee-swarm-simulator",
+      href: "/bee-swarm-simulator-codes-not-expired",
       copy: "See code rewards, source notes, and the latest BlockRadar review date."
     }
   ],
   "blade-ball": [
     {
       title: "Reviewed Blade Ball codes",
-      href: "/codes?game=blade-ball",
+      href: "/blade-ball-codes-not-expired",
       copy: "Copy current source-reviewed codes and check why a code may stop working."
     }
   ],
@@ -83,6 +98,20 @@ const relatedGuidesByGame = {
       href: "/games-like-doors",
       copy: "Compare scare level, co-op fit, and session style across similar Roblox games."
     }
+  ],
+  fisch: [
+    {
+      title: "Reviewed Fisch codes",
+      href: "/fisch-codes-not-expired",
+      copy: "See current source status, redemption checks, and fake-code warnings."
+    }
+  ],
+  "jujutsu-shenanigans": [
+    {
+      title: "Jujutsu Shenanigans code status",
+      href: "/jujutsu-shenanigans-codes-not-expired",
+      copy: "Check whether a public redeem system and active codes are currently confirmed."
+    }
   ]
 };
 const growthGuidesByGame = {
@@ -91,35 +120,42 @@ const growthGuidesByGame = {
     ["Grow a Garden 2 beginner guide", "/grow-a-garden-2-beginner-guide"],
     ["Is Grow a Garden 2 safe for kids?", "/is-grow-a-garden-2-safe-for-kids"],
     ["Best seeds and upgrades", "/grow-a-garden-2-best-seeds-and-upgrades"],
-    ["Night stealing and garden secrets", "/grow-a-garden-2-night-stealing-and-garden-secrets"]
+    ["Night stealing and garden secrets", "/grow-a-garden-2-night-stealing-and-garden-secrets"],
+    ["How to make money fast", "/grow-a-garden-2-how-to-make-money-fast"]
   ],
   "99-nights-in-the-forest": [
     ["99 Nights codes not expired", "/99-nights-in-the-forest-codes-not-expired"],
     ["99 Nights beginner guide", "/99-nights-in-the-forest-beginner-guide"],
     ["Is 99 Nights safe for kids?", "/is-99-nights-in-the-forest-safe-for-kids"],
     ["Best classes and upgrades", "/99-nights-in-the-forest-best-classes-and-upgrades"],
-    ["Map and survival route", "/99-nights-in-the-forest-map-and-survival-route"]
+    ["Map and survival route", "/99-nights-in-the-forest-map-and-survival-route"],
+    ["How to win 99 Nights", "/99-nights-in-the-forest-how-to-win"],
+    ["Best compact base plan", "/99-nights-in-the-forest-best-base-plan"]
   ],
   "rivals": [
     ["RIVALS codes not expired", "/rivals-codes-not-expired"],
     ["RIVALS beginner guide", "/rivals-beginner-guide"],
     ["Is RIVALS safe for kids?", "/is-rivals-safe-for-kids"],
     ["RIVALS best weapons", "/rivals-best-weapons"],
-    ["RIVALS maps and positioning", "/rivals-maps-and-positioning"]
+    ["RIVALS maps and positioning", "/rivals-maps-and-positioning"],
+    ["RIVALS settings and crosshair builder", "/rivals-settings-builder"]
   ],
   "steal-a-brainrot": [
     ["Steal a Brainrot code status", "/steal-a-brainrot-codes-not-expired"],
     ["Steal a Brainrot beginner guide", "/steal-a-brainrot-beginner-guide"],
     ["Is Steal a Brainrot safe for kids?", "/is-steal-a-brainrot-safe-for-kids"],
     ["Best Brainrots and value checks", "/steal-a-brainrot-best-brainrots-and-values"],
-    ["Base defense and stealing secrets", "/steal-a-brainrot-base-defense-secrets"]
+    ["Base defense and stealing secrets", "/steal-a-brainrot-base-defense-secrets"],
+    ["How to rebirth safely", "/steal-a-brainrot-how-to-rebirth"]
   ],
   "fish-it": [
     ["Fish It codes not expired", "/fish-it-codes-not-expired"],
     ["Fish It beginner guide", "/fish-it-beginner-guide"],
     ["Is Fish It safe for kids?", "/is-fish-it-safe-for-kids"],
     ["Fish It best rods", "/fish-it-best-rods"],
-    ["Fish It locations and route", "/fish-it-locations-and-fishing-route"]
+    ["Fish It locations and route", "/fish-it-locations-and-fishing-route"],
+    ["How to enchant a rod", "/fish-it-how-to-enchant-a-rod"],
+    ["Best money spot test", "/fish-it-best-spot-for-money"]
   ],
   "anime-expeditions": [
     ["Anime Expeditions codes", "/anime-expeditions-codes-not-expired"],
@@ -137,6 +173,11 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+}
+
+function compactText(value, maxLength = 900) {
+  const text = String(value ?? "").replace(/\s+/g, " ").trim();
+  return text.length > maxLength ? `${text.slice(0, maxLength - 1).trimEnd()}…` : text;
 }
 
 function list(items) {
@@ -282,7 +323,7 @@ function gameDetail(game) {
 
         <article class="detail-card wide-card">
           <h2>What the official Roblox page says</h2>
-          <p>${escapeHtml(game.officialSummary || game.summary)}</p>
+          <p>${escapeHtml(compactText(game.officialSummary || game.summary))}</p>
           <p class="card-note">Live players, visits, rating, thumbnail, and chart position come from Roblox endpoints. BlockRadar's safety score is an independent editorial assessment.</p>
         </article>
 
@@ -392,7 +433,7 @@ function normalizeInternalLinks(html, relativePath) {
 }
 
 function ensurePrimaryNavigation(html) {
-  const links = '<a href="/games">Games</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/search">Search</a><a href="/dashboard">My Radar</a>';
+  const links = '<a href="/games">Games</a><a href="/updates">Updates</a><a href="/rankings">Rankings</a><a href="/guides">Guides</a><a href="/codes">Codes</a><a href="/tools">Tools</a><a href="/search">Search</a><a href="/dashboard">My Radar</a>';
   return html
     .replace(/<nav class="nav"([^>]*)>[\s\S]*?<\/nav>/i, `<nav class="nav"$1>${links}</nav>`)
     .replace(/<a class="submit-link" href="\/creators">Submit Game<\/a>/i, '<a class="submit-link" href="/dashboard">My Radar</a>');
@@ -454,6 +495,7 @@ const sitemapRows = relativeUrls.map((relativePath) => {
   const loc = `${baseUrl}${canonicalPath(relativePath)}`;
   const isDynamic = relativePath === "index.html"
     || relativePath === "games.html"
+    || relativePath === "updates.html"
     || relativePath === "rankings.html"
     || relativePath === "most-played-roblox-games-today.html"
     || relativePath.startsWith("games/");

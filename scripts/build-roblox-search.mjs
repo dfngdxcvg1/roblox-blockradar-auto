@@ -19,7 +19,7 @@ function decode(value) {
 }
 
 function pageType(pathname) {
-  if (["/tools", "/search", "/dashboard"].includes(pathname) || /(?:calculator|values|finder|checklist)$/.test(pathname)) return "Tool";
+  if (["/tools", "/search", "/dashboard", "/updates"].includes(pathname) || /(?:calculator|values|finder|checklist|builder|fixer|checker|tracker)$/.test(pathname)) return "Tool";
   if (pathname.includes("codes")) return "Codes";
   if (/safe|safety|parent|scam/.test(pathname)) return "Safety";
   if (/rank|most-played|best-roblox/.test(pathname)) return "Ranking";

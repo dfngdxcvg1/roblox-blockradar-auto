@@ -5,6 +5,8 @@
   const resultsRoot = document.querySelector('#search-results');
   const summary = document.querySelector('#search-summary');
   const typeFilter = document.querySelector('#search-type');
+  let gapTimer = 0;
+  let lastGap = '';
 
   function escapeHtml(value) {
     return String(value ?? '')
@@ -57,6 +59,42 @@
     </a>`;
   }
 
+  function gapSessionId() {
+    const key = 'blockradar-feedback-session-v1';
+    try {
+      const current = localStorage.getItem(key);
+      if (current) return current;
+      const next = crypto.randomUUID?.() || `${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      localStorage.setItem(key, next);
+      return next;
+    } catch {
+      return `${Date.now()}_${Math.random().toString(36).slice(2)}`;
+    }
+  }
+
+  function recordGap(query) {
+    const normalized = normalize(query);
+    if (normalized.length < 3 || normalized === lastGap) return;
+    clearTimeout(gapTimer);
+    gapTimer = setTimeout(async () => {
+      lastGap = normalized;
+      try {
+        await fetch('/api/query-gap', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            query: query.slice(0, 120),
+            page: `${window.location.pathname}${window.location.search}`.slice(0, 240),
+            sessionId: gapSessionId()
+          }),
+          keepalive: true
+        });
+      } catch {
+        // Search remains usable when anonymous demand logging is unavailable.
+      }
+    }, 900);
+  }
+
   function renderResults() {
     if (!resultsRoot || !queryInput) return;
     const query = queryInput.value.trim();
@@ -67,7 +105,8 @@
       : `${results.length} popular games, guides, codes, and tools`;
     resultsRoot.innerHTML = results.length
       ? results.map(resultCard).join('')
-      : '<div class="empty-state"><strong>No exact answer yet.</strong><p>Try the game name plus codes, guide, values, map, safety, or tool.</p></div>';
+      : '<div class="empty-state"><strong>No exact answer yet.</strong><p>Try the game name plus codes, guide, values, map, safety, or tool. This anonymous search gap helps prioritize the next reviewed answer.</p></div>';
+    if (query && !results.length) recordGap(query);
     const url = new URL(window.location.href);
     if (query) url.searchParams.set('q', query);
     else url.searchParams.delete('q');

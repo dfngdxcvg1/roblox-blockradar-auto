@@ -162,6 +162,7 @@ async function submitQueryGap(request, env) {
 
   const query = String(body.query || "").trim().replace(/\s+/g, " ");
   const normalizedQuery = query.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const scope = `search-gap:${normalizedQuery.replace(/\s+/g, "-").slice(0, 150)}`;
   const page = String(body.page || "/search").trim();
   const sessionId = String(body.sessionId || "").trim();
   const looksPrivate = /@|https?:\/\/|www\.|\b\d{7,}\b/i.test(query);
@@ -178,13 +179,12 @@ async function submitQueryGap(request, env) {
 
   try {
     await env.FEEDBACK_DB.prepare(`
-      INSERT INTO blockradar_query_gaps (query, normalized_query, page, session_id)
-      VALUES (?, ?, ?, ?)
-      ON CONFLICT(session_id, normalized_query) DO UPDATE SET
-        occurrences = MIN(1000, blockradar_query_gaps.occurrences + 1),
+      INSERT INTO blockradar_feedback (scope, value, page, session_id)
+      VALUES (?, 'not-helpful', ?, ?)
+      ON CONFLICT(session_id, scope) DO UPDATE SET
         page = excluded.page,
         updated_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
-    `).bind(query, normalizedQuery, page, sessionId).run();
+    `).bind(scope, page, sessionId).run();
   } catch {
     return jsonResponse({ error: "Search-gap sync is temporarily unavailable" }, 503);
   }

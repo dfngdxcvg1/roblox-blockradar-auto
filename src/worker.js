@@ -85,7 +85,7 @@ async function submitFeedback(request, env) {
     return jsonResponse({ error: "Method not allowed" }, 405);
   }
 
-  if (!env.SUPABASE_URL || !env.SUPABASE_PUBLISHABLE_KEY) {
+  if (!env.FEEDBACK_DB) {
     return jsonResponse({ error: "Feedback sync is temporarily unavailable" }, 503);
   }
 
@@ -120,24 +120,14 @@ async function submitFeedback(request, env) {
   }
 
   try {
-    const response = await fetch(`${env.SUPABASE_URL.replace(/\/$/, "")}/rest/v1/rpc/submit_blockradar_feedback`, {
-      method: "POST",
-      headers: {
-        apikey: env.SUPABASE_PUBLISHABLE_KEY,
-        Authorization: `Bearer ${env.SUPABASE_PUBLISHABLE_KEY}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        p_scope: scope,
-        p_value: value,
-        p_page: page,
-        p_session_id: sessionId
-      })
-    });
-
-    if (!response.ok) {
-      return jsonResponse({ error: "Feedback sync is temporarily unavailable" }, 503);
-    }
+    await env.FEEDBACK_DB.prepare(`
+      INSERT INTO blockradar_feedback (scope, value, page, session_id)
+      VALUES (?, ?, ?, ?)
+      ON CONFLICT(session_id, scope) DO UPDATE SET
+        value = excluded.value,
+        page = excluded.page,
+        updated_at = strftime('%Y-%m-%dT%H:%M:%fZ', 'now')
+    `).bind(scope, value, page, sessionId).run();
   } catch {
     return jsonResponse({ error: "Feedback sync is temporarily unavailable" }, 503);
   }

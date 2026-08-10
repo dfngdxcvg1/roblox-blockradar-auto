@@ -6,7 +6,7 @@ window.blockRadarSearchIndex = [
     "description": "Long-form anime-inspired progression with codes, fruit choices, trading caution, and leveling guides.",
     "image": "https://tr.rbxcdn.com/180DAY-a64f70da20fc1e80ee76fe5d49c1be0a/512/512/Image/Png/noFilter",
     "keywords": "Adventure 10+ Active code tracking recommended Players who like long progression, combat mastery, and anime-inspired worlds. High grind, optional passes Low Blade Ball Anime Fighters King Legacy",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 116
   },
   {
@@ -16,8 +16,8 @@ window.blockRadarSearchIndex = [
     "description": "Easy social roleplay with houses, vehicles, family play, and parent-friendly moderation checklists.",
     "image": "https://tr.rbxcdn.com/180DAY-f606c64aab576459f23a8fe582bc116e/512/512/Image/Png/noFilter",
     "keywords": "Roleplay 9+ Not code-focused Relaxed social roleplay, houses, vehicles, and pretend-play with friends. Cosmetic and convenience None Livetopia Berry Avenue Adopt Me!",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 117
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 118
   },
   {
     "type": "Game",
@@ -26,8 +26,8 @@ window.blockRadarSearchIndex = [
     "description": "Co-op horror with strong jump scares, room-by-room guides, monster tells, and age guidance.",
     "image": "https://tr.rbxcdn.com/180DAY-53f81a48fb348823169b97fd42a1094a/512/512/Image/Png/noFilter",
     "keywords": "Horror 12+ Occasional Co-op players who enjoy tension, pattern learning, and jump-scare survival. Low to medium High Pressure Rainbow Friends Evade",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 53
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 52
   },
   {
     "type": "Game",
@@ -36,7 +36,7 @@ window.blockRadarSearchIndex = [
     "description": "Fashion rounds, theme guides, voting tips, outfit inspiration, and social pressure notes.",
     "image": "https://tr.rbxcdn.com/180DAY-af42d7527e84101c951d3b3d16808a28/512/512/Image/Png/noFilter",
     "keywords": "Fashion 9+ Active style codes Creative players who like themes, outfit building, voting, and social rounds. Style items and VIP None Fashion Famous Royal High Catalog Avatar Creator",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 105
   },
   {
@@ -46,8 +46,8 @@ window.blockRadarSearchIndex = [
     "description": "Pet collecting and roleplay with trading safety, value guides, event tracking, and parent notes.",
     "image": "https://tr.rbxcdn.com/180DAY-88934fc6382a0ddf06c583c5eb5320d0/512/512/Image/Png/noFilter",
     "keywords": "Pet Sim 8+ Event-based Pet collecting, roleplay, light home decoration, and seasonal events. Trading and pets None Pet Simulator 99 Brookhaven RP Livetopia",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 108
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 109
   },
   {
     "type": "Game",
@@ -56,8 +56,8 @@ window.blockRadarSearchIndex = [
     "description": "Fast skill-based obstacle courses with practice tips, no-code-needed play, and low purchase pressure.",
     "image": "https://tr.rbxcdn.com/180DAY-9704151d9c8a70e7ebe0ced8cb2b95c1/512/512/Image/Png/noFilter",
     "keywords": "Obby 9+ Not code-focused Players who want skill practice, quick retries, and low monetization pressure. Low None Mega Easy Obby Obby Creator Speed Run 4",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 92
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 90
   },
   {
     "type": "Game",
@@ -66,8 +66,8 @@ window.blockRadarSearchIndex = [
     "description": "Quick competitive matches with ability rankings, reaction drills, and spending-pressure tracking.",
     "image": "https://tr.rbxcdn.com/180DAY-b7317d44fd85c141d154cede4aacf4b0/512/512/Image/Png/noFilter",
     "keywords": "Adventure 10+ Frequent code demand Fast competitive rounds, reflex practice, abilities, and friend duels. Abilities and cosmetics None Death Ball Blox Fruits The Strongest Battlegrounds",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 51
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 53
   },
   {
     "type": "Game",
@@ -76,7 +76,7 @@ window.blockRadarSearchIndex = [
     "description": "Classic round-based survival with simple objectives, strong replay value, and easy family approval.",
     "image": "https://tr.rbxcdn.com/180DAY-ac1c764a99cfae201fd4fe916170a218/512/512/Image/Png/noFilter",
     "keywords": "Adventure 8+ Not code-focused Simple rounds, family-friendly chaos, and easy group play. Low Low Epic Minigames Flood Escape 2 Survive the Killer",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 20
   },
   {
@@ -86,8 +86,8 @@ window.blockRadarSearchIndex = [
     "description": "Pet collecting and upgrade loops with event guides, value notes, and spending-pressure warnings.",
     "image": "https://tr.rbxcdn.com/180DAY-e5a8e7aa5f344a19b468b596e363d89e/512/512/Image/Png/noFilter",
     "keywords": "Pet Sim 9+ High search demand Collectors who enjoy pets, upgrades, events, and steady reward loops. Collection pressure and boosts None Adopt Me! Bee Swarm Simulator Mining Simulator",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 110
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 106
   },
   {
     "type": "Game",
@@ -96,8 +96,8 @@ window.blockRadarSearchIndex = [
     "description": "Round-based chase survival with movement tips, revive habits, and friend-party recommendations.",
     "image": "https://tr.rbxcdn.com/180DAY-80528c1e2a1fe4fd8562802406963946/512/512/Image/Png/noFilter",
     "keywords": "Adventure 10+ Occasional Friends who want quick survival rounds and team revives. Mostly optional Medium Doors Natural Disaster Survival Nico's Nextbots",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 100
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 98
   },
   {
     "type": "Game",
@@ -106,7 +106,7 @@ window.blockRadarSearchIndex = [
     "description": "Creative building and management with low risk, strong family fit, and long-term sandbox value.",
     "image": "https://tr.rbxcdn.com/180DAY-cdddc8bcd502f7c749cd5ea7692ba940/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Not code-focused Creative builders who like designing rides, shops, paths, and park layouts. Low to medium None Restaurant Tycoon 2 Retail Tycoon 2 Build A Boat For Treasure",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 20
   },
   {
@@ -116,8 +116,8 @@ window.blockRadarSearchIndex = [
     "description": "Quest-driven farming simulator with strong code searches, upgrade paths, and free-player planning.",
     "image": "https://tr.rbxcdn.com/180DAY-47a5cb3cce196ed1f9ddbc097c415ad1/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Strong code demand Players who enjoy farming, quests, upgrades, and code optimization. Boosts and progression None Pet Simulator 99 Mining Simulator Restaurant Tycoon 2",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 61
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 47
   },
   {
     "type": "Game",
@@ -126,7 +126,7 @@ window.blockRadarSearchIndex = [
     "description": "Fashion roleplay with social play, cosmetics, trading caution, and event guides.",
     "image": "https://tr.rbxcdn.com/180DAY-70261ea10395ff2b3e27f1d562ade61c/512/512/Image/Png/noFilter",
     "keywords": "Roleplay 9+ Not code-focused Players who like fashion, roleplay, seasonal events, and avatar expression. Cosmetics and trading None Dress to Impress Brookhaven RP Catalog Avatar Creator",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 20
   },
   {
@@ -136,7 +136,7 @@ window.blockRadarSearchIndex = [
     "description": "Classic social-deduction rounds with trading risk, weapon-theme review, and age guidance.",
     "image": "https://tr.rbxcdn.com/180DAY-313f1416cd5e4335a97d054183743fdd/512/512/Image/Png/noFilter",
     "keywords": "Adventure 12+ Low current demand Players who like social deduction, quick rounds, and cosmetic collecting. Trading and cosmetics Medium Flee the Facility Evade Survive the Killer",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 119
   },
   {
@@ -146,7 +146,7 @@ window.blockRadarSearchIndex = [
     "description": "Arcade shooter with skill emphasis, cosmetic spending, chat moderation notes, and age review.",
     "image": "https://tr.rbxcdn.com/180DAY-29023c3f115f5eac513c836ef674fd42/512/512/Image/Png/noFilter",
     "keywords": "Shooter 12+ Occasional Players who like fast arcade shooting and skill-based rounds. Cosmetics None Phantom Forces Counter Blox Blade Ball",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 20
   },
   {
@@ -156,8 +156,8 @@ window.blockRadarSearchIndex = [
     "description": "Creative physics building with strong group fun, low safety concern, and code/update opportunities.",
     "image": "https://tr.rbxcdn.com/180DAY-a16e27d3d8380da38b43960549590ca2/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Occasional Creative players who enjoy building, testing, failing, and improving designs. Low to medium Low Theme Park Tycoon 2 Obby Creator Natural Disaster Survival",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 60
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 54
   },
   {
     "type": "Game",
@@ -166,7 +166,7 @@ window.blockRadarSearchIndex = [
     "description": "Restaurant building and management with low risk, family-friendly loops, and practical beginner routes.",
     "image": "https://tr.rbxcdn.com/180DAY-68fe1115430d39e2be8be57ee0a4ffe2/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Useful for boosts Builders who like decorating, menus, staff upgrades, and management loops. Low to medium None Theme Park Tycoon 2 Retail Tycoon 2 Work at a Pizza Place",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 20
   },
   {
@@ -176,7 +176,7 @@ window.blockRadarSearchIndex = [
     "description": "Classic teamwork roleplay with easy jobs, low purchase pressure, and strong family suitability.",
     "image": "https://tr.rbxcdn.com/180DAY-ae06e2703a3f516a9946173e656912c0/512/512/Image/Png/noFilter",
     "keywords": "Roleplay 8+ Not code-focused Casual teamwork, simple jobs, home decoration, and low-pressure social play. Low None Restaurant Tycoon 2 Brookhaven RP Theme Park Tycoon 2",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 20
   },
   {
@@ -186,7 +186,7 @@ window.blockRadarSearchIndex = [
     "description": "Accessible horror adventure with creature guides, scare review, and co-op survival tips.",
     "image": "https://tr.rbxcdn.com/180DAY-52711cf678d6a095888b0d4c8f893809/512/512/Image/Png/noFilter",
     "keywords": "Horror 10+ Occasional Players who want beginner-friendly horror with clear objectives. Low to medium Medium Doors Pressure Evade",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 20
   },
   {
@@ -196,7 +196,7 @@ window.blockRadarSearchIndex = [
     "description": "Avatar styling sandbox with outfit ideas, purchase-awareness notes, and social-space review.",
     "image": "https://tr.rbxcdn.com/180DAY-4091747afd807e31c643fac0b3ad3448/512/512/Image/Png/noFilter",
     "keywords": "Fashion 8+ Not code-focused Players who like trying outfits, saving looks, and exploring avatar ideas. Avatar items None Dress to Impress Royale High Fashion Famous",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 102
   },
   {
@@ -204,10 +204,10 @@ window.blockRadarSearchIndex = [
     "title": "Grow a Garden 2",
     "url": "/games/grow-a-garden-2",
     "description": "Plant, harvest, sell, and build a guild while preparing for the game's night-time stealing phase.",
-    "image": "https://tr.rbxcdn.com/180DAY-88578861f2c7d5a44b24985e134b9689/512/512/Image/Png/noFilter",
+    "image": "https://tr.rbxcdn.com/180DAY-a4c070d4762f71fc50d0d149461732c0/512/512/Image/Png/noFilter",
     "keywords": "Simulator 9+ Active codes tracked Players who like farming loops, shop restocks, guild goals, and gardens that progress while offline. Seeds, boosts, and progression Low Grow a Garden Bee Swarm Simulator Pet Simulator 99",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 118
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 117
   },
   {
     "type": "Game",
@@ -216,8 +216,8 @@ window.blockRadarSearchIndex = [
     "description": "Gain speed from movement, train multipliers, and race through candy-themed keyboard obstacles.",
     "image": "https://tr.rbxcdn.com/180DAY-f5fa1c194484ce2ba7751230545b7e91/512/512/Image/Png/noFilter",
     "keywords": "Obby 8+ Group reward, not code-focused Players who enjoy simple speed progression, obstacle routes, and racing friends. Multipliers and convenience Low Tower of Hell Speed Run 4 Mega Easy Obby",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 111
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 113
   },
   {
     "type": "Game",
@@ -226,7 +226,7 @@ window.blockRadarSearchIndex = [
     "description": "Build and maintain a camp with friends, rescue missing children, and prepare each day for escalating nights.",
     "image": "https://tr.rbxcdn.com/180DAY-ad2dcbc33cd533a2b5780606c6bb45eb/512/512/Image/Png/noFilter",
     "keywords": "Horror 10+ Active codes tracked Co-op survival players who enjoy building a camp, collecting resources, and planning around dangerous nights. Classes and optional progression High Doors Forsaken Rainbow Friends",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 115
   },
   {
@@ -236,7 +236,7 @@ window.blockRadarSearchIndex = [
     "description": "Work a night shift, treat animal patients, and identify when something at the hospital is not normal.",
     "image": "https://tr.rbxcdn.com/180DAY-dc6563b6f6fe389cbe8ced776c16c6cd/512/512/Image/Png/noFilter",
     "keywords": "Horror 10+ No verified code system Players who like observation games, unusual patients, and short mystery-horror sessions. Optional Medium Pressure Doors The Mimic",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 114
   },
   {
@@ -244,10 +244,10 @@ window.blockRadarSearchIndex = [
     "title": "Anime Expeditions",
     "url": "/games/anime-expeditions",
     "description": "Build an anime-inspired unit team, evolve abilities, and clear expeditions, waves, and bosses.",
-    "image": "https://tr.rbxcdn.com/180DAY-ff30bfc6dff778cfc9fec04606670eaa/512/512/Image/Png/noFilter",
+    "image": "https://tr.rbxcdn.com/180DAY-ff41928f464a4b129b32eeefdb3a45cc/512/512/Image/Png/noFilter",
     "keywords": "Adventure 9+ Active codes tracked Tower-defense players who enjoy summoning units, evolving teams, and clearing waves with friends. Summons and progression Low Anime Vanguards Anime Adventures All Star Tower Defense",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 20
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 112
   },
   {
     "type": "Game",
@@ -256,8 +256,8 @@ window.blockRadarSearchIndex = [
     "description": "Fast first-person duels where the first team to five rounds wins, with contracts, keys, and weapon unlocks.",
     "image": "https://tr.rbxcdn.com/180DAY-e162b9799dc941a9d132ac0dee2b79e7/512/512/Image/Png/noFilter",
     "keywords": "Shooter 12+ Active codes tracked Competitive FPS players who want short 1v1 to 5v5 duels and visible skill progression. Weapons, skins, and progression None Arsenal Bad Business Phantom Forces",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 112
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 110
   },
   {
     "type": "Game",
@@ -266,8 +266,8 @@ window.blockRadarSearchIndex = [
     "description": "Buy collectible Brainrots, generate money, raid other plots, rebirth, and defend against other players.",
     "image": "https://tr.rbxcdn.com/180DAY-e867b1a09af00635643dd3d6d10e34a3/512/512/Image/Png/noFilter",
     "keywords": "Simulator 9+ No redeem system confirmed Players who enjoy chaotic collection, base defense, rebirth loops, and social competition. Collection, rebirth, and troll gear None Grow a Garden 2 Kick a Lucky Block Pet Simulator 99",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 113
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 111
   },
   {
     "type": "Game",
@@ -276,8 +276,8 @@ window.blockRadarSearchIndex = [
     "description": "An anime-inspired battleground focused on melee strings, skills, blocking, dashing, and destructive fights.",
     "image": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/512/512/Image/Png/noFilter",
     "keywords": "Adventure 12+ No active codes confirmed Players who like battleground combat, destructible environments, combos, dashes, blocks, and awakenings. Optional cosmetics and access Low The Strongest Battlegrounds Heroes Battlegrounds Realm Rampage",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 107
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 108
   },
   {
     "type": "Game",
@@ -286,8 +286,8 @@ window.blockRadarSearchIndex = [
     "description": "Charge casts, complete the catch interaction, upgrade rods, and explore islands for a large fish collection.",
     "image": "https://tr.rbxcdn.com/180DAY-797f5303d031bf67e87af321bb33fc78/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Active codes tracked Players who enjoy fishing progression, rod upgrades, collecting variations, sailing, and exploring with friends. Rods, boosts, and collection None Fisch Fishing Simulator Bee Swarm Simulator",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 109
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 107
   },
   {
     "type": "Game",
@@ -296,8 +296,8 @@ window.blockRadarSearchIndex = [
     "description": "Five survivors complete objectives and manage scarce pallets while a player-controlled killer hunts them.",
     "image": "https://tr.rbxcdn.com/180DAY-24a7fe15374c20384a33ba2f9d4dc362/512/512/Image/Png/noFilter",
     "keywords": "Horror 13+ No verified code system Older players who enjoy asymmetrical team horror and survivor-versus-killer matches. Optional High Forsaken Dead by Daylight-style games Survive the Killer",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 106
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 104
   },
   {
     "type": "Game",
@@ -306,8 +306,8 @@ window.blockRadarSearchIndex = [
     "description": "Train and fight in an open battleground using punches, blocks, dashes, evasives, and ultimate modes.",
     "image": "https://tr.rbxcdn.com/180DAY-68c92fc62a8753793f7963e146b5197f/512/512/Image/Png/noFilter",
     "keywords": "Adventure 12+ Not code-focused Players who want open battleground fights, blocks, dashes, ultimates, and skill-based improvement. Cosmetics and randomized rewards Low Jujutsu Shenanigans Heroes Battlegrounds Blade Ball",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 104
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 101
   },
   {
     "type": "Game",
@@ -316,7 +316,7 @@ window.blockRadarSearchIndex = [
     "description": "Survivors protect teammates and finish objectives while killers try to eliminate the group before time expires.",
     "image": "https://tr.rbxcdn.com/180DAY-d617c6321e19ca67bd096866ed2136ac/512/512/Image/Png/noFilter",
     "keywords": "Horror 13+ Occasional Older co-op players who enjoy survivor roles, objectives, killers, and tense team coordination. Optional characters and cosmetics High Violence District 99 Nights in the Forest Survive the Killer",
-    "freshness": "2026-08-10T08:51:50.387Z",
+    "freshness": "2026-08-10T14:33:26.568Z",
     "popularity": 99
   },
   {
@@ -326,8 +326,8 @@ window.blockRadarSearchIndex = [
     "description": "Cast, attract bites, follow the catch bar, upgrade equipment, and explore a growing fishing world.",
     "image": "https://tr.rbxcdn.com/180DAY-3799ced2fc94ee4dc53c57ea00c577f2/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Active codes tracked Players who want an exploration-focused fishing adventure with rods, rare catches, and a timing minigame. Rods, boats, and progression Low Fish It! Fishing Simulator Islands",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 96
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 94
   },
   {
     "type": "Game",
@@ -336,8 +336,8 @@ window.blockRadarSearchIndex = [
     "description": "Train leg strength, kick a lucky block, survive the triggered tsunami, and place rewards on a money-making plot.",
     "image": "https://tr.rbxcdn.com/180DAY-570b13f37802d7bc7a1f475eb99998b1/512/512/Image/Png/noFilter",
     "keywords": "Simulator 8+ Occasional Players who like short training loops, random collection rewards, plot income, and distance progression. Training and collection boosts Low Steal a Brainrot Pet Simulator 99 Speed Keyboard Escape",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 93
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 89
   },
   {
     "type": "Game",
@@ -346,8 +346,8 @@ window.blockRadarSearchIndex = [
     "description": "Fight very large zombie waves, unlock guns, team up, and push for a higher wave record.",
     "image": "https://tr.rbxcdn.com/180DAY-953c2c907c40171141a2e7e4cf392ffa/512/512/Image/Png/noFilter",
     "keywords": "Shooter 12+ Occasional Players who like wave defense, weapon unlocks, team survival, and leaderboard challenges. Guns and progression Medium Zombie Uprising Arsenal Tower Defense Simulator",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 82
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 68
   },
   {
     "type": "Game",
@@ -356,8 +356,8 @@ window.blockRadarSearchIndex = [
     "description": "A broad life-roleplay sandbox centered on homes, family scenarios, city spaces, and player-created stories.",
     "image": "https://tr.rbxcdn.com/180DAY-7797064846090391f2217bdf7c7485d9/512/512/Image/Png/noFilter",
     "keywords": "Roleplay 9+ Occasional Players who enjoy open-ended family, home, city, and social roleplay. Homes, vehicles, and cosmetics None Brookhaven RP Berry Avenue Livetopia",
-    "freshness": "2026-08-10T08:51:50.387Z",
-    "popularity": 94
+    "freshness": "2026-08-10T14:33:26.568Z",
+    "popularity": 100
   },
   {
     "type": "Guide",

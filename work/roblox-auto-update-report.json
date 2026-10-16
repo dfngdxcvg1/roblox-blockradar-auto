@@ -1,257 +1,257 @@
 {
-  "updatedAt": "2026-10-15T17:48:22.897Z",
+  "updatedAt": "2026-10-16T05:55:44.011Z",
   "updatedCount": 36,
   "updated": [
     {
       "id": "blox-fruits",
       "name": "Blox Fruits",
-      "playing": 188116,
-      "visits": 64968138893,
+      "playing": 143429,
+      "visits": 64973928389,
       "likeRatio": 92
     },
     {
       "id": "brookhaven-rp",
       "name": "Brookhaven RP",
-      "playing": 413912,
-      "visits": 88562243254,
+      "playing": 236310,
+      "visits": 88576244590,
       "likeRatio": 86
     },
     {
       "id": "doors",
       "name": "Doors",
-      "playing": 52248,
-      "visits": 7881562170,
+      "playing": 19886,
+      "visits": 7883485863,
       "likeRatio": 93
     },
     {
       "id": "dress-to-impress",
       "name": "Dress to Impress",
-      "playing": 61301,
-      "visits": 11154003835,
+      "playing": 28743,
+      "visits": 11156215282,
       "likeRatio": 91
     },
     {
       "id": "adopt-me",
       "name": "Adopt Me!",
-      "playing": 275128,
-      "visits": 45084094020,
+      "playing": 222887,
+      "visits": 45090384736,
       "likeRatio": 86
     },
     {
       "id": "tower-of-hell",
       "name": "Tower of Hell",
-      "playing": 45328,
-      "visits": 29164870527,
+      "playing": 19273,
+      "visits": 29168012673,
       "likeRatio": 74
     },
     {
       "id": "blade-ball",
       "name": "Blade Ball",
-      "playing": 19722,
-      "visits": 6488423165,
+      "playing": 11854,
+      "visits": 6489264694,
       "likeRatio": 93
     },
     {
       "id": "natural-disaster-survival",
       "name": "Natural Disaster Survival",
-      "playing": 6791,
-      "visits": 4512485591,
+      "playing": 6100,
+      "visits": 4513129079,
       "likeRatio": 91
     },
     {
       "id": "pet-simulator-99",
       "name": "Pet Simulator 99",
-      "playing": 55657,
-      "visits": 2669139316,
+      "playing": 47684,
+      "visits": 2669582969,
       "likeRatio": 95
     },
     {
       "id": "evade",
       "name": "Evade",
-      "playing": 37426,
-      "visits": 9307027706,
+      "playing": 38157,
+      "visits": 9308963814,
       "likeRatio": 94
     },
     {
       "id": "theme-park-tycoon-2",
       "name": "Theme Park Tycoon 2",
-      "playing": 3674,
-      "visits": 1623430675,
+      "playing": 1974,
+      "visits": 1623525407,
       "likeRatio": 89
     },
     {
       "id": "bee-swarm-simulator",
       "name": "Bee Swarm Simulator",
-      "playing": 30660,
-      "visits": 4608730544,
+      "playing": 26739,
+      "visits": 4609630582,
       "likeRatio": 96
     },
     {
       "id": "royale-high",
       "name": "Royale High",
-      "playing": 8822,
-      "visits": 10466787935,
+      "playing": 5737,
+      "visits": 10467056382,
       "likeRatio": 86
     },
     {
       "id": "murder-mystery-2",
       "name": "Murder Mystery 2",
-      "playing": 234308,
-      "visits": 31313038039,
+      "playing": 104546,
+      "visits": 31325184004,
       "likeRatio": 91
     },
     {
       "id": "arsenal",
       "name": "Arsenal",
-      "playing": 2946,
-      "visits": 6316383793,
+      "playing": 2243,
+      "visits": 6316654267,
       "likeRatio": 89
     },
     {
       "id": "build-a-boat-for-treasure",
       "name": "Build A Boat For Treasure",
-      "playing": 15521,
-      "visits": 5227707035,
+      "playing": 7882,
+      "visits": 5228109426,
       "likeRatio": 93
     },
     {
       "id": "restaurant-tycoon-2",
       "name": "Restaurant Tycoon 2",
-      "playing": 1709,
-      "visits": 1651654036,
+      "playing": 851,
+      "visits": 1651698305,
       "likeRatio": 93
     },
     {
       "id": "work-at-a-pizza-place",
       "name": "Work at a Pizza Place",
-      "playing": 4589,
-      "visits": 5614852184,
+      "playing": 3496,
+      "visits": 5615064330,
       "likeRatio": 93
     },
     {
       "id": "rainbow-friends",
       "name": "Rainbow Friends",
-      "playing": 6965,
-      "visits": 5146926675,
+      "playing": 3321,
+      "visits": 5147381776,
       "likeRatio": 84
     },
     {
       "id": "catalog-avatar-creator",
       "name": "Catalog Avatar Creator",
-      "playing": 66978,
-      "visits": 8107899836,
+      "playing": 45867,
+      "visits": 8111617837,
       "likeRatio": 94
     },
     {
       "id": "grow-a-garden-2",
       "name": "Grow a Garden 2",
-      "playing": 2206,
-      "visits": 1678067253,
+      "playing": 2357,
+      "visits": 1678134152,
       "likeRatio": 88
     },
     {
       "id": "speed-keyboard-escape",
       "name": "+1 Speed Keyboard Escape",
-      "playing": 92178,
-      "visits": 6451515489,
+      "playing": 41211,
+      "visits": 6456193868,
       "likeRatio": 97
     },
     {
       "id": "99-nights-in-the-forest",
       "name": "99 Nights in the Forest",
-      "playing": 195638,
-      "visits": 30061729790,
+      "playing": 131882,
+      "visits": 30067273582,
       "likeRatio": 90
     },
     {
       "id": "animal-hospital-anomaly",
       "name": "Animal Hospital (Anomaly)",
-      "playing": 27921,
-      "visits": 2428565650,
+      "playing": 17985,
+      "visits": 2429803023,
       "likeRatio": 93
     },
     {
       "id": "anime-expeditions",
       "name": "Anime Expeditions",
-      "playing": 2767,
-      "visits": 805053663,
+      "playing": 2548,
+      "visits": 805150163,
       "likeRatio": 96
     },
     {
       "id": "rivals",
       "name": "RIVALS",
-      "playing": 145201,
-      "visits": 18722676849,
+      "playing": 90204,
+      "visits": 18729900023,
       "likeRatio": 94
     },
     {
       "id": "steal-a-brainrot",
       "name": "Steal a Brainrot",
-      "playing": 111251,
-      "visits": 73970317945,
+      "playing": 89642,
+      "visits": 73976228814,
       "likeRatio": 85
     },
     {
       "id": "jujutsu-shenanigans",
       "name": "Jujutsu Shenanigans",
-      "playing": 132493,
-      "visits": 7620200508,
+      "playing": 74652,
+      "visits": 7626129072,
       "likeRatio": 86
     },
     {
       "id": "fish-it",
       "name": "Fish It!",
-      "playing": 73549,
-      "visits": 4782406872,
+      "playing": 73124,
+      "visits": 4783057373,
       "likeRatio": 83
     },
     {
       "id": "violence-district",
       "name": "Violence District",
-      "playing": 43400,
-      "visits": 1575534002,
+      "playing": 56947,
+      "visits": 1577157215,
       "likeRatio": 93
     },
     {
       "id": "strongest-battlegrounds",
       "name": "The Strongest Battlegrounds",
-      "playing": 46768,
-      "visits": 19421659596,
+      "playing": 39220,
+      "visits": 19424616239,
       "likeRatio": 84
     },
     {
       "id": "forsaken",
       "name": "Forsaken",
-      "playing": 43939,
-      "visits": 5820190032,
+      "playing": 32227,
+      "visits": 5822165149,
       "likeRatio": 84
     },
     {
       "id": "fisch",
       "name": "Fisch",
-      "playing": 68376,
-      "visits": 5021244684,
+      "playing": 54543,
+      "visits": 5022780996,
       "likeRatio": 91
     },
     {
       "id": "kick-a-lucky-block",
       "name": "Kick a Lucky Block",
-      "playing": 9421,
-      "visits": 1919529957,
+      "playing": 11529,
+      "visits": 1920139350,
       "likeRatio": 95
     },
     {
       "id": "survive-zombie-arena",
       "name": "Survive Zombie Arena",
-      "playing": 3535,
-      "visits": 753344647,
+      "playing": 4168,
+      "visits": 753555329,
       "likeRatio": 95
     },
     {
       "id": "lifetogether-rp",
       "name": "LifeTogether RP",
-      "playing": 33572,
-      "visits": 4037901850,
+      "playing": 14334,
+      "visits": 4039298267,
       "likeRatio": 90
     }
   ]
